@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<script type="text/javascript">
+	//현 페이지의 document 객체가 준비되면 한번 실행 
+	// 이 때 현페이지의 동작(javascript)을 일괄 등록 
+	$(document).ready(function() {
+		//alert("jquery");
+		// html 요소 중 linkTest class 명을 가진 요소가 클릭되면 
+		// 명시한 익명함수가 실행되도록 정의 
+		$(".linkTest").click(function(){
+			//alert($(this).text());
+			// return false가 되면 a link 속성인 페이지 이동이 되지 않는다 
+			return confirm($(this).text()+" 이동하시겠습니까?");
+		});
+	});
+</script>
+</head>
+<body>
+<!-- step1. class linkTest 이름을 가진 요소가 클릭될 때 alert() 을 실행하고
+			  자신의 text를 보여준다 
+	  step2. class linkTest 요소가 클릭될 때 confirm() 을 실행하고 
+	  		  다음넷으로 이동하겠습니까? 
+	  		  확인 누르면 이동 , 취소 누르면 이동하지 않는다 
+	  		  jquery click 은 false 를 반환하면 기존 행위를 중단한다 		  
+     -->
+<div class="container">
+<a href="http://daum.net" class="linkTest">다음넷으로</a><br>
+<a href="http://naver.com">네이버로</a><br>
+<a href="http://google.com" class="linkTest">구글로</a><br>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+**JDBC**
+JDBC - Java Database Connectivity 
+자바와 데이터베이스 연동을 위한 기술 
+
+주요 패키지 java.sql.*
+
+-JDBC 개발단계 
+	INSERT, DELETE, UPDATE 시에는 
+	1. JDBC Driver loading 
+	2. Connection 
+	3. PreparedStatement
+	   executeUpdate() 메서드로 SQL 실행 
+	   executeUpdate() 메서드의 리턴타입은 int , 리턴값은 영향을 준 row 수 
+	4. close 
+	
+	SELECT 실행시 
+	1. JDBC Driver loading 
+	2. Connection 
+	3. PreparedStatement
+	   executeQuery() 메서드로 SQL 을 실행 
+	   executeQuery() 메서드의 리턴타입은 ResultSet, 리턴값은 조회결과정보
+	4. ResultSet
+		: 조회한 결과 집합 
+		주요 메서드는 next() : boolean 다음 행이 있으면 true
+									실제 커서가 아래로 이동됨
+									getString(column index) : String index는 1부터 시작 
+									getInt(column index) : int 
+									or
+									getString(column label) : String 컬럼명으로 조회 
+	5. close();

@@ -1,0 +1,77 @@
+**11일차 주요목차**
+- Exception Review 
+- String , StringBuilder 
+- java.io.File 
+- IO 개념 
+-------------------------------
+- Exception Review 
+	Exception Handling -  프로그램 실행시 예외 발생하면
+										대처방안을 실행하고 
+										프로그램을 정상 수행시키는 것이 목적 
+	try : 예외 발생 예상 영역을 지정 
+	catch : 예외를 처리 ( 대처 방안 실행 ) 
+	finally : 항상 실행 ( ex - 컨넥션을 닫는다, 파일을 닫는다, 자원을 반납 .. )
+	throws : 예외가 전달될 수 있다는 것을 명시 
+	throw : 예외를 고의로 발생 
+										
+----------------------------------------------
+ - String , StringBuilder( StringBuffer ) : 문자열 처리 클래스 
+ 	String :   불변 , 변경시 새로 생성 	
+ 	               heap 영역 내의 문자열 상수 영역에 저장 
+ 	             동일한 문자열은 한번 생성하고 여러 곳에서 공유해서 사용 
+ 	              같은 문자열이 여러번 사용될 때 메모리 효율성이 높다  
+   StringBuilder : 가변 , 변경시 자체가 변경 
+   						  heap 영역 내 저장 
+   						  문자열 자체가 변경되므로
+   						  문자열이 자주 변경되는 문자열 처리에 적합하다 
+   StringBuffer :  StringBuilder와 동일하나 
+   							thread-safe 한 특성이 있다 ( 이후 공부 예정 ) 
+   							
+  - IO ( 입출력 ) 
+    I : Input 입력 
+    O : Output 출력 
+    
+    Stream 스트림 :   사전적 의미 - 액체 또는 기체의 줄기
+    							연속적인 데이터의 흐름을 Stream 이라고 표현 
+    							-> 입출력을 위한 클래스들을 스트림이라고 표현한다 
+    	
+    IO 계열의 4가지 abstract 부모 클래스(super class)
+    			1byte단위(ByteStream계열)			2byte단위(CharacterStream계열)
+    입력		InputStream								Reader
+    출력		OutputStream								Writer 
+    
+    NodeStream 계열 특징 : 직접 장치에 연결되는 스트림 
+    									   필수적인 스트림 
+    
+    ProcessingStream 계열 특징 : 기존 스트림에 연결되어 기능을 제공하는 스트림
+    												반드시 다른 스트림을 필요로 한다
+													( 생성자에서 다른 스트림을 매개변수로 명시)    
+    
+    
+    					  							
+   							
+   							
+   							
+   							
+   							
+   							
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 										
+										
+										
+										
+										
+										
+										
+										
+										
+										

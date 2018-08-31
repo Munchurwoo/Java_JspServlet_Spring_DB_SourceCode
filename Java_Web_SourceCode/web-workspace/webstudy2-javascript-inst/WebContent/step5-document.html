@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>document test</title>
+<script type="text/javascript">
+	function testDiv(){
+		// innerHTML 속성으로 get / set 모두 가능하다 
+		var m1=document.getElementById("mess1").innerHTML;
+		alert("div test "+m1);
+	}
+	function testSpan(){
+		var m2=document.getElementById("mess2").innerHTML;
+		alert("span test "+m2);
+	}
+	function testNick(){
+		// id가 nick 인 입력양식 text의 value를 출력 
+		// form 입력양식은 innerHTML로 접근하지 않고 value로 접근한다 
+		var n=document.getElementById("nick").value
+		alert(n);
+		// 닉네임 입력 텍스트란 정보를 비워준다 
+		document.getElementById("nick").value="";
+		// 닉네임란에 포커스를 준다 
+		document.getElementById("nick").focus();
+	}
+</script>
+</head>
+<body>
+<div id="mess1" style="background-color: yellow" onclick="testDiv()">이 부분은 div 영역입니다</div>
+<span id="mess2" style="background-color: green" onclick="testSpan()">이 부분은 span 영역입니다</span>
+<hr>
+<input type="text" id="nick" name="nick">
+<input type="button" value="별명확인" onclick="testNick()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

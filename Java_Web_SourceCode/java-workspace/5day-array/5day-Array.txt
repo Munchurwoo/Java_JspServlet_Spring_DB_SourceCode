@@ -1,0 +1,29 @@
+- Array
+1) primitive data type 을 저장하는 배열 
+
+int [] age; // 배열 선언 (배열의 타입은 int[] )
+age = new int[4]; // 길이 4인 배열을 생성 
+age[0] = 10; // 배열 요소에 할당 
+sysout(age.length); // 배열의 길이가 출력된다. 4
+
+배열 선언 생성 할당을 동시에 
+int age[] = {10,30,20,40}; // 길이 4인 배열 생성 
+
+2) reference data type 을 저장하는 배열 
+//배열 선언 및 생성 
+Person p[] = new Person[3]; // 길이 3의 배열 선언 및 생성 
+p[0]=new Person("아이유",26); //배열 요소에 객체를 참조 
+sysout(p[0]); // Person 객체의 주소값 출력 
+// 배열 선언, 생성, 할당 동시에 
+
+** 6일차 수업소스**
+
+- Inheritance( 상속 )
+상속이란 
+상속의 장점 
+extends keyword 
+super keyword 
+Overloading 과 Overriding 
+
+- Polymorphism
+object casting 

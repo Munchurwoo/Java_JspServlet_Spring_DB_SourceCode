@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript function</title>
+<script type="text/javascript">
+
+	function hello(){
+		var a = document.getElementById("test");
+		alert(a.value);
+	}
+	function bye(age){
+		alert(age+"세");
+	}
+	function go(name){
+		var info=returnTest();
+		alert(name+" "+info);
+	}
+	function returnTest(){
+		return "정보를 리턴";
+	}
+	function sendMessage(){		
+		var returnValue=confirm("잠이 오나요?");
+		//alert(returnValue);
+		if(returnValue){//리턴값이 true이면 
+			alert("엎드려 주무세요");
+		}else{//리턴값이 false이면 
+			alert("javascript 공부 합시다");
+		}
+	}
+</script>
+</head>
+<body>
+<input type="button" value="test1" id="test" onclick="hello()"><br><br>
+<input type="button" value="test2" onclick="bye(26)"><br><br>
+<input type="button" value="test3" onclick="go('아이유')"><br><br>
+<input type="button" value="test4" onclick="sendMessage()">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

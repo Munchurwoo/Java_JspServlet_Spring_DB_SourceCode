@@ -1,0 +1,16 @@
+- 요구사항은 카페에 있는 실행 화면으로 대체
+
+-요구분석 :  usecase 다이어그램을 작성해본다. 
+- 적용기술 : 
+-
+java SE , jdbc, Servlet/jsp (Model2 mvc) , html, css, javascript
+
+-설계 : customer.sql -- DDL 
+			 application 설계는 영역별 파일리스트로 대체 
+			 
+			 model : MemberDAO, MemberDTO
+			 
+			 view : 
+			 
+			 controller : (interface) Controller, DispatcherServlet( command를 처리할 Handler Controller 객체를 반환받는다 ), HandlerMapping
+			 						RegisterProductController, GetAlMemebrListController , loginController, logoutController

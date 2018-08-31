@@ -1,0 +1,43 @@
+	**4day 주요목차 **
+	- 연산자 
+	
+	- 제어문 :
+		조건문 : if, switch if문 중심으로 예씁 
+		반복문 :  for, while , do while 
+	- 변수 범위( Variable scope )
+	- 객체 관계 ( use a, has a relationship )
+	
+	-----------------------------------------------------------------------
+	
+	- 변수 범위( Variable scope )
+	자바 변수의 종류 : instance variable, local variable, class variable(static variable)
+	
+	자바 메모리 주요 구성 : heap, stack, class area 
+	
+	instance variable 의 특징 
+	: 객체의 속성 정보를 저장 
+		heap 메모리 영역에 저장 
+		선언만 해도 디폴트 초기화 (ex - int 는 0, 참조형은 null, boolean은 false )
+	
+	local variable 의 특징 
+	: 메서드와 생성자에서 임시로 사용하는 변수 
+	stack 메모리 영역에 저장 (선입후출 - 일시적으로 사용하다가 메모리에서 해제하는 것이 목적)
+	선언 및 명시적 초기화가 필요 ( ex - int i =1 )
+	메서드 또는 생성자 내에서 선언된다. 
+	local variable 은 선언된 자신의 실행영역({}) 내에서만 사용가능 
+	
+	class variable 과 class area는 이후 공부예정 
+	
+	- 객체 관계( use a , has a relationship )
+	객체의 관계 use a( association ) : 사람이 렌트카를 이용하다. 
+					 has a (aggregation) : 사람이 스마트폰을 보유하여 사용하다. 
+					 consist of( composition ) : 사람은 뇌를 가지고 있다.
+					 											  :  자동차는 엔진을 가지고 있다. 
+					 is a ( generalization ) : 사람은 동물이다. 
+
+					 
+	**5day 주요 목차**
+	- oject relation : 
+		composition( consist of )
+	- Array ( 배열 )
+	- Inheritance( 상속 ) 

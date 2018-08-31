@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>내가 직접 만드는 예제</title>
+<script type="text/javascript">
+	function move(){
+		if(confirm("텍스트 파일을 옆으로 이동하겠습니까?")){
+			var a = document.getElementById("text");
+			document.getElementById("span").innerHTML=a.value;
+			document.getElementById("1").innerHTML=a.value;
+			document.getElementById("2").innerHTML=a.value;
+			a.value="";
+			a.focus();
+		}else{
+			alter("이동을 취소했습니다.");
+		}
+	}
+</script>
+</head>
+<body>
+<input type="text" id="text" style="background-color: gray;">
+<input type="button" value="Text 이동" onclick="move()">
+<span id = "span" style="background-color: yellow">빈공간</span>
+<div>
+	<table>
+		<tr id="1"></tr>
+		<tr id="2"></tr>
+	</table>
+</div>
+</body>
+</html>
+
+<!--  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>document test</title>
+<script type="text/javascript">
+	function moveTxt(){
+		var orgElement=document.getElementById("orgTxt");
+		document.getElementById("destTxt").innerHTML=orgElement.value;
+		orgElement.value="";
+		orgElement.focus();		
+	}
+</script>
+</head>
+<body>
+<input type="text" id="orgTxt"> 
+<input type="button" value="오른쪽으로 이동" onclick="moveTxt()">
+<span id="destTxt" style="background-color: yellow"></span>
+
+		orgTxt 에 입력한 후 button 클릭하면 destTxt로 해당 text가 이동
+		orgTxt는 정보가 비워지며 포커스가 뜬다 
+
+</body>
+</html>
+ -->
+
+
+
+
+
+
+
+

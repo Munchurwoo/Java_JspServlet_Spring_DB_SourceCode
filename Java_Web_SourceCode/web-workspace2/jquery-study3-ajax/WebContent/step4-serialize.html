@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#test").click(function(){
+			//f1 아이디의 폼의 name 과 value 정보를 query string 으로 생성해 준다. 
+			alert($("#f1").serialize());
+		});
+	});
+</script>
+</head>
+<body>
+<!-- ajax 방식으로 서버 전송시
+	 data: "name=장기하&age=18&hobby=겜&hobby=노래" 와 같은 
+	 query string 을 만들어 전송해야 한다 
+  -->
+ <form id="f1" action="test.jsp">
+  이름 :<input type="text" name="name">
+   <input type="hidden"
+   name="command" value="register"> 
+   <select name="tool">
+   <option value="notepad">메모장</option>
+   <option value="editplus">에디트플러스</option>
+   <option value="eclipse">이클립스</option>
+  </select> 
+  <br>
+  <input type="checkbox" name="menu" value="beer">맥주<br>
+   <input type="checkbox" name="menu" value="pizza">피자<br> 
+   <input type="button" value="test" id="test">
+ </form>
+</body>
+</html>
+
+
+
+
+
+

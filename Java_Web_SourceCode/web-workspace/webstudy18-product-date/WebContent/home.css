@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+	background-color: aqua;
+	font-size: large;
+}
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0080FF;
+}
+
+.container {
+	/* background-color:aqua;
+	height : 500px; */
+	padding: 50px;
+}
+table{
+	/* 단선 */
+	border-collapse: collapse;
+}
+table,th,td{
+	border: 1px solid black;
+}
+th,td{
+	padding: 10px;
+}

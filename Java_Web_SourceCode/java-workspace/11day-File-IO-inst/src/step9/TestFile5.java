@@ -1,0 +1,28 @@
+package step9;
+
+import java.io.IOException;
+
+public class TestFile5 {
+	public static void main(String[] args) {
+		String dir="C:\\java-kosta\\test\\media\\music";
+		String songInfo=
+	"Dance The Night Away.mp3,Dejavu.mp3,¶ÑµÎ¶ÑµÎ.mp3,ºÏ±Ø¼º.mp3";
+		MultiFileService service=new MultiFileService();
+		//try catch 
+		try {
+			service.createDirAndMultiFile(dir,songInfo);
+			System.out.println("µð·ºÅä¸® ¹× ³ë·¡ÆÄÀÏµé »ý¼º");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
+
+
+
+
+
+
+

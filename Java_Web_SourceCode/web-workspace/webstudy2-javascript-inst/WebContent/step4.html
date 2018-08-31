@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>location test</title>
+<script type="text/javascript">
+	function enterAdultHome(){
+		if(confirm("당신은 성인이십니까?")){
+			alert("성인 사이트는 성인 인증이 필요합니다.")
+			location.href="http://www.pororopark.com";
+			document.write(document.getElementById("1").value);
+		}
+	}
+</script>
+</head>
+<body>
+<input id="1" type="button" value="성인사이트입장" onclick="enterAdultHome()">
+<!-- 	당신은 성인이십니까? 
+		확인누르면 성인사이트(http://www.pororopark.com)로 이동한다 
+		취소누르면 그대로 둔다 
+ -->
+</body>
+</html>

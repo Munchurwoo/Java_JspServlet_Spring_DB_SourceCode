@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>jquery val(), text()</title>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// 아이디가 testBtn 인 요소를 선택하여 
+		// 요소가 클릭되면 
+		// 자신의 value를 alert으로 출력하도록 이벤트 행위 등록
+		// value 대신 valueView 아이디 요소의 텍스트를 alert으로
+		// 출력해본다 
+		// 출력 후 valueView 아이디의 text를 비워본다 
+		$("#testBtn").click(function(){
+			//alert($(this).val());
+			alert($("#valueView").text());
+			$("#valueView").text("");
+		});
+		// id testBtn2 요소가 클릭되면 
+		// valueView 요소의 텍스트를 자신의 value로 할당하도록
+		// 이벤트를 등록한다 
+		$("#testBtn2").click(function() {
+			$("#valueView").text($(this).val());
+		});
+	});
+</script>
+</head>
+<body>
+<input type="button" value="버튼1"><br><br>
+<input type="button" value="버튼2" id="testBtn"><br><br>
+<input type="button" value="버튼3" id="testBtn2"><br><br>
+<span id="valueView">이 부분은 span 영역입니다</span>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

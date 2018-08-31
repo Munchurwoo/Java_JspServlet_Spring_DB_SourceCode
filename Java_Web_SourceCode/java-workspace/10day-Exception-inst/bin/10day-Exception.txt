@@ -1,0 +1,42 @@
+**10일차 주요목차**
+- Exception 개념 
+- Exception Handling(예외 처리) 의 주요 keyword
+   try, catch ,finally, throws, throw 
+-------------------------------------------
+- Exception 개념 
+  자바 프로그램 실행시 발생할 수 있는 예외를 말한다 
+  JVM 이 프로그램 실행시 Exception 상황을 만나면
+  해당 Exception 발생시키고 프로그램을 즉시 종료한다 
+  
+  Exception Handling 이란 -> 예외에 대한 대안 실행 
+  JVM이 Exception 을 발생시켜 전달할 때 
+  적절한 try 와 catch , finally, throws, throw 구문으로 
+  해당 Exception 에 대한 적절한 대처방안을 실행하고 
+  프로그램을 정상적으로 지속시키기 위한 작업을 말한다 
+  
+  try :  Exception 발생 예상 코드 영역을 지정 
+  catch : Exception 처리 , Exception에 대한 대처방안을 실행
+  finally : finally 영역은 Exception 발생 및 처리여부와 관계없이 항상 실행
+  throw : Exception을 발생시킨다 
+  throws : 호출한 곳으로 Exception 발생하면 던질 수 있다는 의미 
+  
+  -> Exception 은 checked exception 계열과 unchecked exception 계열이 있다
+      unchecked exception 계열은 java.lang.RuntimeException 의 자식
+      Exception class 들이다.
+       (ex- NullPointerException , IndexOutOfBoundsException
+       			NumberFormatException 등...) 
+      UncheckedException 계열은 별도의 throws 명시가 필요없다 
+      
+      Exception 복습은 step4 예제로 하면 됨  			
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+   

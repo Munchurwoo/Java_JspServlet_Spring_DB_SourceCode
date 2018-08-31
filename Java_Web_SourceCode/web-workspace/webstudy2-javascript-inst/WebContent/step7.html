@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function testForm(){
+		/* var userNameElement=document.getElementById("userName");
+		alert(userNameElement.value);
+		alert(userNameElement.value.length); */
+		var passElement=document.getElementById("memberPass");
+		var confirmPassElement=document.getElementById("confirmPass");
+		if(passElement.value.length<3||passElement.value.length>5){
+			alert("패스워드는 3자 이상 5자 이상!");
+			passElement.value="";
+			passElement.focus();
+		}else if(passElement.value!=confirmPassElement.value){
+			alert("패스워드 확인란과 일치하지 않습니다");
+		}else{
+			alert("패스워드 정상 입력입니다^^");
+		}
+	}
+</script>
+</head>
+<body>
+이름 <input type="text" id="userName"><br><br>
+패스워드(3자이상 5자이하) <input type="password" id="memberPass"><br>
+패스워드확인<input type="password" id="confirmPass"><br>
+<input type="button" value="테스트" onclick="testForm()">
+<!-- 		패스워드(와 확인) 입력 후 확인 누르면 
+			3자 이상 5자 이하가 아닐 경우 패스워드는 3자 이상 5자 이상! alert
+			후 패스워드 입력한 내용 지운 후 포커스 준다 
+			3자 이상 5자 이하일 경우 
+			패스워드 확인란과 일치하지 않으면 
+			패스워드 확인란과 일치하지 않습니다 alert 
+			패스워드 3자 이상 5자 이하이고 패스워드 확인 정보와 
+			일치하면 패스워드 정상 입력입니다^^ alert 
+ -->
+</body>
+</html>
+
+
+
+
+
+
+

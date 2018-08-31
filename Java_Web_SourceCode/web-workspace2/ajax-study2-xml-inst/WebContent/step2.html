@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xhr;
+	function startRequest(){
+		var maker=document.getElementById("maker").value;
+		var modelView=document.getElementById("modelView");
+		var priceView=document.getElementById("priceView");
+		if(maker==""){
+			modelView.innerHTML="";
+			priceView.innerHTML="";
+			return; //메서드 실행 중단 
+		}
+		xhr=new XMLHttpRequest();//ajax 통신 객체		
+		//콜백함수 , 서버가 응답하면 실행될 함수를 등록 
+		xhr.onreadystatechange=callback;
+		xhr.open("post","FindCarXMLServlet");
+		//ajax post 방식일 때 content type을 지정해야 한다. 
+		xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		xhr.send("maker="+maker);
+	}
+	// XMLHttpRequest 객체가 서버에 데이터를 요청하여 응답되면 아래 callback 함수가 실행
+	 function callback(){
+	  if(xhr.readyState==4){// 4 : 응답완료 
+	   if(xhr.status==200){// 200 : 정상수행 
+	    var dom=xhr.responseXML;//응답한 xml 을 받는다. 
+	    //alert(dom);
+	    var carVal=dom.getElementsByTagName("car");
+	    //alert(carVal.length);
+	    /* alert(carVal[0].childNodes[0].nodeName);//model
+	    alert(carVal[0].childNodes[0].childNodes[0].nodeValue);//model명 
+	    alert(carVal[0].childNodes[1].nodeName);//price
+	    alert(carVal[0].childNodes[1].childNodes[0].nodeValue);//price value  */
+	    var model=carVal[0].childNodes[0].childNodes[0].nodeValue;
+	    modelView.innerHTML=model;
+	    var price=carVal[0].childNodes[1].childNodes[0].nodeValue;
+	    priceView.innerHTML=price;
+	   }
+	  }
+	 }
+</script>
+</head>
+<body>
+<select id="maker" onchange="startRequest()">
+	<option value="">---</option>
+	<option value="현대">현대</option>
+	<option value="기아">기아</option>
+	<option value="삼성">삼성</option>
+</select>
+<!-- <span id="carView"></span> -->
+<!-- 
+		select 옵션을 선택하면 carView에 
+		모델:K5   가격:300
+ -->
+ <!-- 만약 모델과 가격을 분리해서 화면에 표현해야 할 경우 
+       서버의 응답 결과를 문자열로 분리해서 처리
+  -->
+<br><br> 모델 : <span id="modelView"></span>
+<br><br> 가격 : <span id="priceView"></span>
+</body>
+</html>
+
+
+
+
+
+
+
+

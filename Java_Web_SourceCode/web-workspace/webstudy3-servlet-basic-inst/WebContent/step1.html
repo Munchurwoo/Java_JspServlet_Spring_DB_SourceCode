@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form과 Servlet연동</title>
+</head>
+<body>
+<!-- 	form 요소 중 
+		action="url" : 처리할 서버 프로그램 url 
+		web.xml 의 url-pattern 에 명시된 정보를 쓰면 된다 	
+		
+		method="get" : 요청 방식   get방식으로 요청하는 것을 의미 
+		특정 method 즉 요청방식을 명시하지 않으면 get 방식으로 요청한다	
+ -->
+<form action="UserServlet" method="get">
+이름 <input type="text" name="userName"><br>
+주소 <input type="text" name="userAddress"><br>
+<input type="submit" value="전송">	
+</form>
+<!-- 
+		사용자 이름은 모모 
+		사용자 주소는 판교 
+		get 방식 요청시 url 
+		UserServlet?userName=아이유&userAddress=판교
+ -->
+ <hr>
+ <a href="UserServlet?userName=정우성&userAddress=판교">하이퍼링크 테스트</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

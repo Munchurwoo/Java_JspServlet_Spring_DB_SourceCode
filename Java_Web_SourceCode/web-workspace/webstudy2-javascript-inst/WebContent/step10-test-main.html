@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function opeWindow(){
+		//alert("새창 띄우기");
+		//자바스크립트로 함수로 새창을 띄움 
+		open("step11-popup.html","mypopup","width=200,hight=150,top=150,left=200");
+	}
+</script>
+</head>
+<body>
+<form name="testForm">
+<input type="text" name="userId">
+<input type="hidden" name="hiddenTest" value="">
+<br>
+<input type="button" value="새창 띄우기" onclick="opeWindow()">
+</form>
+</body>
+</html>

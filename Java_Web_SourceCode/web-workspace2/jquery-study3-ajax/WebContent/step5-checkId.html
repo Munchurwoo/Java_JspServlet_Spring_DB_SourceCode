@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#id").keyup(function(){
+			var a = $(this).val().length;
+			if(a>10||a<4){
+				$("#checkResult").html("아이디는 4자 이상 10자 이하만 가능!").css("color","pink");
+			}else{
+				//$("#checkResult").html("출력").css("color","red");
+				$.ajax({
+					type:"post",
+					url:"CheckIdServlet",				
+					//dataType:"json",
+					data:$("#idForm").serialize(),
+					success:function(jsonData){
+						if(jsonData=="ok"){
+							$("#checkResult").html("사용가능").css("color","blue");
+						}else{
+							$("#checkResult").html("사용불가").css("color","red");
+						}
+					}
+				}); 
+			}//else end
+			});
+	});			
+</script>
+</head>
+<body>
+<form id="idForm">
+아이디 : <input type="text" id="id" name="id">
+<span id="checkResult"></span>
+<input type="hidden" name="command" value="idcheck">
+</form>
+<!-- 
+  keyup(handler) 
+  step1
+  4자이상 10자이하만 가능 
+  만약 4자 미만 또는 10자 초과하는 경우 
+  id checkResult에 아이디는 4자이상 10자이하만 가능! (pink)
+  css("color","pink");
+  
+  step2 
+  4자이상 10자이하인 경우 서버 전송되어 
+  idMap에 존재하면 checkResult에 중복된 아이디 사용불가 (red)
+  존재하지 않는 정보이면 사용가능 (blue) 
+ -->
+</body>
+</html>
+
+

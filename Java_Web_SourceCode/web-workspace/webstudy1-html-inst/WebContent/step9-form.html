@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form tag</title>
+</head>
+<body>
+<form action="step9-response.jsp">
+	<!-- 
+			html 5 에서는 required="required" 속성을 명시하면
+			입력하지 않은 상태에서 서버로 전송하는 것을 막는다 
+			autofocus="autofocus"  속성은 커서가 자동으로 가게 한다 
+	 -->
+	아이디 <input type="text" name="userId" 
+	required="required" autofocus="autofocus"><br><br>
+	<!-- readonly="readonly" 읽기전용, 수정불가 -->
+	상품코드 <input type="text" name="pcode" value="123" 
+	readonly="readonly"><br><br>
+	<!-- 
+			type="number" 숫자만 입력가능한 입력양식 
+	 -->
+	상품가격 <input type="number" name="price" min="0" required="required">
+	<br><br>
+	<!-- 
+			type="email" 이메일 형식을 확인한다 
+	 -->
+	이메일 <input type="email" name="userEmail" required="required">
+	<br><br>
+	등록일시 <input type="date" name="regDate" max="2018-11-11">
+	<br><br>
+	<!-- 	Hidden Tag
+			사용자 화면에는 보이지 않고 서버상에 전송이 될 때 
+			서버에서 정보를 확인하기 위한 용도로 사용한다 
+	 -->
+	<input type="hidden" name="command" value="register">
+	<input type="submit" value="전송">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

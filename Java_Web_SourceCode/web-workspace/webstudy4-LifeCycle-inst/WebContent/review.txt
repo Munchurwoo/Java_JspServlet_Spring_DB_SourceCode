@@ -1,0 +1,9 @@
+**Servlet과 Form 연동 review**
+
+client															WAS 
+html form action="서버프로그램 url"					  web.xml 의 url-pattern
+			method="get or post"						  doGet() or doPost() 
+
+<input type="text" name="userId">										-----> request.getParameter("userId");
+									get 방식요청일 경우 url
+				http://127.0.0.1:8888/webstudy2/ReviewServlet?userId=입력정보	

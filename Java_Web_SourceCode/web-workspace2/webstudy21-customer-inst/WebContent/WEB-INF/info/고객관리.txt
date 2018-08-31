@@ -1,0 +1,27 @@
+- 요구사항은 카페에 있는 실행화면을 대체 
+
+- 요구분석 : Usecase 다이어그램을 작성해본다 
+
+- 적용기술 : 
+java SE , jdbc , Servlet/JSP ( Model2 MVC ) , html , javascript , css 
+
+- 설계 :  customer.sql - DDL  
+			application 설계는 영역별 파일리스트로 대체 
+			
+			model : 
+			
+			view : 
+			
+			controller : 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

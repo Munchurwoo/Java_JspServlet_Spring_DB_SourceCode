@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>json-basic.html</title>
+<script type="text/javascript">
+	function testJsonObject(){		
+		//json : javascript object notation 
+		/* var jsonObj={"name":"아이유","age":26}
+		alert(jsonObj.name);
+		alert(jsonObj.age); */
+		var carJson={"price":200,"model":"BMW"};
+		//alert(carJson.price+" "+carJson.model);
+		document.getElementById("modelInfo").innerHTML=carJson.model;
+		document.getElementById("priceInfo").innerHTML=carJson.price;
+	}
+</script>
+</head>
+<body>
+<input type="button" value="testJson" onclick="testJsonObject()"><br><br>
+차모델 <span id="modelInfo"></span> <br><br><br><br><br><br><br><br>
+차가격 <span id="priceInfo"></span>
+</body>
+</html>
+
+
+
+
+
+
+

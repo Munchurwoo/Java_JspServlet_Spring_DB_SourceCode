@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+	background-color: #eceff0;
+	font-family: fantasy;
+	font-size: large;
+}
+.container {
+	padding: 50px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: #F7D358;
+}
+table{
+	border-collapse: collapse;
+}
+table,th,td {
+	border: 1px solid black;
+}
+th,td{
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#jsonObjBtn").click(function(){
+				$.ajax({
+					type:"get",
+					url:"JSONServlet",
+					dataType:"json",
+					data:"command=getMemberInfo",
+					success:function(jsonData){
+						$("#nameView").text(jsonData.name);
+						$("#ageView").text(jsonData.age);
+					}
+				});//ajax
+			});
+			$("#jsonArrayBtn").click(function(){
+				$.ajax({
+					type:"get",
+					url:"JSONServlet",
+					dataType:"json",
+					data:"command=getMemberList",
+					success:function(jsonData){
+						var str="";
+						for(var i =0; i<jsonData.length;i++){
+							str+=(jsonData[i]);
+						}
+							alert(str);
+							$.each(jsonData,function(index,info){
+								alert((index+1)+"."+info);
+							});
+					}
+				});//ajax
+			});
+			$("#getJSONTest").click(function(){
+				$.getJSON("JSONServlet","command=getMemberInfo",function(jsonData){
+					$("#nameView").text(jsonData.name);
+					$("#ageView").text(jsonData.age);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+<input type="button" id="jsonObjBtn" value="JSONObject테스트">
+<hr>
+이름 : <span id="nameView"></span><br>
+나이 : <span id="ageView"></span>
+<hr>
+<!-- 아래 버튼 누르면 ajax 통신을 통해 아이유 이준규 설현이 
+	  각각 alert으로 출력 
+ -->
+<input type="button" id="jsonArrayBtn" value="JSONArray테스트">
+<hr>
+<input type="button" id="getJSONTest" value="getJSON테스트">
+<hr>
+
+</body>
+</html>
+
+
+
+
+

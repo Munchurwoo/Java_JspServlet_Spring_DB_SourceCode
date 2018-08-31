@@ -1,0 +1,157 @@
+**6day 주요목차**
+  - Inheritance ( 상속 ) 
+    상속 개념 
+    extends keyword 
+    access modifier
+    super keyword
+    Overloading 과 Overriding   
+    
+  - Polymorphism   ( 다형성 ) 
+    object casting 
+    
+    ---------------------------------------------
+    - 상속(Inheritance) 개념 
+     
+      객체지향의 주요 개념은 Encapsulation, Inheritance, Polymorphism이 있다
+      
+      상속은 자식 객체들의 공통적인 속성과 기능을 
+      부모 객체에 정의하고 물려 받아 재사용 
+      -> 부모 멤버( 인스턴스 변수와 메서드 ) 를 물려받아 재사용 
+      	-> 상속을 통해 계층구조를 형성하면 다형성 적용환경이 된다
+      	
+      상속은 is a  relationship 이다  ( generalization ) 
+      ex)  사람은 동물이다. 
+      		 학생은 사람이다. 	
+      	
+    - extends keyword :  상속을 위한 자바 키워드 
+    	class 자식 extends 부모 {}    	
+      	
+     - access modifier 
+       public > protected > [default] > private 
+       
+       public : 다른 팩키지에서도 접근가능 , 즉 어디서나 접근가능 
+       protected : 같은 팩키지 내에서만 접근가능 
+       					 단 상속관계에 있을 때는 다른 팩키지에서도 접근가능 
+       [default] : 같은 팩키지 내에서만 접근가능 
+       private : 동일한 클래스 내에서만 접근가능 					  
+      
+   - super keyword 
+   super() :  부모 생성자를 실행하여 부모 객체를 heap영역에 생성한다 
+   				  생성자의 첫라인에 위치한다 
+   				  명시하지 않으면 컴파일시에 자동으로 삽입된다 
+   				  부모 생성자의 매개변수가 정의되어 있을 경우 
+   				  super() 를 직접 명시해서 인자값을 적절히 할당해서 호출해야 한다
+   	ex)   class Animal{}
+   			class Person extends Animal{}
+   			class Student extends Person{}
+   			---------------------------------------
+   			new Student() 를 실행한다면 객체 생성의 순서는 
+   			Animal -> Person -> Student 순으로 객체가 생성된다 
+   			: super() 가 생성자 첫라인에 배치되어 실행되므로 
+   						  
+   	Overloading : 동일한 이름으로 다양한 매개변수를 정의하는 프로그래밍 기법
+   	메서드 오버로딩 , 생성자 오버로딩이 있다 
+   	ex)		메서드 오버로딩의 예 :  메서드 명만 알면 다양한 데이터를 적재할 수 있다
+   	            public void eat(){}
+   				public void eat(int count){}
+   				public void eat(String menu){}
+   				public void eat(String menu,int count){}			   
+   				
+   				생성자 오버로딩의 예 : 다양한 매개변수의 생성자를 정의할 수 있다 
+   				Member(){}
+   				Member(String id){}
+   				Member(String id,String password,int address){}  
+    
+    - Overriding ( 메서드 오버라이딩 ) 
+    :  부모 클래스를 상속받은 자식 클래스에서 
+       상속받은 부모 메서드를 자신에 맞게 다시 정의 
+       -> 부모 메서드를 재정의 
+      부모 메서드의 이름과 매개변수, 리턴타입이 일치해야 한다 
+      ex) 
+      			class Animal{
+      				public void eat(){}
+      			}
+      			class Person extends Animal{
+      				public void eat(){ // method overriding 
+      					// 구현부를 자신에 맞게 재정의 
+      				}
+      			}
+    
+    **java.lang.Object**
+    모든 클래스 계층구조의 최상위 클래스이다. 
+    자바로 구성된 모든 객체는 부모로서 Object를 가진다. 
+    별도로 클래스 정의시 상속을 명시하지 않으면 자동으로 extends Object
+    처리가 된다. 
+    
+    - Polymorphism 
+     : 다형성 
+     정의 - 하나의 메세징 수단으로 ( 하나의 소통방식으로 ) 
+                다양한 객체들이 각자의 방식으로 다양하게 동작하는 성질 
+     ex)     재생버튼을 클릭한다 ( 메세징 방식 ) 
+     			곰플레이어가 동영상을 재생한다
+     			알송플레어가 음악을 재생한다 
+     			이클립스가 자바를 실행한다 
+     			즉 하나의 재생버튼을 누르는 소통방식으로
+     			다양한 플레이어들이 각자의 방식으로 다양하게 동작하는 성질 
+     			
+     특징 
+     부모 타입의 변수로 다양한 자식 객체를 참조할 수 있다 
+     ex)
+     			Animal a=new Person();
+     			//위의 형식이 지원된다는 것은 아래처럼 개발이 가능하다는 것을
+     			//의미한다 
+     			rv.accept(new Person()); --->   void accept(Animal a){}
+     			rv.accept(new Dog());				하나의 accept에서 다양한 자식객체를
+     														   처리할 수 있다 
+    
+    -  Object casting 
+      부모 타입의 변수로 자식 객체 참조시 
+      부모로부터 상속받은 멤버(인스턴스변수,메서드) 와
+       오버라이딩한 메서드는 직접 접근이 가능하다 
+       단 자식의 독자적 멤버(인스턴스변수,메서드)에는 
+       직접 접근은 불가능하다. 이유는 부모타입의 변수이기 때문이다. 
+       이 때는 Object casting 절차를 거쳐서 참조변수의 타입을 자식타입으로
+       인식시킨 다음에 호출하면 된다. 
+       ex)  Animal a=new Person();
+       		 // a.study();  // Person 의 독자적 멤버이므로 직접 접근 불가 
+       		 ((Person)a).study();// Object casting ( Object down casting ) 
+ 
+  - instanceof 연산자 
+  	: 객체의 타입을 비교하는 연산자 
+  	  is a 관계가 성립되면 true를 반환한다        														   
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     			
+     			
+     			
+     			
+     			
+     			
+     			
+     			
+     			
+     		   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

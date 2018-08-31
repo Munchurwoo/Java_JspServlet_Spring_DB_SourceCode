@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step1-ajax.html</title>
+<script type="text/javascript">	
+	var xhr;
+	function startRequest(){
+		var maker=document.getElementById("maker").value;
+		if(maker=="")
+			return; // 함수 실행을 중단한다 ( 서버로 ajax 통신을 하지 않는다 )
+		xhr=new XMLHttpRequest();
+		xhr.onreadystatechange=callback;	
+		//alert("maker:"+maker);	
+		xhr.open("get","JsonObjectServlet?maker="+maker);
+		xhr.send(null);
+	}
+	function callback(){
+		if(xhr.readyState==4&&xhr.status==200){
+			//alert(xhr.responseText);
+			//응답받은 정보를 javascript 객체로 변환 
+			var json=JSON.parse(xhr.responseText);
+			document.getElementById("modelView").innerHTML=json.model;
+			document.getElementById("priceView").innerHTML=json.price;
+		}
+	}
+</script>
+</head>
+<body>
+<body>
+<select id="maker" onchange="startRequest()">
+	<option value="">---</option>
+	<option value="현대">현대</option>
+	<option value="기아">기아</option>
+	<option value="삼성">삼성</option>
+</select>
+<!-- <span id="carView"></span> -->
+<!-- 
+		select 옵션을 선택하면 carView에 
+		모델:K5   가격:300
+ -->
+ <!-- 만약 모델과 가격을 분리해서 화면에 표현해야 할 경우 
+       서버의 응답 결과를 문자열로 분리해서 처리
+  -->
+<br><br> 모델 : <span id="modelView"></span>
+<br><br> 가격 : <span id="priceView"></span>
+</body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>jquery basic</title>
+<script type="text/javascript">
+	//jQuery(document).ready(function() {
+	$(document).ready(function() {	
+		//alert("jquery ready");
+		//document ready 시점에 현 페이지에서 사용되는 모든 행위를 
+		//등록한다 -> jquery는 웹페이지의 구조와 동작을 분리 
+		// 현 페이지의 모든 a 태그는 자신이 클릭되었을 때 
+		// 등록한 익명함수가 실행되어 자신의 text를 출력하게 된다 
+		// a 태그에 대한 클릭 이벤트를 등록하는 코드임 
+		$("a").click(function() {
+			alert($(this).text());
+		});
+	});
+</script>
+</head>
+<body>
+<a href="#">test1</a><br>
+<a href="#">test2</a><br>
+<a href="#">test3</a><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

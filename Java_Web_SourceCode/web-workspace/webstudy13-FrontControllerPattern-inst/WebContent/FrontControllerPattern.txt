@@ -1,0 +1,83 @@
+**Front Controller Design Pattern**
+Front Controller Design Pattern 은 
+		    모든 클라이언트의 다양한 요청을 하나의 진입점으로 
+		    처리하기 위한 패턴 
+		    웹트래킹(사용자 요청 정보 수집 및 분석, 마케팅 적용) 과
+		    보안(인증 및 인가) 등에 일관성있는 정책을 적용할 수 있다 
+
+기존 MVC 
+step1 							Controller							Model 
+			client  -----   	FindMemberServlet
+							    RegisterMemberServlet 
+							    UpdateMemberServlet
+							    ProductListServlet 
+							    ...  
+							    
+MVC 에 FrontController Pattern 적용 						
+: step1 에서는 클라이언트 요청별 서블릿을 생성해서 서비스한다 
+  위 구조에서는 사용자 요청 정보 수집 및 분석, 마케팅 정책 적용 
+  및 인증, 인가 정책에 효율적이지 않다 ( 생산성과 유지보수성이 낮다 ) 
+
+	    
+step2							Controller						Model	    
+			client -------  	DispatcherServlet 
+
+step2에서는 모든 클라이언트의 요청을 하나의 진입점으로 모아서 
+처리하도록 했다 ( 실세계의 콜센터가 유사 ) 
+DispatcherServlet의 업무량 ( 코드량 ) 이 비대하고 하나의 클래스로 
+정의되어 유지보수에 문제가 있다 			
+						    
+step3							Controller										Model	    
+			client -------  	DispatcherServlet 		   FindMemberController
+															   RegisterMemberController
+															   UpdateMemberController
+															   ProductListController
+step3에서는 모든 클라이언트의 요청을 하나의 진입점 즉 front 역할을
+하는 DispatcherServlet에서 담당하고 실제 업무처리 즉 컨트롤러 로직은 
+개별 Controller class에서 담당하도록 step2를 업데이트 한다 
+-->  개별 업무를 담당하는 컨트롤러들을 계층구조를 형성해 
+	  표준화시켜 다형성을 지원하도록 설계한다 															   				    
+					front
+	client ----	DispatcherServlet    ---    Controller(Interface)					    
+							    						|
+							    						FindController 등 
+step4 
+		DispatcherServlet 과 Controller 구현체들과의 결합도를 
+		낮추기 위해 객체 생성을 전담하는 Factory 객체인 
+		HandlerMapping을 추가한다 
+		개별 컨트롤러들이 추가 및 수정시에도 DispatcherServlet은 
+		영향을 받지 않는다 -> 유지보수성 향상 
+		
+				 front					  factory					  handler
+	client ----DispatcherServlet---HanderMapping  ---	  Controller(Interface)					    
+							    											|
+							    										FindController 등 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+									    
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							    
+							    	    

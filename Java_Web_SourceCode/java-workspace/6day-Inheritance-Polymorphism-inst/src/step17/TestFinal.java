@@ -1,0 +1,25 @@
+package step17;
+
+public class TestFinal {
+	public static void main(String[] args) {
+		CompanyService service=new CompanyService();
+		service.calculateAnnualSalary(new Employee("æ∆¿Ã¿Ø",200));
+		/*		æ∆¿Ã¿Ø 2400  
+		 */
+		service.calculateAnnualSalary(new Manager("±Ë≈¬∏Æ",300,"øµæ˜"));
+		/*   ±Ë≈¬∏Æ 3600
+		 */
+		service.calculateAnnualSalary(new Engineer("º’»ÔπŒ",400,"¿⁄πŸ",100));
+		/*  º’»ÔπŒ 6000	
+		 */
+	}
+}
+
+
+
+
+
+
+
+
+

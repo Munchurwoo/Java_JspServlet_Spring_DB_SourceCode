@@ -1,0 +1,6 @@
+@charset "UTF-8";
+table,td,tr,th{
+	border: solid red 1px;
+	border-collapse: collapse;
+	padding: 1px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ajaxBtn").click(function(){
+			$.ajax({
+				type:"post",
+				url:"CommentServlet",
+				data:"comment="+$("#comment").val(),
+				success:function(result){
+					//서버가 응답하면 동작되는 콜백함수 
+					$("#resultView").html("<pre>"+result+"<pre>");
+					$("#comment").val().focus();
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<textarea rows="10" cols="10" id="comment"></textarea>
+	<br>
+	<input type="button" id="ajaxBtn" value="ajax연동테스트">
+	<hr>
+	<div id="resultView"></div>
+</body>
+</html>
+
+
+
+

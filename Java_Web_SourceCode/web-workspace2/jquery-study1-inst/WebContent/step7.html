@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>jquery hide,show</title>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#hideBtn").click(function(){
+			// 첫번째 인자값: 기간 , 두번째 인자값: 후속작업 진행 함수 
+			$("#friend").hide(2000,function(){
+				//alert("감춤");
+				//stateView id의 html 정보를 아이유 없다로 할당해본다 
+				$("#stateView").html("<h3>아이유 없다~~~</h3>");
+			});
+		});
+		// 아이유를 보이게 한 후 아이유 있다를 h1 사이즈로 보여준다 
+		$("#showBtn").click(function() {
+			$("#friend").show(2000,function(){
+				$("#stateView").html("<h1>아이유 있다~~</h1>");
+			});
+		})
+	});
+</script>
+</head>
+<body>
+<img src="아이유.jpg" id="friend"><br><br>
+<!-- 		hideBtn id 버튼을 클릭하면 friend id 이미지를 감춘다 
+			jquery function 명은  hide(2000);  
+		    showBtn id 버튼 클릭하면 friend id 이미지를 보여준다 
+		    show(2000); 
+ -->
+<input type="button" id="hideBtn" value="사진감추기">
+<input type="button" id="showBtn" value="사진보기">
+<hr>
+<span id="stateView">아이유 있다</span>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function closeWindow(){
+		//alert("close");
+		// 현재 판업창을 띄운 본화면의 제어해 본다.
+		// 자신을 띄운 본화면(opener)의 요소중 userId의 value에 값을 할당 )
+		opener.document.testForm.userId.value="판업에서 할당"
+		//자시 자신을 가르키는 자바스크립트 키워드 
+		//현재 창이 종료된다.
+		self.close();
+	}
+</script>
+</head>
+
+<body bgcolor="yellow" onunload="closeWindow()">
+	새창입니다.<br><br>
+	<input type="button" value ="확인" onclick="closeWindow()">
+
+</body>
+</html>

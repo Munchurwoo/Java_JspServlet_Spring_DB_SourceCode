@@ -1,0 +1,90 @@
+**9일차 주요 목차**
+- java.util.Collection 계열 List 와 Map 
+
+	Collection API( or Framework )
+	: java 자료 구조체를 정의한 인터페이스와 객체의 그룹 
+	최상위 인터페이스 Collection
+	그 자식 인터페이스 List 와 Set 이 대표적이다 
+	별도로 key 와 value로 저장되는 Map 이 있다 
+	
+	Set 인터페이스 계열 :  중복이 허용되지 않는다 
+	하위 구상 클래스(구현체) 중 LinkedHashSet 은 저장 순서를 기억 
+									             TreeSet 은 정렬 기능이 내장 
+									             
+	List 인터페이스 계열 : 인덱스로 관리된다 ( 배열과 동일한 방식 ) 
+	하위 구상 클래스(구현체) 중 ArrayList 는 검색에 장점 
+											    LinkedList 는 삽입 삭제시 장점 	
+
+	Map 인터페이스 계열 :  key 와 value 로 저장된다 
+										key를 이용한 value 검색에 장점이 있다 
+										
+	Generic :    자료구조체에 저장될 요소의 타입을 지정한다 
+					  데이터의 안정성 보장 
+					  객체 캐스팅 절차를 감소한다 
+					  
+					  ex)		ArrayList<Friend> list=new ArrayList<Friend>();
+					  		   위와 같이 Generic을 선언하면 
+					  		   list 의 요소로 Friend 객체 또는 Friend 하위의 객체만
+					  		   저장할 수 있다 
+					  		   
+	Iterator :  사전적 의미는 반복자 
+					 자료 구조체의 요소를 반복해서 열거하기 위한 
+					 표준화된 방법을 제공하는 인터페이스 
+					 자바 자료 구조체 최상위 인터페이스인 Collection Interface에서
+					 abstract method로 iterator() : Iterator 로 선언되어 있으므로
+					 그 하위의 모든 자료 구조 구상 클래스(or 구현체) 는 
+					 모두 이 메서드를 구현하고 있다 
+					 hasNext() : boolean   다음 요소가 존재하면 true 없으면 false
+					 next() : E ( 요소 타입 )   다음 요소를 반환한다 				  		   
+					  		   
+	Stack :  last-in-first-out (LIFO)
+				가장 마지막에 추가된 요소가 가장 먼저 나온다 
+	Queue : First In First Out (FIFO)
+				가장 먼저 추가된 요소가 가장 먼저 나온다 			
+				
+	**10day 주요목차**
+	-Exception 
+		try
+	    catch
+	    finally
+	    throw
+	    throws 				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+								  		   
+					  		   
+					  		   
+					  		   
+					  		   							
+										
+										
+										
+										
+										
+										
+																					    																             
+									             
+									             
+									             
+									             
+									             
+									             
+									             
+									             
+									             
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript confirm test</title>
+<script type="text/javascript">
+	function testConfirm(){
+		if(confirm("오늘 지각한 사람 노래시킬까요?")){
+			alert("노래 일발장전~");
+		}else{
+			//alert("취소..\n그냥 부반장 노래");
+			// id가 info 인 요소에 html 정보를 할당 
+			document.getElementById("info").innerHTML="<h3>부반장노래</h3>";
+		}
+	}
+	function testLocation(){
+		/* alert("다른 곳으로 이동테스트");
+		location.href="http://daum.net"; */
+		document.getElementById("test").innerHTML="<h3>기존의코드 변경</h3>"
+	}
+</script>
+</head>
+<body>
+<input type="button" value="confirmTest" onclick="testConfirm()">
+<!-- 위 버튼 누르면 confirm 함수로 오늘 지각한 사람 노래시킬까요?
+	 확인 누르면  노래일발장전 alert
+	 취소 누르면  취소. 그냥 부반장노래하는 걸로..alert 
+ -->
+ <div id="info" style="background-color: yellow">메세지출력</div>
+ <br><br>
+ <input type="button" value="이동테스트" style="background-color: blue" onclick="testLocation()">
+	</br>
+	<span id=test>바꿀꺼다 이걸로</span>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

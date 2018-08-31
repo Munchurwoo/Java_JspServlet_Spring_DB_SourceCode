@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function checkForm(){
+		//skill name 요소가 다수이므로 배열로 반환 
+		var skillComp=document.getElementsByName("skill");
+		//skill 요소수 3출력
+		//alert(skillComp[0].value);
+		//alert(skillComp.length);
+		//check 상태를 확인한다.
+		alert(skillComp[0].checked);
+		return true;
+	}
+</script>
+</head>
+<body>
+<form action="test.jsp" onsubmit="return checkForm()">
+	<input type="checkbox" name="skill" value="jsp">jsp<br>
+	<input type="checkbox" name="skill" value="spring">spring<br>
+	<input type="checkbox" name="skill" value="mybatis">mybatis<br>
+	<input type="submit" value="전송">
+</form>
+</body>
+</html>

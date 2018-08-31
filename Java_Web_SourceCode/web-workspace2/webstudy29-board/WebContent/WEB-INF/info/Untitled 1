@@ -1,0 +1,8 @@
+**Model2 게시판**
+
+1. 요구분석 : Usecase Diagram
+2. 설계 : ERD Modeling(ERD-논리, 물리)
+				-> DDL 
+				Application Modeling(UML - Class Diagram )
+				-> VO 만 설계 
+				나머지는 Model, View, Controller File List 로 대체 

@@ -1,0 +1,81 @@
+	**2day 주요목차**
+  	
+  	- 객체지향 프로그래밍 ( OOP ) 
+  	- 객체 지향 ( Object - Oriented ) 
+  	- 객체( Object ) 
+    - 객체 구성요소 :  속성과 기능 
+  	- 객체와 클래스 관계 
+  	- UML 							  
+    - 객체 지향의 주요 개념 세가지  ( 이후 공부 예정 )
+    ( Encapsulation, Inheritance, Polymorphism ) 
+
+    자바 기본 문법 
+    - 클래스 정의 
+    - 객체 생성 
+    - 변수 정의 : 변수의 데이터 타입은 int 와 String 
+    - 메서드 정의 
+    - Encapsulation 개념 ( 객체 지향의 주요 개념 중 하나 )
+    - access modifier 접근제어자 public 과 private 
+ 				 
+  -----------------------------------------------------------------
+  
+  - 객체지향 프로그래밍 ( OOP )
+  	: 객체 지향 개념이 적용된 프로그래밍 
+  - 객체 지향 ( Object - Oriented )  
+  	: 시스템 분석 설계 기법 
+  		-> 객체지향이란 시스템의 기본 단위를 객체로 상정하고 객체와 객체의 관계를 중심으로 시스템 분석 설계를 하는 기법을 말함. 
+  		
+  		참고) 소프트줴어 개발 프로세스 
+  		: 폭포수 모델 (WATERFALL MODEL )
+  		요구분석 - 설계 - 구현 - 테스트 - 운영 
+  		
+  		
+  - 객체( Object ) 
+  	시스템의 기본 단위. 
+  		 속성과 기능으로 구성 
+  	ex) 축구게임 소프트웨어 
+  		: 축구선수, 감독 , 관중 , 심판 
+  		  경기장 , 경기전적, 골
+  		  
+  		- 객체 구성요소 :  속성과 기능
+  		속성 : 객체의 정보 , attribute or 변수(variable)에 저장 
+  			ex)축구선수의 이름, 나이, 신체정보  
+  		기능 : 객체의 동작 , operation or method 라고 함 
+  			ex)축구선수가 달린다, 축구선수가 패스하다.
+  	
+  	- 객체와 클래스 관계 
+  		클래스는 객체의 설계도이다.
+  		-> 객체 object는 class 를 통해서 생성할 수 있다.
+  		
+  	-UML : 통합 모델링 언어 
+  				  객체지향 분석 설계(OOAD : Object - Oriented Anaysis and Design)를 위한 모델링 언어 
+  				  대표적으로 class diagram, usecase diagram등이 있다. 
+  		
+  		uml 툴 중 star uml 을 이용해 class diagram 을 만들어본다. 
+  		ex) Person class를 diagram 으로 정의 
+  			속성 : name, age 
+  			기능 : eat , sleep 
+  		
+  	-Encapsulation
+  		객체 지향의 주요 개념 
+  		"public interface, private implementation" 
+  		인터페이스는 공개하고 구현부는 감춘다. 
+  		객체 (or 모듈) 를 정의할 때 인터페이스와 구현부를 분리해서 개발한다. 
+  		
+  	Encapsulation 적용시 장점 
+  	
+  	1. 정보 보호 (정보 은닉)
+  	2. 유지보수성 향상 
+  		인터페이스로 소통하고 구현부가 감추어져 있으므로 구현부가 업데이트 되어도 외부에는 영향이없다. 
+  			-> 결합도가 낮아진다. 
+  	3. 생산성 향상 
+  		구현부를 분석하지 않아도 인터페이스만 알면 사용할 수 있다. 
+  				
+  	** 3일차 주요 목차** 
+  	- review 
+  	- this keyword
+  		- 생성자( constructor )
+  		-  java Data Type : primitive data type 과 reference data type 
+  		- 연산자 
+  		- 제어문 : 조건문 / 반복문 
+  		

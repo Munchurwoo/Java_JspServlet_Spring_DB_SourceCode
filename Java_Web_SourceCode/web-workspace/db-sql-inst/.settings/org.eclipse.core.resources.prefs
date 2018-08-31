@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/step1-basic.sql=ms949
+encoding//src/step2-basic.sql=ms949
+encoding//src/step3-sequence.sql=ms949
+encoding//src/step4-join.sql=ms949
+encoding//src/step5-SubQuery.sql=ms949
+encoding//src/step6-GroupBy.sql=ms949

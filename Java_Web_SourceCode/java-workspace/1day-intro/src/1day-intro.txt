@@ -1,0 +1,150 @@
+**전체 커리큘럼**
+Java SE 
+Database 
+JDBC 
+HTML 
+Javascript 
+CSS 
+Servlet 
+JSP  
+Model2 MVC 
+Ajax 
+jQuery 
+Semi Project 
+Spring Framework ( IOC , AOP , MVC ) 
+MyBatis Framework 
+Tiles Framework 
+분석 / 설계 :  OOAD , Erd 
+Final Project 
+
+**Java SE 주요목차**
+- java 특징 
+- java 개발환경
+- 객체지향개념의 이해 
+- java 기본문법 ( 변수, 메서드 , 생성자 , 팩키지 , import ) 
+- java의 데이터타입 
+- 연산자 
+- 제어문 ( 조건문, 반복문 ) 
+- 변수범위 
+- 객체 관계 ( object relationship ) 
+- Array (배열) 
+- Inheritance ( 상속 ) 
+- Polymorphism ( 다형성 ) 
+- static , final , abstract , interface 
+- Collection ( 자료구조 ) 
+- Exception 
+- IO 
+- Thread 
+- Network 
+
+
+**1day 수업**
+- java SE 환경설정 
+   JDK 1.8 다운로드 및 설치 
+   JDK PATH 를 시스템 환경변수에 추가 
+   DOS 창에서 JAVA 클래스를 컴파일 , 실행 
+   
+   jdk 다운로드 
+ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+ 
+ jdk 설치 후
+ C:\Program Files\Java\jdk1.8.0_171\bin 패스를 복사 후 
+ 컴퓨터 - 마오 클릭 - 고급 시스템 설정 - 환경변수 - 시스템 변수에서 path 편집 -
+   ;C:\Program Files\Java\jdk1.8.0_171\bin ( 새미콜론으로 구분 ) 
+ 
+ jdk path 설정 후 확인 - 실행에서 cmd 입력 후 enter 해서 dos 창 띄운 후 
+ javac 명령어를 입력해서 옵션이 나오는 지 확인한다 
+
+ 이클립스 다운로드 (zip 파일 버전)
+http://www.eclipse.org/downloads/eclipse-packages/ 
+   
+   
+   
+   
+   자바 개발툴 
+   메모장 
+   에디트 플러스 
+   이클립스
+   
+ -  자바의 특징 
+    1) 플랫폼 독립적 - JVM 이 통역자 역할 
+       "Write Once , Run Anywhere" 
+    2) 객체 지향(Object-Oriented) 언어이다     
+    3) 가비지 컬렉션 ( jvm이 메모리 관리 ) 
+    4) Multi Threading   활용도 좋음 
+
+
+ **1day 주요 용어정리**
+ 
+ jdk - java development kit 자바 개발 도구 
+ jdk 다운로드 후 설치하면 
+ jdk(자바개발도구) > jre(자바실행환경) > jvm (자바가상머신)
+ 
+ jvm : jvm 이 os 와 어플리케이션의 통역자 역할 
+ 
+ HelloWorld.java  를 개발자가 작성 
+ 컴파일 : 기계어 코드 생성 (bytecode 생성 ) 
+ 				  javac 	 HelloWorld.java 
+ 				  
+ 				  HelloWorld.class 생성 
+ 				   
+ 실행 (runtime) : 프로그램 실행 ( .class 가 실행 ) 
+ 				  java HelloWorld 
+ 				  
+  eclipse : 자바 통합 개발 툴 
+  				main ->   ctrl + space  -> 메인 메서드 생성 
+  				sysout -> ctrl + space -> System.out.println() 
+  				컴파일은 ctrl + s 즉 저장시점에 자동 컴파일 
+  				실행 ctrl + f11 
+  				코드정리 ctrl+shift+f 
+  				
+   자바 기본 코드 간단 분석 
+   step2.TestSimpleCode 에 주석으로 정리 
+   
+   주석 : 프로그램 실행에 영향을 주지 않고
+   			   프로그램 작성 및 기능에 대한 명세 
+   	한줄짜리 주석 // 
+   	여러줄짜리 주석 /*     */
+   								  /**    */ 	- javadoc 	   				
+  				
+  	**2day 주요목차**
+  	
+  	- 객체지향 프로그래밍 ( OOP ) 
+  	- 객체( Object ) 
+  	- 객체 지향 ( Object - Oriented ) 
+  	- 객체와 클래스 관계 
+  	- UML 							  
+    - 객체 지향 분석 및 설계 ( OOAD ) 
+    - 객체 구성요소 :  속성과 기능 
+    
+    - 클래스 정의 
+    - 객체 생성 
+    - 변수 정의 : 변수의 데이터 타입은 int 와 String 
+    - 메서드 정의 
+    - 생성자 
+ 				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

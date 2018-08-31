@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#ajaxBtn").click(function(){
+			$.ajax({
+				type:"get",
+				dataType:"json",
+				url:"CountServlet",
+				data:"userId=javaking",
+				success:function(result){
+					//서버가 응답하면 동작되는 콜백함수 
+					alert("오류");
+					alert(result);
+				}
+			});
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<input type="button" id="ajaxBtn" value="ajax연동테스트">
+	<span id="resultView"></span>
+</body>
+</html>
+
+
+
+
+
+
+

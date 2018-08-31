@@ -1,0 +1,110 @@
+**8일차 주요목차**
+- static 
+- final 
+- abstract 
+- interface 
+- set
+-----------------------------------------------------
+- static 
+	정적 ( static : class )<-----> 동적 ( dynamic: object )
+	
+	static member ( variable, method ) 를 
+	class member 라고도 표현한다. 
+	
+	일반적으로 static modifier 는 method 와 variable 앞에서 명시된다. 
+	
+	java 컴파일 단계 -> .class 파일 생성 ( jvm 이 실행하기 위해 )
+	java 실행 단계 
+	-> 1. class loading (type, 상속관계, package, class, method 정보 적재)
+		:이 클래스 로딩 단계에서 클래스에 관련된 메타정보를 class area 메모리 영역(or method area)에 적재한다. 
+		이 시점에 static 변수와 메서드 정보가 메모리에 적재된다. 
+		2. bytecode(class) 검증 단계 
+		3. 실행 단계 (main 부터 시작)
+			new keyword 즉 객체 생성 코드를 만나면 heap 영역에 객체 생성 
+		
+		java memory 구조 
+		1) class area : class meta 정보가 저장된다. 
+			(pakage, class, method, type 등의 정보와 
+			static member( variable, method ) 정보)
+		2) stack : local variable ( 지역변수 )
+		3)heap : Object ( instance variable )
+		
+		static 특징 
+		- 객체 생성 없이 클래스 로딩만으로 메모리에 적재되므로 
+		클래스명.변수 or 클래스명.메서드 로 접근해서 사용가능하다. 
+		
+		static 에서 non-static 을 직접 접근 불가 
+		접근 위해서는 반드시 객체 생성이 필요 
+		
+		non-static 에서 static 으로는 직접 접근 가능 
+		
+	- final 	
+		1) 상수 : 재할당 불가 , 대문자로 표현 ( 합성어는 _ 로 연결 )
+			ex) final int MAX_PRICE=100;
+		
+		2) final 메서드 : 자식 클래스에서 해당 메서드 오버라이딩 불가 
+		
+		3) final class : 상속 불가 , final 로 선언된 클래스는 상속이 불가하다. 
+		
+	- abstract 
+		
+		1) abstract class 
+			abstract class 로 선언되면 해당 클래스는 직접 객체화 될 수 없다 
+			부모 클래스로서의 역할을 한다. ( 자식 클래스의 생성자 내에서 super
+			()가 동작되어 객체 생성은 이루어 진다.
+			abstract method 가 하나 이상 존재하면 해당 클래스는 abstract class로
+			선언되어야 한다 .
+			
+		2) abstract method 
+		추상 메서드는 구현부가 없다 ex) public abstract void study();
+		자식 클래스에서 반드시 구현해야 한다. 
+		구현하지 않으면 자식 클래스 또한 abstract class 로 
+		선언되어야 한다. 
+		(abstract class는 직접 객체화 될 수 없다 )
+		abstract method는 자식 클래스에게 구현을 강제하기 위해
+		사용된다. 
+		(시스템 표준화에 기여한다.) 
+		추상 메서드가 하나 이상 선언된 클래스는 abstract class로 
+		선언되어야 한다.
+		
+		 **Template Method Design Pattern**
+		상위 부모 클래스에서 작업에 대한 알고리즘(작업공정절차)을 정의하고 
+		하위 자식 클래스에서 상세한 구현을 하도록 설계하는 패턴 
+		ex) 피자 서비스의 makePizza() method -> Template Method 
+		topping() 은 abstract method로 선언해 자식 클래스에서 상세 구현하도록 강제 
+		
+		-  interface 
+			: 다중 상속의 효과 ( 자바는 단일 상속 )
+				-> 상속의 장점 
+				1. 부모 맴버를 물려받아 재사용 
+				2. 계층 구조 형성을 통한 다형성 적용 
+				자바 인터페이스는 상속의 장점 2번을 말한다. 
+				
+				* 다중 상속의 효과란 
+				다양한 계층 구조 형성을 통한 다형성 적용에 있다. 
+		- java interface 특징
+		인터페이스는 구현부가 없는 메서드 즉 추상메서드를 정의한다. 
+		구현부가 있는 일반 메서드는 정의 불가능하다.
+		static final 상수만 명시할 수 있다. 
+		인스턴스에서  변수의 개념은 없다. 
+		즉 클래스에서 명시하는 인스턴스 변수  및 일반 메서드는 정의 물가능하다. 
+		
+		인터페이스를 구현하는 *implements 클래스는 다양한인 터페이스
+		
+	- java.util.Set 
+	Set Interface 계열의 구상클래스 LinkedHashSet, TreeSet 등은 요소들을 저장할 때 
+	중복을 허용하지 않는 특징이 있다. 
+	
+	LinkedHashSet : 요소의 중복을 허용하지 않고 추가된 순서를 기억한다. 
+	TreeSet : 요소의 중복을 허용하지 않고 정렬 기능이 있다.
+	
+	** 9일차 주요목차 **
+	- java.util.Collection 
+	  List 
+	  Iterator interface 
+	  Map 
+	  Stack, Queue 
+	- Exception 
+		try, catch, finally, throws, throw 
+	
+				

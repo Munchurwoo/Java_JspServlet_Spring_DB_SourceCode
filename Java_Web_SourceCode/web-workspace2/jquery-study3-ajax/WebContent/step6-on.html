@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jquery on 메서드 테스트</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#createBtn").click(function(){
+			$("#menu").html($("#menu").html()+"<p>"+$(this).val()+"</p>");
+		});
+		//p 를 대상으로 클릭될 때 자신의 text를 alert으로 출력하도록
+		//이벤트를 바인딩한다 
+		//p 요소는 처음 document ready 시점에는 존재하지 않기 
+		//때문에 ( 즉 이후에 동적으로 생성) 아래와 같은 
+		//방식은 불가하다 --> jquery on 을 이용 
+		/* $("p").click(function(){
+			alert($(this).text());
+		});  */
+		//대상을 보유하는 요소를 선택하고
+		//on(event type,선택자,handler) 
+		//즉 id menu div 를 선택한 후 on 을 적용하고 
+		//이 div 내부에 동적으로 생성되는 p 를 대상으로
+		//click 이벤트 발생시 해당 handler 익명함수를 실행하도록 한다 
+		
+	});
+</script>
+</head>
+<body>
+<input type="button" id="createBtn" value="동적으로 문자열생성">
+<div id="menu"></div>
+</body>
+</html>
+
+
+
+
+
+
+

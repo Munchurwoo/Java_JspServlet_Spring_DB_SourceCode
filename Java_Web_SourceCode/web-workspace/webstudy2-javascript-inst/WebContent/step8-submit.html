@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	function checkForm(){
+		//alert("폼을 확인");
+		var id=document.getElementById("userId").value;
+		if(id==""){
+			alert("아이디를 입력하세요.");
+			return false;//서버로의 전송을 막는다.
+		}
+	}
+	
+</script>
+<body>
+<!-- 1. 전송 submit 버튼을 클릭하면 전송되기 전 alert()을 띄운다.
+	 2. 아이디 입력란이 공란일 경우 submit 되는 것을 막아본다.  
+		만약 공란이 아니면 submit 되도록 한다. 		
+  -->
+	<form action="test.jsp" onsubmit="return checkForm()">
+		아이디 : <input type="text" name="userId" id="userId">
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>
