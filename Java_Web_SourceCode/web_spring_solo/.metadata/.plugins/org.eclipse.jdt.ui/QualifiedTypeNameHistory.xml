@@ -7,8 +7,9 @@
 <fullyQualifiedTypeName name="com.javalec.ex.MyCalculator"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.javalec.ex.MyInfo"/>
+<fullyQualifiedTypeName name="com.javalec.ex.StudentInfo"/>
+<fullyQualifiedTypeName name="com.javalec.ex.Pancil"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.javalec.ex.StudentInfo"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Student"/>
 </qualifiedTypeNameHistroy>

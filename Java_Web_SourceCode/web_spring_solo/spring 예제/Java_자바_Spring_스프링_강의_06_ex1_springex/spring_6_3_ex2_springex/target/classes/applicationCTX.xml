@@ -15,5 +15,5 @@
 		<property name="height" value="190" />
 		<property name="weight" value="70" />
 	</bean>
-
+	
 </beans>

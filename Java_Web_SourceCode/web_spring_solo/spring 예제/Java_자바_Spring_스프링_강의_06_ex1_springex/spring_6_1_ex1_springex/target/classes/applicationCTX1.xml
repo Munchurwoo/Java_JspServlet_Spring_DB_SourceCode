@@ -12,7 +12,7 @@
 			<list>
 				<value>줄넘기</value>
 				<value>공기놀이</value>
-			</list>
+			</list> 
 		</constructor-arg>
 		
 		<property name="height">

@@ -39,6 +39,10 @@ public class MainClass {
 		System.out.println(family.getSisterName());
 		System.out.println(family.getBrotherName());
 		
+		/*String configLocation = "classpath:xmlTest.xml";
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext(configLocation);
+		Student student = ctx.getBean("student4",Student.class);
+		System.out.println(student.getName());*/
 		ctx.close();
 		
 	}
