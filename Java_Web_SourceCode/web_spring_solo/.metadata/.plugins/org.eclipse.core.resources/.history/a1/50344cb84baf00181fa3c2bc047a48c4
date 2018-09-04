@@ -1,0 +1,6 @@
+package com.javalec.ex;
+
+public class MainClass {
+	calculator cal = new calculator();
+	
+}

@@ -1,0 +1,6 @@
+package com.javalec.ex;
+
+public class Calculation {
+	private int firstNum;
+	private int secondNum;
+}

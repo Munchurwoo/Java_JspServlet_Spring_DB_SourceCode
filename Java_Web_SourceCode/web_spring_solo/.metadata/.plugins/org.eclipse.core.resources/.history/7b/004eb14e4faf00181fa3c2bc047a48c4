@@ -1,0 +1,14 @@
+package com.javalec.ex;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+		/*MyCalculator  mycal = new MyCalculator();
+		mycal.setCal(new calculator());
+		mycal.setFirstNum(10);
+		mycal.setSecondNum(2);*/
+		
+		mycal.add();
+		
+	}
+}
