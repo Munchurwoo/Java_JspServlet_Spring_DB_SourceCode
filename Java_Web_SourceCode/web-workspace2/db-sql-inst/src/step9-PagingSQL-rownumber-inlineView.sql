@@ -37,6 +37,7 @@ select count(*) from player;
 select * from player order by no desc;
 -- row_number() over(정렬)
 select row_number() over(order by no desc) as rnum, no , title from player;
+select row_number() over(order by no asc) as anum, no, title from player;
 -- 삭제 title 이 Power 인 곡을 삭제 
 delete from player where title='Power';
 -- row number 가 3 이하인 곡들만 조회 
@@ -74,6 +75,17 @@ FROM (
 ) B , BOARD_MEMBER M 
 WHERE B.id=M.id AND rnum BETWEEN 1 AND 5
 ORDER BY NO DESC;
+
+-- 오름차순으로 rnum 을 출력하고 1~6번의 로우 넘버를 조회 
+select row_number() over(order by no asc) as rnum, to_char(time_posted,'yyyy.mm.dd') as time_posted
+from board_inst;
+-- join subquery 활용한 예제 
+select B.*, m.name from(
+select row_number() over(order by no asc) as rnum, to_char(time_posted,'yyyy.mm.dd') as time_posted, id
+from board_inst) B, board_member m
+where B.id = m.id and rnum between 1 and 6
+order by time_posted desc;
+
 -- BoardDAO 에서 사용할 SQL 
 SELECT	B.* , M.name
 FROM (

@@ -1,5 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/step1-basic.sql=ms949
+encoding//src/step10-Many-To-Many-relation-AssociationEntity.sql=UTF-8
 encoding//src/step2-basic.sql=ms949
 encoding//src/step3-sequence.sql=ms949
 encoding//src/step4-join.sql=ms949

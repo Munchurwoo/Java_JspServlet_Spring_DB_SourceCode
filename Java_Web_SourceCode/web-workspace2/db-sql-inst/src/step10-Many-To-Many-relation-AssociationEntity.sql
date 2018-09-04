@@ -37,7 +37,7 @@
  )
  insert into h_member(id,password,name) values('java','1234','아이유')
  
- insert into hobby_type(hid,name) values('1','독서');
+ insert into hobby_type(hid,name) values('8','독서'),('7','여러번 등록');	
  insert into hobby_type(hid,name) values('2','영화감상');
  insert into hobby_type(hid,name) values('3','프로그래밍');
  insert into hobby_type(hid,name) values('4','자전거');

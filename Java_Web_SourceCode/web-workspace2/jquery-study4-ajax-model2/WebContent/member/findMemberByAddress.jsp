@@ -19,7 +19,31 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3 col-sm-offset-2">
-				<a href="index.jsp">홈</a><br><br>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					$("#address").change(function(){
+						$.ajax({
+							type:"get",
+							url:"${pageContext.request.contextPath}/front",
+							dataType:"json",
+							data:$("#addressForm").serialize(),
+							success:function(json){
+								//alert(json);
+								//membody id 영역에 회원정보를 할당한다 
+								var info="";
+								for(var i=0;i<json.length;i++){
+									info+="<tr>";
+									info+="<td>"+json[i].id+"</td>";
+									info+="<td>"+json[i].name+"</td>";
+									info+="</tr>";
+								}
+								$("#membody").html(info);
+							}
+						});//ajax
+					});//change
+				});//ready
+			</script>
+				<a href="index.jsp">홈</a><br> <br>
 				<form id="addressForm">
 					<input type="hidden" name="command" value="findMemberByAddress">
 					<select name="address" id="address">
@@ -27,11 +51,10 @@
 							<option value="${address}">${address}</option>
 						</c:forEach>
 					</select>
-					</form>
+				</form>
 			</div>
-			<div class="col-sm-3">			
-				<br>
-				<br>
+			<div class="col-sm-3">
+				<br> <br>
 				<table class="table  table-bordered">
 					<thead>
 						<tr>
@@ -44,7 +67,7 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="col-sm-4"></div>		
+			<div class="col-sm-4"></div>
 		</div>
 		<!--  row  -->
 	</div>

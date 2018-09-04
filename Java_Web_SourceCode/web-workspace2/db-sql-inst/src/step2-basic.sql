@@ -11,7 +11,10 @@
  	name varchar2(9) primary key, 
  	money number not null
  )
- INSERT INTO type_test(name,money) VALUES('abcdefghi',100);
+ INSERT ALL
+ INSERT INTO type_test(name,money) VALUES('지선1',100)
+ INSERT INTO type_test(name,money) VALUES('철우1',200)
+ 
  SELECT * FROM type_test;
  -- id가 영문기준 9자 초과하여 error 
 INSERT INTO type_test(name,money) VALUES('abcdefghij',100);

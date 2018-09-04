@@ -19,12 +19,26 @@
 		<div class="row">
 			<!-- offset: 2비중만큼 오른쪽으로 이동 -->
 			<div class="col-sm-8 col-sm-offset-2">
-				<!-- container -->
+				<script type="text/javascript">
+				$(document).ready(function() {
+					$("#findMemberBtn").click(function(){
+						$.ajax({
+							type:"get",
+							url:"${pageContext.request.contextPath}/front",							
+							data:"command=findMemberById&id="+$("#memberId").val(),
+							success:function(result){
+								alert(result);								
+							}
+						});//ajax
+					});//click
+				});//ready
+				</script>
 				<a href="${pageContext.request.contextPath}/index.jsp">홈</a>
 				<hr>
 				<form id="findForm" method="get">
 					아이디 : <input type="text" id="memberId" name="memberId"
-						required="required"> <input type="submit" value="검색">
+						required="required">
+					 <input type="button" value="검색" id="findMemberBtn">
 					<span id="resultView"></span>
 				</form>
 			</div>
