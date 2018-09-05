@@ -1,9 +1,14 @@
 package com.javalec.ex;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+import javax.persistence.PostPersist;
+
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.core.env.Environment;
+
 
 public class AdminConnection implements EnvironmentAware, InitializingBean, DisposableBean {
 
@@ -11,6 +16,10 @@ public class AdminConnection implements EnvironmentAware, InitializingBean, Disp
 	private String adminId;
 	private String adminPw;
 	
+	
+	/*@PostConstruct // 컨테이너 생성 및 초기화 
+	@PreDestroy // bean 컨테이너 종료 전에 실행 
+*/	
 	@Override
 	public void setEnvironment(Environment env) {
 		System.out.println("setEnvironment()");

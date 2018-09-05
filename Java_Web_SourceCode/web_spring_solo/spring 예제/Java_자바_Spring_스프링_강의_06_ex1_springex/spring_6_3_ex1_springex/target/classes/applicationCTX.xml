@@ -7,7 +7,6 @@
 	
 	<context:annotation-config />
 	<bean class="com.javalec.ex.ApplicationConfig" />
-	
 	<bean id="student2" class="com.javalec.ex.Student">
 		<constructor-arg value="홍길순"></constructor-arg>
 		<constructor-arg value="30"></constructor-arg>

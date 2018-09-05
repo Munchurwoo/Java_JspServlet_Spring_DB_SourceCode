@@ -22,13 +22,13 @@ public class Student implements InitializingBean, DisposableBean{
 	public int getAge() {
 		return age;
 	}
-
+	//빈이 초기화 할 때 생성
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub
 		System.out.println("afterPropertiesSet()");
 	}
-
+	
 	@Override
 	public void destroy() throws Exception {
 		// TODO Auto-generated method stub

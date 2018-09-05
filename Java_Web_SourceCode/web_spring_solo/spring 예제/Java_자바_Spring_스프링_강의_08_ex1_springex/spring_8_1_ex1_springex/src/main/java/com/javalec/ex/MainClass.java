@@ -1,6 +1,7 @@
 package com.javalec.ex;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -16,9 +17,9 @@ public class MainClass {
 		ConfigurableApplicationContext ctx = new GenericXmlApplicationContext();
 		ConfigurableEnvironment env = ctx.getEnvironment();
 		MutablePropertySources propertySources = env.getPropertySources();
-		
 		try {
-			propertySources.addLast(new ResourcePropertySource("classpath:admin.properties"));
+			propertySources.addLast(new ResourcePropertySource
+					("classpath:admin.properties"));
 			
 			System.out.println( env.getProperty("admin.id") );
 			System.out.println( env.getProperty("admin.pw") );

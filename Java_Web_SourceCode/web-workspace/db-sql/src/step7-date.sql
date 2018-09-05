@@ -38,4 +38,5 @@ values('d',to_date('2000.7.14','yyyy.mm.dd'));
 -- months_between(현재시간, 등록시간) : 몇개월 차이인지 조회 
 select id, trunc(months_between(sysdate,reg_date)) from date_test;
 select id, trunc(months_between(sysdate,reg_date)/12) from date_test;
+select id, trunc((months_between(sysdate,reg_date)/12)) as 개월수 from date_test;
 

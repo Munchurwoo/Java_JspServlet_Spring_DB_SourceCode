@@ -11,5 +11,9 @@
 <fullyQualifiedTypeName name="com.javalec.ex.Pancil"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Student"/>
 </qualifiedTypeNameHistroy>
