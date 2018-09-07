@@ -1,10 +1,10 @@
-euc-kr-to-utf-8.md
+euc-kr-to-utf-8.md <br>
 back-end developers
 
 :memo: 2018-07-09 ~2018-08-30 
-> BACK-END : JAVA, JSP&SERVLET STUDY ฟฯทแ </br>
-PRONT-END : HTML5, JavaScript, CSS, Jquery, JSON, Bootstrap ฟฯทแ</br> 
+> BACK-END : JAVA, JSP&SERVLET STUDY ยฟรยทรก </br>
+PRONT-END : HTML5, JavaScript, CSS, Jquery, JSON, Bootstrap ยฟรยทรก</br> 
 
 :memo: 2018-09-01~2018-09-10 
-> Spring solo Study ม๘วเ 
+> Spring solo Study รรธรร  
  
