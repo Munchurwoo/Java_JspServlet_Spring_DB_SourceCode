@@ -1,0 +1,15 @@
+package com.javalec.ex;
+
+import java.util.ArrayList;
+
+public class MainClass {
+
+	public Student student1() {
+		ArrayList<String> hobbys = new ArrayList<String>();
+		hobbys.add("게임");
+		hobbys.add("복사");
+		Student student=new Student("문철우", 10, hobbys);
+		
+		return null;
+	}
+}

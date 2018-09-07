@@ -1,0 +1,32 @@
+package com.javalec.ex;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfig {
+	@Bean
+	public Student student1() {
+		ArrayList<String> hobbys = new ArrayList<String>();
+		hobbys.add("게임");
+		hobbys.add("복사");
+		Student student=new Student("문철우", 10, hobbys);
+		student.setHeight(180);
+		student.setWeight(80);
+		return student;
+	}
+	@Bean
+	public Student student2() {
+		ArrayList<String> hobbys = new ArrayList<String>();
+		hobbys.add("코딩");
+		hobbys.add("테스트");
+		Student student=new Student("해랑", 25, hobbys);
+		student.setHeight(170);
+		student.setWeight(80);
+		return student;
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+package com.javalec.ex;
+
+import java.util.ArrayList;
+
+public class MainClass {
+
+	public Student student1() {
+		ArrayList<String> hobbys;
+		return null;
+	}
+}

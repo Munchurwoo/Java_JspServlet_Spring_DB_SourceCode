@@ -1,0 +1,14 @@
+package com.javalec.ex;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfig {
+	@Bean
+	public void Student1() {
+		
+	}
+}

@@ -1,0 +1,23 @@
+package com.javalec.ex;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.core.env.MutablePropertySources;
+import org.springframework.core.io.support.ResourcePropertySource;
+
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx = new GenericXmlApplicationContext();
+		ConfigurableEnvironment env =ctx.getEnvironment();
+		MutablePropertySources propertySource = env.getPropertySources();
+		PropertySource propertySource = new ResourcePropertySource("admin.properties");
+	}
+}

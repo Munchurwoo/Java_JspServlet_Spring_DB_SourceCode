@@ -10,10 +10,24 @@
 <fullyQualifiedTypeName name="com.javalec.ex.StudentInfo"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Pancil"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
 <fullyQualifiedTypeName name="com.javalec.ex.Student"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.ImportResource"/>
+<fullyQualifiedTypeName name="javax.persistence.PostPersist"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.Environment"/>
+<fullyQualifiedTypeName name="org.hibernate.exception.spi.Configurable"/>
+<fullyQualifiedTypeName name="org.springframework.context.ConfigurableApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.ConfigurableEnvironment"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.MutablePropertySources"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.support.ResourcePropertySource"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="java.text.Annotation"/>
+<fullyQualifiedTypeName name="com.javalec.ex.AdminConnection"/>
+<fullyQualifiedTypeName name="org.springframework.context.EnvironmentAware"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.PropertySourcesPlaceholderConfigurer"/>
 </qualifiedTypeNameHistroy>

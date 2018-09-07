@@ -6,7 +6,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 	
 	<context:property-placeholder location="classpath:admin.properties, classpath:sub_admin.properties" />
-	
 	<bean id="adminConnection" class="com.javalec.ex.AdminConnection" >
 		<property name="adminId">
 			<value>${admin.id}</value>

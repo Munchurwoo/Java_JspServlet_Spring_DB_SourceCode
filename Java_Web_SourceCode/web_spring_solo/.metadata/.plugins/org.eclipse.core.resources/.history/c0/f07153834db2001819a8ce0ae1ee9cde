@@ -1,0 +1,13 @@
+package com.javalec.ex;
+
+public class AdminConnection {
+	
+	private String adminId;
+	private String adminPw;
+	private String sub_adminId;
+	private String sub_adminPw;
+	admin.id=abcde
+			admin.pw=12345
+			sub_admin.id=fghij
+			sub_admin.pw=67890
+}

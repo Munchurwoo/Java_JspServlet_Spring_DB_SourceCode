@@ -1,0 +1,10 @@
+package com.javalec.ex;
+
+import java.util.ArrayList;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class MainClass {
+	AnnotationConfigApplicationContext ctx=new AnnotationConfigApplicationContext(ApplicationConfig.class);
+	Student student = ctx.getBean("student1",Student.class);
+}

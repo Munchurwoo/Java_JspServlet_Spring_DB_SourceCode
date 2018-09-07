@@ -1,0 +1,22 @@
+package com.javalec.ex;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
+
+@Configuration
+public class ApplicationConfig {
+	
+	@Value(@{"admin_id");
+	private String adminId;
+	private String adminPw;
+	private String subAdminId;
+	private String subAdminPw;
+	@Bean
+	public static PropertySourcesPlaceholderConfigurer propertics() {
+		return null;
+	}
+	
+}

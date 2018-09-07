@@ -1,0 +1,11 @@
+package com.javalec.ex;
+
+public class Pancil4B implements Pancil{
+
+	@Override
+	public void use() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

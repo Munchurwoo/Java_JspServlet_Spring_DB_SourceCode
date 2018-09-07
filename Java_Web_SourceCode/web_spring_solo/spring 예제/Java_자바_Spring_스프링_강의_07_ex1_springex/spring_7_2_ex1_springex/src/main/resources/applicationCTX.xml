@@ -11,7 +11,6 @@
 		<constructor-arg value="홍길순"></constructor-arg>
 		<constructor-arg value="30"></constructor-arg>
 	</bean>
-	
 	<bean id="otherStudent" class="com.javalec.ex.OtherStudent">
 		<constructor-arg value="홍길자"></constructor-arg>
 		<constructor-arg value="50"></constructor-arg>
