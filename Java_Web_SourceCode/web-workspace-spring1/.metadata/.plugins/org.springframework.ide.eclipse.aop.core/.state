@@ -2,10 +2,12 @@
 <aop-reference-model>
 <aop-project name="springIOC4-dbcp"/>
 <aop-project name="springIOC1-solution-maven"/>
+<aop-project name="springmvc4-mybatis-inst"/>
 <aop-project name="springIOC2"/>
 <aop-project name="springmvc2"/>
 <aop-project name="springIOC1-solution"/>
 <aop-project name="springAOP2-ex-inst"/>
+<aop-project name="springIOC6-Annotation-inst"/>
 <aop-project name="springMVC-annotation"/>
 <aop-project name="springAOP1-solution-inst">
 <aspect-definition advice-class-name="aop.common.CommonLoggingService" advice-method-name="timeLogging" advice-type="AFTER" aspect-end-line-number="24" aspect-name="commonLogging" aspect-start-line-number="24" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/springAOP1-solution-inst/src/ioc.xml" pointcut-expression="execution(public * model.*Service.*(..))" proxy-target-class="false">
@@ -50,6 +52,8 @@
 </aop-project>
 <aop-project name="springIOC3"/>
 <aop-project name="springmvc1"/>
+<aop-project name="springmvc2-inst"/>
+<aop-project name="springmvc3-annotation-inst"/>
 <aop-project name="springAOP2-solution-inst">
 <aspect-definition advice-class-name="aop.common.LoggingAspect" advice-method-name="logging" advice-type="BEFORE" aspect-end-line-number="25" aspect-name="loggingAspect" aspect-start-line-number="25" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" pointcut-expression="execution(public * org.kosta.model..*Service.*(..))" proxy-target-class="false">
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~findMemberById" target-start-line="4"/>
@@ -61,6 +65,7 @@
 </aspect-definition>
 </aop-project>
 <aop-project name="springIOC6-Anotation"/>
+<aop-project name="springmvc1-inst"/>
 <aop-project name="springIOC5-review"/>
 <aop-project name="MyBatis-Study3-Spring-inst"/>
 </aop-reference-model>
