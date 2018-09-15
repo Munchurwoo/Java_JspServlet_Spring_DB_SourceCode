@@ -1,0 +1,20 @@
+package org.kosta.model.dao;
+
+import org.kosta.model.vo.CustomerVO;
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class CustomerDAOImpl implements CustomerDAO {
+	private SqlSessionTemplate template;
+	
+	
+	public CustomerDAOImpl() {
+		super();
+	
+	}
+
+	@Override
+	public CustomerVO findCustomerById(String id) {
+		return template.selectOne("customer.findCustomerById",id);
+	}
+
+}

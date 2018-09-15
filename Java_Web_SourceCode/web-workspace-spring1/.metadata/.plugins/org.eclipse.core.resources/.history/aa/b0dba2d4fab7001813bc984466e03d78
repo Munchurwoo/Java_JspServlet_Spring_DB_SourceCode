@@ -1,0 +1,12 @@
+package org.kosta.model.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class CustomerDAOImpl {
+	private SqlSessionTemplate template;
+	
+	public static void main(String[] args) {
+
+	}
+
+}

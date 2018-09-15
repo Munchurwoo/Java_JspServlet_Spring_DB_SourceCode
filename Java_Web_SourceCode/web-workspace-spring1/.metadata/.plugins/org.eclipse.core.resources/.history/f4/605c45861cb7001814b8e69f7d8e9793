@@ -1,0 +1,16 @@
+package test;
+
+import org.kosta.model.dao.MovieDAO;
+import org.kosta.model.vo.DirectorVO;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMovieDAO {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+		MovieDAO dao = (MovieDAO) factory.getBean("movieDAO");
+		//dao.insertDirector 감독 정보 
+		DirectorVO dvo = new DirectorVO();
+		dao.insertDirector();
+		factory.close();
+	}
+}

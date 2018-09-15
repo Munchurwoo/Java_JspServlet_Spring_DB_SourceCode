@@ -1,0 +1,10 @@
+package org.kosta.model.dao;
+
+public class MovieDAO {
+	private sqlSessionTemplate template;
+
+	public MovieDAO(sqlSessionTemplate template) {
+		super();
+		this.template = template;
+	}
+}

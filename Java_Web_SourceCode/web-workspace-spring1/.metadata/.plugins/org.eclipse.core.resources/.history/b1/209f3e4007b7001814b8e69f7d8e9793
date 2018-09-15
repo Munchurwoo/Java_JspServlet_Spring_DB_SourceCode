@@ -1,0 +1,25 @@
+package aop.common;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.util.StopWatch;
+
+public class PerformanceReportAspect {
+	private Log log= LogFactory.getLog(getClass());
+
+	public Object checkTime(ProceedingJoinPoint point) throws Throwable {
+		
+		Object retValue=null;
+		System.out.println("**AOP**");
+		try{
+			StopWatch st = new StopWatch();
+			st.start();
+			retValue=point.proceed();
+			st.stop();
+		}finally{
+			
+		}
+		return point;
+	}
+}

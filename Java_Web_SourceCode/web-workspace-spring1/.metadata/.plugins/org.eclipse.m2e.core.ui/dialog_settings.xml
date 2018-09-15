@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="springmvc4-mybatis"/>
+			<item value="springMVC-annotation"/>
+			<item value="springIOC6-Anotation"/>
+			<item value="springmvc2"/>
+			<item value="springmvc1"/>
+			<item value="MyBatis-Study4"/>
+			<item value="springAOP4-around"/>
+			<item value="springAOP3-around"/>
+			<item value="springAOP2-ex"/>
+			<item value="log4j-test"/>
+			<item value="springAOP-Study1-ex"/>
+			<item value="MyBatis-Study3-Spring"/>
+			<item value="MyBatis-Study2"/>
+			<item value="springIOC5-review"/>
+			<item value="MyBatis-Study1"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="springmvc4-mybatis"/>
+			<item value="springMVC-annotation"/>
+			<item value="springIOC6-Anotation"/>
+			<item value="springmvc2"/>
+			<item value="springmvc1"/>
+			<item value="MyBatis-Study4"/>
+			<item value="springAOP4-around"/>
+			<item value="springAOP3-around"/>
+			<item value="springAOP2-ex"/>
+			<item value="log4j-test"/>
+			<item value="springAOP-Study1-ex"/>
+			<item value="MyBatis-Study3-Spring"/>
+			<item value="MyBatis-Study2"/>
+			<item value="springIOC5-review"/>
+			<item value="MyBatis-Study1"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\MyBatis-Study1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

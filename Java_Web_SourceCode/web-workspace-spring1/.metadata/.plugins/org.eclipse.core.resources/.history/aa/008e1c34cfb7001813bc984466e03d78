@@ -1,0 +1,30 @@
+package org.kosta.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.kosta.model.MockDAO;
+import org.kosta.model.MockDAOImpl;
+import org.kosta.model.ProductVO;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+public class findProductcController extends AbstractController{
+	
+	private MockDAO mockDAO = new MockDAOImpl();
+	
+	public findProductcController(MockDAO mockDAO) {
+		super();
+		this.mockDAO = mockDAO;
+	}
+
+	@Override
+	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		ProductVO vo = null;
+		String s = request.getParameter("name");
+		ProductVO find = mockDAO.findProductByName(s);
+		return null;
+	}
+	
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="guestbook">
+	<insert id="insertGuestBook" parameterType="guestBookVO">
+		insert into guestbook(guestbook_no,title,content)
+		values(guestbook_seq.nextval,#{title},#{content})
+	</insert>
+	
+	<select id="getAllGuestBookList" resultType="guestBookVO">
+		
+		select guestbook_no, title, content
+		from guestbook
+		order by guestbook_no desc
+	</select>
+	
+	<insert id="insertGuestBook2" parameterType="guestBookVO">
+		<selectKey keyProperty="guestBookNo" resultType="int" order="BEFORE">
+			select guestbook_seq.nextval from dual
+		</selectKey>
+		insert into guestbook(guestbook_no,title,content)
+		values(guestbook_seq.nextval,#{title},#{content})
+	</insert>
+</mapper>

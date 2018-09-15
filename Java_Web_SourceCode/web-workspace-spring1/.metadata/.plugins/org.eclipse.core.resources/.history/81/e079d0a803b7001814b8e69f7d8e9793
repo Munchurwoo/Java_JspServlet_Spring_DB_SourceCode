@@ -1,0 +1,19 @@
+package test;
+
+class ProductService{
+	public void getList() {
+		try {
+			Thread.sleep(12000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		System.out.println("상품목록을 조회");
+	}
+}
+public class TestStopWatch {
+	public static void main(String[] args) {
+		ProductService ps=new ProductService();
+		ps.getList();
+	}
+}

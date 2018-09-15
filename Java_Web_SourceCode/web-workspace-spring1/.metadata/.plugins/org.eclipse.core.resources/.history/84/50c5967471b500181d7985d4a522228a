@@ -1,0 +1,23 @@
+package test;
+
+import org.kosta.model.MemberVO;
+
+import model.MemberDAO;
+
+public class TestMemberDAO {
+	public static void main(String[] args) {
+		MemberDAO dao = MemberDAO.getInstance();
+		//1. 아이디로 검색 
+		/*String id ="java";
+		MemberVO vo  = dao.findMemberById(id);
+		System.out.println(vo); //vo or null
+		 */	
+		
+		//2. 회원 정보를 INSERT 
+		//	  다수의 정보(회원정보)를 전달할 때에는 vo or map 을 이용한다. 
+		
+		MemberVO paramVO = new MemberVO("jdbc", "1", "김태리", "판교");
+		dao.insertMember(paramVO);
+		System.out.println("insert ok:"+dao.findMemberById(paramVO.getId()));
+	}
+}

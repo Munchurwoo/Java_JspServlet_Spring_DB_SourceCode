@@ -1,0 +1,11 @@
+package org.kosta.model;
+
+public class MockDAOImpl {
+	public ProductVO findProductByName(String name) {
+		ProductVO pvo = null;
+		if(name.equals("짬뽕")) {
+			pvo=new ProductVO(name,8000);
+		}
+		return pvo;
+	}
+}

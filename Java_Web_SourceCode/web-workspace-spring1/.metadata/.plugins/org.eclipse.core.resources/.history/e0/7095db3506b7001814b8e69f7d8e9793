@@ -1,0 +1,11 @@
+package aop.common;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class PerformanceReportAspect {
+	private Log log = LogFactory.getLog(getClass());
+	public void checkTime() {
+		System.out.println("**AOP**");
+	}
+}

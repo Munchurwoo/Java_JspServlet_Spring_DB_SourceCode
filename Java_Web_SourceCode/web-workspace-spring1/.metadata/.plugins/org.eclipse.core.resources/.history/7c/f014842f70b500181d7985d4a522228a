@@ -1,0 +1,14 @@
+package test;
+
+import org.kosta.model.MemberVO;
+
+import model.MemberDAO;
+
+public class TestMemberDAO {
+	public static void main(String[] args) {
+		MemberDAO dao = MemberDAO.getInstance();
+		String id ="java";
+		MemberVO vo  = dao.findMemberById(id);
+		System.out.println(vo); //vo or null
+	}
+}

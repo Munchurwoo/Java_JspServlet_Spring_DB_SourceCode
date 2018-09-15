@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;member.xml&apos; to &apos;MyBatis-Study3-Spring/src/mybatis.config&apos;&#x0D;&#x0A;- Original project: &apos;MyBatis-Study3-Spring&apos;&#x0D;&#x0A;- Destination element: &apos;MyBatis-Study3-Spring/src/mybatis.config&apos;&#x0D;&#x0A;- Original element: &apos;member.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;mybatis.config" element1="member.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1536650074420" units="0" version="1.0"/>
+</session>

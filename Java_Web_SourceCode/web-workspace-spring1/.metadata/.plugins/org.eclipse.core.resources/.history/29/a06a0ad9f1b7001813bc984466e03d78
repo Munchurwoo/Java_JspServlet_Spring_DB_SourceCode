@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<a href="hello.do">hello.do test</a>
+	<form action="paramtest1.do">
+		이름 <input type="text" name="userName"> 
+		<input type="submit" vaule="전송">
+	</form>
+	</br>
+	<form action="paramtest2.do">
+		이름 <input type="text" name="userName"> 
+		<input type="submit" vaule="전송2">
+	</form>
+	</br>
+	<form action="paramtest3.do">
+		이름 <input type="text" name="userName"> 
+		주소 <input type="text" name="userAddr"> 
+		<input type="submit" vaule="전송3">
+	</form>
+	<form action="paramtest4.do">
+		이름 <input type="text" name="id"> 
+		이름 <input type="text" name="userName"> 
+		주소 <input type="text" name="userAddr"> 
+		<input type="submit" vaule="전송4">
+	</form>
+</body>
+</html>

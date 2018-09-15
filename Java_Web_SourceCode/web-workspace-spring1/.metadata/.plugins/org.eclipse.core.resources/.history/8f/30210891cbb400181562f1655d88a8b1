@@ -1,0 +1,15 @@
+package test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import model.AccountDAO;
+
+public class TestIOC {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("AccountServiceImpl");
+		AccountDAO Service = (AccountDAO)factory.getBean("accountDAO");
+		
+		System.out.println("검색결과 :"+Service.findAccountById("1"));
+		factory.close();
+	}
+}

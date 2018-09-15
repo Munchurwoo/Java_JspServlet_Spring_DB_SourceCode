@@ -1,0 +1,9 @@
+package test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestAnnotationIOC {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext container = ClassPathXmlApplicationContext("ioc.xml");
+	}
+}

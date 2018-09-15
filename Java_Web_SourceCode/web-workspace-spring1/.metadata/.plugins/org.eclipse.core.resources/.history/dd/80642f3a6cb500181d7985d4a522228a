@@ -1,0 +1,21 @@
+package model;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.kosta.model.MemberVO;
+
+import factory.SqlSessionFactoryManager;
+
+public class MemberDAO {
+	private static MemberDAO instance = new MemberDAO();
+	private SqlSessionFactory factory;
+	private MemberDAO() {
+		factory = SqlSessionFactoryManager.getInstance().getFactory();
+	}
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+	public MemberVO findMemberById(String id) {
+		SqlSession session = null;
+		return null;
+	}
+}

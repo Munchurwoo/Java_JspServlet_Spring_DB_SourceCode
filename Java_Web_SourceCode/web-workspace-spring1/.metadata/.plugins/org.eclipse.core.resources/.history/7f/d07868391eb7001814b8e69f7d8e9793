@@ -1,0 +1,21 @@
+package org.kosta.model.dao;
+
+import java.util.List;
+
+import org.kosta.model.vo.DirectorVO;
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class MovieDAO {
+	private SqlSessionTemplate template;
+	public MovieDAO(SqlSessionTemplate template) {
+		super();
+		this.template = template;
+	}
+	public void insertDirector(DirectorVO dvo) {
+		template.insert("movie.insertDirector",dvo);
+	}
+	public List<DirectorVO> getDirectorList() {
+		
+		return null;
+	}
+}

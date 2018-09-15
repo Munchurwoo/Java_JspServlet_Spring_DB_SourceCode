@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="guestbook">
+	<insert id="insertGuestBook" parameterType="guestBookVO">
+		insert into guestbook(guestbook_no,title,content)
+		values(guestbook_seq.nextval,#{title},#{content})
+	</insert>
+	
+	<select id="" resultType="guestBookVO">
+		select geuestbook_no, title, content
+		from guestbook
+		order y guestbook_no desc
+	</select>
+</mapper>

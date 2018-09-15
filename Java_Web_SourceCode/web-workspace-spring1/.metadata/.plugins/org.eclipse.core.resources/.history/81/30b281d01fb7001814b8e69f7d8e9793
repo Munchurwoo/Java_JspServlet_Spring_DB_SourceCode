@@ -1,0 +1,27 @@
+package test;
+
+import org.kosta.model.dao.MovieDAO;
+import org.kosta.model.vo.DirectorVO;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMovieDAO {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = 
+				new ClassPathXmlApplicationContext("spring-mybatis.xml");
+		MovieDAO dao = (MovieDAO) factory.getBean("movieDAO");
+		//dao.insertDirector 감독 정보 
+		DirectorVO dvo = new DirectorVO();
+		dvo.setDirectorId("A");
+		dvo.setDirectorName("스필버그");
+		dvo.setIntro("46년생");
+		dao.insertDirector(dvo);
+		
+		//감독 리스트 반환
+		//mapUnderscoreToCamelCase : db column 명과 vo 의 인스턴스변수명을 자동으로 
+		//매핑 시키는 설정을 테스트 
+		/*List<DirectorVO> list = dao.getDirectorList();
+		for(DirectorVO vo : list)
+			System.out.println(vo);*/
+		factory.close();
+	}
+}

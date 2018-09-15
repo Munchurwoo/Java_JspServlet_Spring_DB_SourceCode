@@ -1,0 +1,27 @@
+package org.kosta.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+	
+	/*
+	 * @Autowired : Dependency Injection 을 위한 어노테이션 
+	 * 				스프링 컨테이너에 생성된 bean(객체) 중 
+	 * 				동일한 타입의 객체를 주입할 것을 명령한다. 
+	 *	만약 선언한 타입의 하위 객체가 여러개 경우에는 Exception 발생한다. 
+	 *@ Resource : 별도의 지정이 없으면 타입으로 검색해서 주입 
+	 *@Resource(name="bean id") : 지정한 bean id의 객체를 주입 
+	 */
+	//@Autowired
+	private ProductDAO productDAO;
+	/*
+	 * 비즈니스 계층(서비스계층)에 사용되는 클래스를 스프링 컨테이너에 객체 생서할 것을 명시한는 어노테이션  @Service
+	 */
+	@Override
+	public ProductVO findProductById(String id) {
+		return productDAO.findProductById(id);
+		
+	}
+}

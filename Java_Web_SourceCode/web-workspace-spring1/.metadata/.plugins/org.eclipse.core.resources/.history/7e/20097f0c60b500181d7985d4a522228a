@@ -1,0 +1,11 @@
+package model;
+
+public class memberDAOImpl implements MemberDAO{
+
+	@Override
+	public void register(String memberInfo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

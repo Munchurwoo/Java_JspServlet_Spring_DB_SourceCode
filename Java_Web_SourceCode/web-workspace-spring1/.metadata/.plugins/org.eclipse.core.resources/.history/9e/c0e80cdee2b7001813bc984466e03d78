@@ -1,0 +1,15 @@
+package org.kosta.model;
+
+import org.springframework.stereotype.Service;
+
+public class ProductServiceImpl {
+	/*
+	 * 
+	 */
+	@Service
+	
+	public ProductVO findProductById(String id) {
+		return null;
+		
+	}
+}

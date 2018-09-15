@@ -1,0 +1,8 @@
+package org.kosta.model;
+
+public class ProductServiceImpl {
+	public ProductVO findProductById(String id) {
+		return null;
+		
+	}
+}

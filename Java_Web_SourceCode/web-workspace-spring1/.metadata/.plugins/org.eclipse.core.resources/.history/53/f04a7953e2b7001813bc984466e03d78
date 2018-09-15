@@ -1,0 +1,10 @@
+package org.kosta.model;
+
+public class ProductDAOImpl {
+	public ProductVO findProductById(String id) {
+		if(id!=null && id.equals("a")){
+			return new ProductVO("a","겔럭시8",100);
+		return null;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+package org.kosta.model.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.kosta.model.vo.DirectorVO;
+import org.kosta.model.vo.MovieVO;
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class MovieDAO {
+	private SqlSessionTemplate template;
+	public MovieDAO(SqlSessionTemplate template) {
+		super();
+		this.template = template;
+	}
+	public void insertDirector(DirectorVO dvo) {
+		template.insert("movie.insertDirector",dvo);
+	}
+	public List<DirectorVO> getDirectorList() {
+		
+		return template.selectList("movie.getDirectorList");
+	}
+	public void insertMovie(MovieVO mvo) {
+		template.insert("movie.insertMovie",mvo);
+	}
+	public List<Map<String, String>> getAllMovieList() {
+		
+		return template.selectList("movie.getAllMovieList");
+	}
+}

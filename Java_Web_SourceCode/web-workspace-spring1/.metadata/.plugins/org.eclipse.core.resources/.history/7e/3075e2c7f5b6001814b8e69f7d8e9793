@@ -1,0 +1,163 @@
+**Framework**
+- Spring IOC ( DL 과 DI ) 
+- Spring AOP ( Aspect Oriented Programming 관점 지향 프로그래밍 )
+- MyBatis Framework ( 영속성 계층 프레임워크 ) 
+- SpringMVC ( web ) 
+- jUnit Framework(테스트), Tiles Framework(view) , Spring Security(보안)
+---------------------------------------------------------
+용어 정리 
+- Object-Oriented : 시스템 분석 설계 기법
+						객체를 기본 단위로 객체와 객체의 관계를 중심으로
+						분석,설계하는 기법을 말한다 
+- 응집도(cohesion) 와 결합도(coupling)
+  " 응집도는 높이고, 결합도는 낮춘다 "
+  응집도 : 자신의 역할에 집중하는 정도 
+  결합도 : 요소와 요소와의 상호 의존 정도  
+
+- Object : 객체 지향 시스템의 기본 단위
+			 속성과 기능으로 구성
+			 -> 붕어빵 
+			 
+- Class : Object의 설계도
+			-> 붕어빵틀 
+			
+- Library : 재사용 가능한 프로그램(클래스)들의 모음 		
+
+- Package : 클래스들을 분류하기 위한 용도 
+
+- Component : 프로그램들(class)이 모여 하나의 독립적 기능단위를 
+				 이루어 부품화 될때 컴포넌트라고 한다 
+- API : Application Programming Interface 
+		 응용프로그램을 개발하기 위해 제공하는 인터페이스 				  
+	
+- Framework :  틀 , 뼈대 , 기반 ( infrastructure ) , 인프라. 
+				   소프트웨어 설계,구현,테스트,운영을 위한 기반을 제공.
+				   반완전한 어플리케이션. 	  			
+				   -> 도메인에 대한 비즈니스 로직을 제외한 
+				   	   소프트웨어의 기반을 제공하는 것을 목표로 한다 
+				   	   참고) 도메인 domain -> 업무영역 	
+---------------------------------------------
+Spring Framework 
+-> java 어플리케이션의 설계 , 구현 , 테스트 , 운영을 위한 기반을 제공 
+	java 어플리케이션 구축을 위한 기반(infrastructure)을 제공
+	-> Spring IOC(DI,DL) , AOP , SpringMVC , SpringSecurity 및 
+		jUnit , Ajax(JSON) , Tiles , MyBatis Framework 등과 같은 다른
+		오픈소스 프레임워크와의 기술 통합을 지원  			
+			
+- IOC 
+: Inversion Of Control
+  역(반전)     제어  또는 제어의 반전 
+  
+  -> 의존 대상을 필요로 할 때 생성하는 기존 제어 방식에서
+  	  컨테이너로부터 의존 대상을 확보하는 방식으로 역제어하는 방식을
+  	  말한다 
+  IOC 의 효과 
+  ->  응집도가 높아진다 
+  	   의존 대상에 생성 및 확보에 대한 작업은 컨테이너에 위임하므로 
+  	   자신의 비즈니스(업무)에 집중할 수 있다 
+  	   
+  ->  결합도가 낮아진다 
+  	   의존 대상의 변경시 기존 방식은 직접 생성하므로 
+  	   생성 및 확보 작업의 수정이 필요하나 
+  	   IOC 적용시에는 상위 인터페이스(또는 부모클래스) 타입으로
+  	   관리되므로 외부 영향이 최소화된다 
+  	   
+  	   ex) 
+  	    기존 제어방식 
+  	    아이유 ( 구현할 application ) 가  항공 티켓을 발급받고
+  	    분장을 직접 한다...
+  	    
+  	    IOC 방식
+  	    아이유는 자신의 역할(노래와 연기)에 집중한다 
+  	    항공 티켓과 같은 교통편과 분장과 같은 지원은 매니지먼트사에서
+  	    제공한다  		  
+  	  		
+	DL : Dependency Lookup  의존성 검색 
+		  어플리케이션 구현시 필요로 하는 요소(의존대상)를 
+		  lookup (검색) 을 통해 실현한다 
+		  
+	DI : Dependency Injection 의존성 주입 
+		  어플리케이션 구현시 필요로 하는 요소(의존대상)를	
+		  Injection(주입) 을 통해 실현한다 
+		
+	* 스프링 컨테이너는 IOC(DI,DL) 적용시 객체를 싱글톤으로 운영한다
+	  즉 시스템 상에서 한번 객체를 생성해 공유한다 	  
+		  
+	코드 사례 ) 
+	기존 방식 
+		일꾼 					망치 또는 삽 	  
+		  		---new--->
+		  		
+		필요로 하는 요소를 직접 일꾼이 생성해서 사용한다 
+		
+	 IOC(DI or DL ) 방식 
+	 					IOC 컨테이너 			도구 상위 인터페이스 
+	 	일꾼  	<--					<--		망치 또는 삽 
+					 	
+	- Maven (메이븐) 
+	  의존 라이브러리 관리 
+	  프로젝트 수행시 필요한 많은 라이브러리들을 
+	  일괄적으로 관리하는 기술 
+	  Maven 설정파일 : pom.xml  (참고 : Project Object Model -> pom ) 	
+		
+- MyBatis Framework :  영속성 계층 프레임워크
+							 데이터 액세스 계층 프레임워크
+							 JDBC 프레임워크  
+
+-AOP : Aspect-Oriented Programming 
+  관점 지향 프로그래밍 
+  -> "OOP를 더욱 OOP답게"
+  
+  관점지향프로그래밍은 
+  시스템을 
+  핵심관심사항(Core Concern) 과 
+  횡단관심사항 or 공통관심사항(cross-cutting concern or common concern)
+  (ex - 로깅,보안,트랜잭션 등)
+  으로 구분하여 분석 설계 구현한다 
+  
+  -> AOP 는 공통관심사항을 별도의 모듈에서 독립적으로
+   구현하고 유지보수할 수 있다 
+  
+  AOP 관련 용어
+  pointcut : 공통관심사항 적용 대상을 지정 - AspectJ 표현식을 이용 
+      within()
+      execution()
+      bean() 
+  advice : 공통관심사항 적용시점 ( 메서드 실행 전, 후 ,예외발생시 등)
+      before , after , after-throwing , after-returning , around 
+  		
+- log4j:  프로그램 작성시 로그를 남기기 위해 사용되는 자바 기반 로깅 라이브러리
+        설정 파일에 대상별(자바에서는 패키지)로 
+        레벨을 지정이 가능하고 그 등급 이상의 로그만 저장하는 방식이다.
+
+FATAL(가장 높은 로그레벨)
+ERROR
+WARN
+INFO
+DEBUG
+TRACE(가장 낮은 로그레벨)		
+		
+		
+		
+		
+		  		
+		  
+		  
+		  
+		  
+		  
+		    		
+			
+			 			 
+
+
+
+
+
+
+
+
+
+
+
+  

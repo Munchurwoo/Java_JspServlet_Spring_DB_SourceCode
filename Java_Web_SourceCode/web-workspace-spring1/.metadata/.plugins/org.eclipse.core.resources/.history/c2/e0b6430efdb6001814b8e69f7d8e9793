@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="personService" class="kosta.model.PersonService"/>
+	<bean id="productService" class="kosta.model.ProductService"/>
+	
+	<!-- AOP -->
+	<!-- 횡단관심사항정의객체 -->
+	<bean id="LoggingService" class="aop.common.AroundLoggingAspect"/>
+	<aop:config>
+		<aop:aspect ref="LoggingService">
+			<!-- pointcut : aop 횡단관심사항 적용 대상 지정
+				 kosta.model 하위 팩키지 및 클래스 전체의 메서드를 대상으로 지정 
+			 -->
+			<aop:pointcut expression="within(kosta.model..*)" id="pt"/>
+			<!-- advice : 횡단관심사항 기능을 어느 시점에 적용할 것인가 -
+				 before : 메서드 실행전에 횡단관심사항 기능을 적용 
+			-->
+			<aop:before method="logging" pointcut-ref="pt"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

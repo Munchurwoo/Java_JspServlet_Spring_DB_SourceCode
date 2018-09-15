@@ -1,0 +1,9 @@
+package model;
+
+public class PointImpl implements PointDAO {
+
+	@Override
+	public void register(String memberInfo, int point) {
+	}
+
+}

@@ -1,0 +1,11 @@
+package model;
+
+public class test {
+	public static void main(String[] args) {
+		Person p = new Person();
+		p.setTicket(new KalTicket());
+		p.setName("문철우");
+		
+		System.out.println(p.getName()+"님이 "+p.getTicket().ticketing()+"을 진행했습니다.");
+	}
+}

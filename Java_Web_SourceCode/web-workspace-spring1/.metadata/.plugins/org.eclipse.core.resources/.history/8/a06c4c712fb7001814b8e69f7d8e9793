@@ -1,0 +1,9 @@
+package org.kosta.model.dao;
+
+public class GuestBookDAO {
+
+	public void insertGuestBook() {
+		
+	}
+
+}

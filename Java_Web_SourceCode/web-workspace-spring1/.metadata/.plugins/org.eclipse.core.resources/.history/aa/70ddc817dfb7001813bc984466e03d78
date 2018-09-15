@@ -1,0 +1,21 @@
+package org.kosta.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MockDAOImpl implements MockDAO {
+	@Override
+	public ProductVO findProductByName(String name) {
+		ProductVO pvo = null;
+		if(name.equals("짬뽕")) {
+			pvo=new ProductVO(name,8000);
+		}
+		return pvo;
+	}
+	public List<ProductVO> getProductList(){
+		List<ProductVO> list = new ArrayList<ProductVO>();
+		list.add(new ProductVO("겔럭시8",8000));
+		list.add(new ProductVO("아이폰7",7000));
+		return list;
+	}
+}

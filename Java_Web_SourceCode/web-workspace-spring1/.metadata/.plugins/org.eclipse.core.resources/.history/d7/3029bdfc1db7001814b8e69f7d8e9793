@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+ <bean id="memberDAO" class="org.kosta.model.dao.MemberDAO">
+ 	<constructor-arg ref="sqlSessionTemplate"/>
+ </bean>
+ <bean id="HRDAO" class="org.kosta.model.dao.HRDAO">
+ 	<constructor-arg ref="sqlSessionTemplate"/>
+ </bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+

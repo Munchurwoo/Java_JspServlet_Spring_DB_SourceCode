@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appenders -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
+		</layout>
+	</appender>
+	<!--  daily file logging -->  	
+    <appender name="dailyout" class="org.apache.log4j.DailyRollingFileAppender">  
+       <param name="file" value="C:\\java-kosta\\report.log"/>  
+        <param name="Append" value="true"/>  
+        <param name="DatePattern" value="'.'yyMMdd"/>  
+        <layout class="org.apache.log4j.PatternLayout">  
+            <param name="ConversionPattern" value="%t> [%d{yyyy-MM-dd HH:mm:ss}] [%c{1}] [%L] [%p] %m %n"/>  
+        </layout>  
+    </appender>  
+	  <!-- 
+			org.kosta 하위 팩키지 클래스들에게만 다음 로깅 설정을 반영
+			additivity="false"  는 root 의 priority 설정을 승계하지 않겠다 
+	 -->
+	<logger name="aop.common" additivity="false">
+		<level value="info" />
+		<appender-ref ref="console" />
+		<appender-ref ref="dailyout"/>
+	</logger>
+	<!-- Root Logger -->
+	<root>
+		<priority value="warn" />
+		<appender-ref ref="console" />
+		<appender-ref ref="dailyout"/>
+	</root>
+	
+</log4j:configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract interface &apos;org.kosta.model.MockDAO&apos; from &apos;org.kosta.model.MockDAOImpl&apos;&#x0D;&#x0A;- Original project: &apos;springmvc2&apos;&#x0D;&#x0A;- Original element: &apos;org.kosta.model.MockDAOImpl&apos;&#x0D;&#x0A;- Extracted interface: &apos;org.kosta.model.MockDAO&apos;&#x0D;&#x0A;- Extracted members:&#x0D;&#x0A;     org.kosta.model.MockDAOImpl.findProductByName(...)&#x0D;&#x0A;- Use super type where possible" comments="false" description="Extract interface &apos;MockDAO&apos;" element1="/src&lt;org.kosta.model{MockDAOImpl.java[MockDAOImpl~findProductByName~QString;" flags="589830" id="org.eclipse.jdt.ui.extract.interface" input="/src&lt;org.kosta.model{MockDAOImpl.java[MockDAOImpl" instanceof="false" name="MockDAO" replace="true" stamp="1536895333852" version="1.0"/>
+</session>

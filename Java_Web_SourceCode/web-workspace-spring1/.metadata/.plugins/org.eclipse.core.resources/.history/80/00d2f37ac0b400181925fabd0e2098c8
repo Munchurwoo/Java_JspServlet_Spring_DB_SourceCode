@@ -1,0 +1,9 @@
+package test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestIOC {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("ioc.xml");
+	}
+}

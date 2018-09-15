@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="memberService" class="org.kosta.model.member.MemberService"></bean>
+	<bean id="productService" class="org.kosta.model.product.ProductService"></bean>
+	
+		<bean id="LoggingAspect" class="aop.common.LoggingAspect" />
+	<!-- pointcut aop 횡단관심사항 적용대상을 지정 -->
+	<aop:config>
+		<aop:aspect ref="LoggingAspect">
+			<!-- public 메서드 접근 제어자 
+				  * 리턴타입 상관없이 모두 다 
+				  org.kosta.model.. org.kosta.model 팩키지 하위 팩키지 모두 포함 
+				  *Service : Service로 끝나는 클래스가 대상 
+				  * : 모든 메서드명이 대상 
+				  (..) : 매개변수 개수에 상관 없이 모두 대상 
+			 -->
+			<aop:pointcut id="pt" expression="execution(public *model.* org.kosta.model..*Service.*(..))"  />
+			<aop:before method="logging" pointcut-ref="pt" />
+		</aop:aspect>
+	</aop:config>
+</beans>

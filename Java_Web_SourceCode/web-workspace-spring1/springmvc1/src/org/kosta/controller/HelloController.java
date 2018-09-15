@@ -1,0 +1,25 @@
+package org.kosta.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.AbstractController;
+
+public class HelloController extends AbstractController{
+
+	@Override
+	protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		ModelAndView mv = new ModelAndView();
+		
+		//request.setAttribute("info","dao 연동정보"); 와 동일 
+		mv.addObject("info","dao 연동정보");
+		mv.addObject("list","dao 연동결과 리스트");
+		
+		//viewResolver에 의해 /views/hello_result.jsp 가 실행되어 응답된다. 
+		mv.setViewName("hello_result");
+		return mv;
+	}
+
+}

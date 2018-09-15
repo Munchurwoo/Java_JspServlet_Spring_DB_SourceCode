@@ -1,0 +1,41 @@
+**Framework**
+-Spring IOC (DL 과 DI)
+-Spring AOP (Aspect Oriented Programming 관점 지향 프로그래밍)
+-MyBatis Framework (영속성 계층 프레임워크)
+-SpringMVC 
+-jUnit Framework(테스트), Tiles Framework(view), Spring Security(보안) 
+----------------------------------------------
+
+용어정리 
+- Object-Oriented : 시스템 분석 설계 기법 
+					객체를 기본 단위로 객체와 객체의 관계를 중심으로 분석, 설계하는 기법을 말한다. 
+- 응집도(cohesion) 와 결합도(coupling) 
+	" 응집도는 높이고, 결합도는 낮춘다 "
+    응집도 : 자신의 역할에 집중하는 정도 
+    결합도 : 요소와 요소와의 상호 의존 정도 
+
+- Object : 객체 지향 시스템의 기본 단위 
+		       속성과 기능으로 구성
+		   -> 붕어방 
+- Class : Object 설계도 
+		   -> 붕어빵틀 
+- Library : 재사용 가능한 프로그램(클래스)들의 모움 
+- Package : 클래스들을 분류하기 위한 용도 
+- Component : 프로그램(class)들이 모여 하나의 독립적 기능 단위를 이루어 부품화 될 때 컴포넌트라고 한다.
+- API : Apllication Programming Interface 
+		응용프로그램을 개발하기 위해 제공하는 인터페이스 
+		
+- Framework : 틀 , 뼈대 , 기반 (infrastructure) . 인프라  소프트웨어 설계, 구현, 테스트, 운영을 위한 기반을 제공한다. 
+			    반 완전한 어플리케이션.
+			 -> 도메인에 대한 비즈니스 로직을 제외한 
+			         소프트웨어의 기반을 제공하는 것을 목표로한다.
+			         참고 ) 도메인 domain -> 업무영역 
+---------------------------------------------------
+Spring Framework 
+-> java 어플리케이션의 설계, 구현, 테스트, 운영을 위한 기반을 제공 
+   java 어플리케이션 구축을 위한 기반(infrastructure)을 제공 
+   -> Spring IOC(DI,DL), AOP, SpringMVC, SpringSecurity
+   jUnit, Ajax(JSON), Tiles, MyBatis Framework 등과의 기술 통합을 지원 
+       오픈소스 프레임워크와의 기술 통합을 지원 
+
+- IOC (DL, DI)			         

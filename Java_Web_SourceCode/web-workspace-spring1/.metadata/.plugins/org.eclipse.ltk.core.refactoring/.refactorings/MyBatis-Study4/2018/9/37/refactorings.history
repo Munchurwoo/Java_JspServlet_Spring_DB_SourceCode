@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;GuestBookDAO.java&apos; to &apos;MyBatis-Study4/src/org.kosta.model.dao&apos;&#x0D;&#x0A;- Original project: &apos;MyBatis-Study4&apos;&#x0D;&#x0A;- Destination element: &apos;MyBatis-Study4/src/org.kosta.model.dao&apos;&#x0D;&#x0A;- Original element: &apos;org.kosta.dao.GuestBookDAO.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;org.kosta.model.dao" element1="/src&lt;org.kosta.dao{GuestBookDAO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1536827394542" units="1" version="1.0"/>
+</session>

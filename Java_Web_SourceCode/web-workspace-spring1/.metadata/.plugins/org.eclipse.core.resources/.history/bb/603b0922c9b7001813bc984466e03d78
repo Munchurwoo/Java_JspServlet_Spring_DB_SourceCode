@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- handlerMapping : 클라이언트의 요청을  처리할 실제 컨트롤러 연결하는 객체  -->
+	<bean id="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+	
+	<!-- viewResolver : 컨트롤러가 클라이언트에게 응답할 view에 대한 처리를 담당하는 객체 
+						만약 해당 컨트롤러가 viewName을 ok 로 리턴하면 아래 viewResolver가 동작되어 
+						/views/ok.jsp가 응답하게 된다. -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/views/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	<bean id="mockDAO" class="org.kosta.model.MockDAO">
+	<bean id="/hello.do" class="org.kosta.controller.HelloController"></bean>
+	<bean id="/find.do" class="org.kosta.controller.FindController"></bean>
+	
+	</bean>
+</beans>

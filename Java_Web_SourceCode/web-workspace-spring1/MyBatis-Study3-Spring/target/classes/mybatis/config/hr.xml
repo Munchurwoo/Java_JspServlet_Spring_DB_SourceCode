@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hr">
+	<select id="getAllDeptList" resultType="deptVO">
+		select deptno, dname,loc
+		from dept
+	</select>
+	<sql id="selectEmp">
+		select empno, ename, job, mgr, hiredate, sal, comm, deptno
+		from emp
+	</sql>
+	<select id="findEmpListByName" resultType="empVO"
+		parameterType="String">
+		<include refid="selectEmp" />
+		where ename=#{value}
+	</select>
+	<select id="findEmpListLikeName" resultType="empVO">
+		<include refid="selectEmp" />
+		where ename like '%' ||#{value} || '%'
+	</select>
+	<select id="getEmpAndDeptAndSalGradeMap" resultType="map">
+	<![CDATA[
+	select e.ename, d.dname, e.sal, s.grade
+		from emp e, SALGRADE s, dept d
+		where e.sal>=s.losal and e.sal<=s.hisal
+		and e.deptno=d.deptno
+		and e.empno=#{empno}
+	]]>
+	</select>
+	<select id="getEmpAndDeptAndSalGradeAndMgr" resultType="map">
+	<![CDATA[
+		select e.ename, d.dname, e.sal, s.grade
+from emp e, SALGRADE s, dept d
+where e.sal>=s.losal and e.sal<=s.hisal 
+and e.empno=7566
+and e.deptno=d.deptno
+	]]>
+
+	</select>
+</mapper>

@@ -1,0 +1,21 @@
+package model;
+/*
+ * 비즈니스 계층에서 사용되는 클래스 
+ * 여러 DAO 를 연동 해서 업무를 정의한다. 
+ */
+public class MemberServiceImpl implements MemberService {
+	private String memberInfo;
+	private int point;
+	@Override
+	public void setMemberDAO(MemberDAO memberDAO) {
+	}
+
+	@Override
+	public void setPointDAO(PointDAO pointDAO) {
+	}
+
+	@Override
+	public void registerMemberAndPoint(String memberInfo, int point) {
+	}
+
+}

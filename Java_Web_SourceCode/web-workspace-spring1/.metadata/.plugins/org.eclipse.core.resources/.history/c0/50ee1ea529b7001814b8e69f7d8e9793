@@ -1,0 +1,67 @@
+package test;
+
+import java.util.List;
+import java.util.Map;
+
+import org.kosta.model.dao.MovieDAO;
+import org.kosta.model.vo.MovieVO;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMovieDAO {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = 
+				new ClassPathXmlApplicationContext("spring-mybatis.xml");
+		MovieDAO dao = (MovieDAO) factory.getBean("movieDAO");
+		//dao.insertDirector 감독 정보 
+		
+		/*DirectorVO dvo = new DirectorVO();
+		dvo.setDirectorId("B");
+		dvo.setDirectorName("문철우");
+		dvo.setIntro("93년생");
+		dao.insertDirector(dvo);*/
+		
+		//감독 리스트 반환
+		//mapUnderscoreToCamelCase : db column 명과 vo 의 인스턴스변수명을 자동으로 
+		//매핑 시키는 설정을 테스트 
+		/*List<DirectorVO> list = dao.getDirectorList();
+		for(DirectorVO vo : list)
+			System.out.println(vo);*/
+		
+		//영화정보 insert 
+		/*MovieVO mvo = new MovieVO();
+		mvo.setMovieId("M1");
+		mvo.setTitle("레디플레이원");
+		mvo.setGenre("SF");
+		mvo.setAttendance(100);
+		DirectorVO dvo = new DirectorVO();
+		dvo.setDirectorId("A");
+		mvo.setDrDirectorVO(dvo);
+		dao.insertMovie(mvo);
+		System.out.println(mvo+"insert ok");*/
+		
+	/*	List<Map<String,String>> list = dao.getAllMovieList();
+		for(Map<String,String> map:list) {
+			System.out.println("영화명:"+map.get("TITLE"));
+			System.out.println("감독명:"+map.get("DIRECTOR_NAME"));
+		}*/
+		
+	/*	List<MovieVO> list = dao.getAllMovieVOListMap();
+		for(MovieVO mvo:list)
+			System.out.println(mvo.getTitle()+" " + mvo.getDrDirectorVO().getDirectorName());*/
+			
+			
+		
+		//영화 상세보기
+		//영화정보와 감독정보를 모두 제공 
+		String movieId="M1";
+		/*
+		Map<String,Object> map = dao.getDetailMovieInfo(movieId);
+		System.out.println(map);*/
+		//귀찮아서 안함 
+		
+		MovieVO movie = dao.getDetailMovieVO(movieId);
+		
+		
+		factory.close();
+	}
+}

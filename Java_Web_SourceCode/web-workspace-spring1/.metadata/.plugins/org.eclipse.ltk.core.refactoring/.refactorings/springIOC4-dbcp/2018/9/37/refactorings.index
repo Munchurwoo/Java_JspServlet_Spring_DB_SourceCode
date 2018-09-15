@@ -1,0 +1,7 @@
+1536561298115	Rename field 'no'
+1536561740291	Extract interface 'AccountDAO'
+1536563828380	Move file
+1536564293304	Extract interface 'AcountService'
+1536564298880	Move compilation units
+1536564352223	Rename local variable 'dao'
+1536567169470	Copy compilation unit

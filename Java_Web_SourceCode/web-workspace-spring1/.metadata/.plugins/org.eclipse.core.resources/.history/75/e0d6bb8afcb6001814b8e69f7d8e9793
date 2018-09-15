@@ -1,0 +1,23 @@
+package aop.common;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.aspectj.lang.ProceedingJoinPoint;
+
+/*
+ * advice : 횡단관심사항 기능이 어떤 시점에 적용될 것인지를 결정 
+ * before - Target 메서드 실행전 적용 
+ * after - 실행 후 적용 
+ * after-throwing : 특정 Exception 발생시 
+ * after-returning : 실행 후 리턴할 때 
+ * 
+ * 위 네가지 advice 를 around advice 하나로 모두 처리 가능 
+ */
+public class AroundLoggingAspect {
+	private Log log= LogFactory.getLog(getClass());
+	//around advice 실제 target 을 제어 
+	
+	public Object aroundLogging(ProceedingJoinPoint point) {
+		return log;		
+	}
+}

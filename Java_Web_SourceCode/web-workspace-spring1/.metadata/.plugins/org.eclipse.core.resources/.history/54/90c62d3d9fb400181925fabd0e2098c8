@@ -1,0 +1,6 @@
+**Framework**
+-Spring IOC (DL 과 DI)
+-Spring AOP (Aspect Oriented Programming 관점 지향 프로그래밍)
+-MyBatis Framework (영속성 계층 프레임워크)
+-SpringMVC 
+-jUnit Framework(테스트), Tiles Framework(view), Spring Security(보안) 

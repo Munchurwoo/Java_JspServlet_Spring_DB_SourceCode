@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="memberDAO" class="model.memberDAOImpl"></bean>
+	<bean id="pointImpl" class="model.PointImpl"></bean>
+	
+	<!-- <bean id="memberService" class="model.MemberServiceImpl">
+		<property name="memberDAO" ref="memberDAO"/>
+		<property name="pointDAO" ref="pointImpl"/>
+	</bean>  -->
+	
+	<!-- memberService 구현체를 ver2 로 변경해본다. 
+		  이 때 생성자를 통한 DI를 연습해볻다. 
+	 -->
+	 <bean id="memberService" class="model.memberServiceImplVer2">
+	 	<constructor-arg ref="memberDAO"/>
+	 	<constructor-arg ref="pointDAO"/>
+	 </bean>
+		
+	
+</beans>

@@ -1,0 +1,13 @@
+package test;
+
+class ProductService{
+	public void getList() {
+		Thread.sleep(12000);
+		System.out.println("상품목록을 조회");
+	}
+}
+public class TestStopWatch {
+	public static void main(String[] args) {
+		
+	}
+}

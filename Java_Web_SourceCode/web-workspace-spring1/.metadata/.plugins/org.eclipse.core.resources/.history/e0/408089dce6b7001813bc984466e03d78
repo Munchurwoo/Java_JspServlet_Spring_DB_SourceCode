@@ -1,0 +1,18 @@
+package org.kosta.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+	@Autowired
+	private ProductDAO productDAO;
+	/*
+	 * 비즈니스 계층(서비스계층)에 사용되는 클래스를 스프링 컨테이너에 객체 생서할 것을 명시한는 어노테이션  @Service
+	 */
+	@Override
+	public ProductVO findProductById(String id) {
+		return null;
+		
+	}
+}

@@ -1,0 +1,46 @@
+package test;
+
+import java.util.List;
+import java.util.Map;
+
+import org.kosta.model.MemberVO;
+
+import model.MemberDAO;
+
+public class TestMemberDAO {
+	public static void main(String[] args) {
+		MemberDAO dao = MemberDAO.getInstance();
+		//1. 아이디로 검색 
+		/*String id ="java";
+		MemberVO vo  = dao.findMemberById(id);
+		System.out.println(vo); //vo or null
+		 */	
+		
+		//2. 회원 정보를 INSERT 
+		//	  다수의 정보(회원정보)를 전달할 때에는 vo or map 을 이용한다. 
+		
+		/*MemberVO paramVO = new MemberVO("jdbc", "1", "김태리", "판교");
+		dao.insertMember(paramVO);
+		System.out.println("insert ok:"+dao.findMemberById(paramVO.getId()));*/
+		
+		//3. 총회원수를 select 
+		
+		/*int totalCount=dao.getMemberTotalCount();
+		System.out.println("총회원수 : "+totalCount);*/
+		
+		//4. 전체 회원리스트를 select 
+		/*
+		 * hint : DAO 의 session.selectList(sql id);
+		 * mapper(member.xml) 의 resultType 은 memberVO
+		 * resultType 은 한 row의 정보를 어떻게 만들것인가 
+		 */
+		/*List<MemberVO> list = dao.getAllMemberList();
+		for(MemberVO vo : list)
+		
+			System.out.println(vo);*/
+		
+		//5. 아이디로 회원검색 (검색결과를 VO 가 아니라 MAP 으로 반환 )
+		Map<String, String> map = dao.findMemberById("java");
+		System.out.println(map);
+	}
+}

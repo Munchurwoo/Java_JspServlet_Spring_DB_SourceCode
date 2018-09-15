@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;springmvc-servlet.xml&apos; to &apos;WEB-INF&apos;&#x0D;&#x0A;- Original project: &apos;springMVC-annotation&apos;&#x0D;&#x0A;- Destination element: &apos;WEB-INF&apos;&#x0D;&#x0A;- Original element: &apos;springmvc-servlet.xml&apos;" description="Copy file" element1="WebContent/WEB-INF/springmvc-servlet.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1536913313032" target="/springmvc4-mybatis/WebContent/WEB-INF" units="0" version="1.0"/>
+</session>

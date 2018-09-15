@@ -1,0 +1,5 @@
+package model;
+
+public interface MemberService {
+	public void registerMemberAndPoint(String memberInfo, int point);
+}

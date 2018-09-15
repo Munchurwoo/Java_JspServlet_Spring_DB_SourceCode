@@ -1,0 +1,9 @@
+package aop.common;
+/*
+ * 공통(횡단) 관심사항을 정의한 클래스 
+ */
+public class LoggingAspect {
+	public void logging() {
+		System.out.println("****");
+	}
+}

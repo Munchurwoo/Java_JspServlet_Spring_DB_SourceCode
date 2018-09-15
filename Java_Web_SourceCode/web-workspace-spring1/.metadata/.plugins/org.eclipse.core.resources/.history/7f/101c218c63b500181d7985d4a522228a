@@ -1,0 +1,16 @@
+package test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import model.MemberService;
+
+public class TestIOC {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext container = 
+				new ClassPathXmlApplicationContext("ioc.xml");
+		MemberService ms  = 
+				(MemberService) container.getBean("memberService"); // dependency lookup (DL)
+		ms.registerMemberAndPoint("아이유 정보", 100);
+		container.close();
+	}
+}

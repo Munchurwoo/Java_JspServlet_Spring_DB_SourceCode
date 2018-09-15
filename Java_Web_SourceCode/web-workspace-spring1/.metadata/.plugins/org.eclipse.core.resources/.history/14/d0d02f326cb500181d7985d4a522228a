@@ -1,0 +1,16 @@
+package model;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+import factory.SqlSessionFactoryManager;
+
+public class MemberDAO {
+	private static MemberDAO instance = new MemberDAO();
+	private SqlSessionFactory factory;
+	private MemberDAO() {
+		factory = SqlSessionFactoryManager.getInstance().getFactory();
+	}
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+}

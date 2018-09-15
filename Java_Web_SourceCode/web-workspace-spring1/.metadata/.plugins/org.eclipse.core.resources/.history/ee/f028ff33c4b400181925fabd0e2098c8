@@ -1,0 +1,15 @@
+package model;
+
+import javax.sql.DataSource;
+
+public class AccountDAOImpl {
+	private DataSource dataSource;
+
+	public void setDataSource(DataSource dataSource) {
+		System.out.println("**spring container로부터 dbcp 주입**"+dataSource);
+		this.dataSource = dataSource;
+	}
+	public AccountVO fileAccountById(String id) {
+		return null;
+	}
+}

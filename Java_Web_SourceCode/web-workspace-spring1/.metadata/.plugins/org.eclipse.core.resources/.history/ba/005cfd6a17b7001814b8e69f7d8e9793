@@ -1,0 +1,12 @@
+/*
+	영화 정보는 영화아이디, 제목, 장르, 관객수 로 구성 
+	감독 정보는 아이디, 이름, 소개 
+	
+	하나의 영화는 영화는 감독 1인으로 지정한다.    
+ */
+drop table director
+create table director(
+	director_id varchar2(100) primary key,
+	director_name varchar2(100) not null,
+	intro varchar2(100) not null
+)

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;spring-mybatis.xml&apos; to &apos;MyBatis-Study4/src&apos;&#x0D;&#x0A;- Original project: &apos;MyBatis-Study3-Spring-inst&apos;&#x0D;&#x0A;- Destination element: &apos;MyBatis-Study4/src&apos;&#x0D;&#x0A;- Original element: &apos;spring-mybatis.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=MyBatis-Study4/src" element1="src/spring-mybatis.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1536817260791" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package model;
+
+public class memberServiceImplVer2 implements MemberService{
+	
+	private MemberDAO memberDAO;
+	private PointDAO pointDAO;
+	
+	@Override
+	public void setMemberDAO(MemberDAO memberDAO) {
+		this.memberDAO = memberDAO;
+	}
+
+	@Override
+	public void setPointDAO(PointDAO pointDAO) {
+		this.pointDAO = pointDAO;
+	}
+
+	@Override
+	public void registerMemberAndPoint(String memberInfo, int point) {
+	}
+
+}

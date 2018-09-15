@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--  dbcp -->
+<bean id="dbcp" class="org.apache.commons.dbcp2.BasicDataSource">
+	<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+	<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:xe" />
+	<property name="username" value="scott"/>
+	<property name="password" value="tiger"/>
+</bean>
+<!-- spring과 mybatis 연동 설정 -->
+<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+<property name="dataSource" ref="dbcp"/>
+<property name="mapperLocations" value="classpath:/mybatis/config/*.xml"/>
+<property name="typeAliasesPackage" value="org.kosta.model.vo"/>
+</bean>
+<!-- MyBatis 의 중복 작업(openSession(), commit(), rollback(), close())에 
+     대한 템플릿을 지원 : 선언적 방식의 트랜잭션 처리를 지원   -->
+ <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+ 	<constructor-arg ref="sqlSessionFactoryBean"/>
+ </bean> 
+
+</beans>

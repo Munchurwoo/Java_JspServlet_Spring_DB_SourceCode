@@ -1,0 +1,5 @@
+package model;
+
+public interface memberDAO {
+	public void register(String memberInfo);
+}

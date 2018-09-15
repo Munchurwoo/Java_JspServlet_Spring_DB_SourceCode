@@ -1,0 +1,11 @@
+package test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMovieDAO {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext factory = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+		factory.getBean("movieDAO");
+		factory.close();
+	}
+}

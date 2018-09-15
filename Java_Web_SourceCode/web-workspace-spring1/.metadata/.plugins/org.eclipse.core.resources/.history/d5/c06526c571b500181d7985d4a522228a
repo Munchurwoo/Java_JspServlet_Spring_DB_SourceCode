@@ -1,0 +1,52 @@
+package model;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.kosta.model.MemberVO;
+
+import factory.SqlSessionFactoryManager;
+
+public class MemberDAO {
+	private static MemberDAO instance = new MemberDAO();
+	private SqlSessionFactory factory;
+	private MemberDAO() {
+		factory = SqlSessionFactoryManager.getInstance().getFactory();
+	}
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+	public MemberVO findMemberById(String id) {
+		SqlSession session = null;
+		MemberVO vo = null;
+		try {
+			//getConnection 하는 역할 
+			session = factory.openSession();
+			/*
+			 * selectOne(sql id, 검색조건)
+			 * : pk로 검색해서 조회결과가 있으면 지정해준 resultType의 정보로 반환하고 조회겨로가가 없으면 
+			 * 	 null을 반환한다.
+			 *   첫번째 매개변수 member.findMemberById 
+			 *   member : mapper xml 의 namespace
+			 *   findMemberById : mapper xml 에 명시된 sql id 
+			 *   두번째 매개변수 id : where 절 이하에 적용될 검색조건 
+			 *   jdbc 의 pstmt.setXXX(1,id)l
+			 */
+			vo = session.selectOne("member.findMemberById",id);
+		}finally {
+			session.close();
+		}
+		session.close();
+		return vo;
+	}
+	public void insertMember(MemberVO paramVO) {
+		SqlSession session = null;
+		try {
+			session=factory.openSession();
+			session.insert("member.inertMember", paramVO);
+			session.commit(); // MyBatis 디폴트는 수동 commit mode
+		}finally{
+			session.close();
+		}
+		
+	}
+}

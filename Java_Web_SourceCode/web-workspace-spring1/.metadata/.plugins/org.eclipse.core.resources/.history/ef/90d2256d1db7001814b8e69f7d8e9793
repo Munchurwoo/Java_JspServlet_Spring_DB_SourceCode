@@ -1,0 +1,13 @@
+package org.kosta.model.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+public class MovieDAO {
+	private SqlSessionTemplate template;
+	public MovieDAO(SqlSessionTemplate template) {
+		super();
+		this.template = template;
+	}
+	public void insertDirector() {
+	}
+}

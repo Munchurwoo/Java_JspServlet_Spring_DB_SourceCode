@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="movie">
+	<insert id="insertDirector" parameterType="directorVO">
+		insert into director(director_id, director_name, intro)
+		values(#{directorId},#{directorName},#{intro})
+	</insert>
+	<select id="getDirectorList" resultType="directorVO">
+		select director_id as directorId,
+		director_name as directorName, intro from director
+	</select>
+
+	<insert id="insertMovie" parameterType="movieVO">
+		insert into movie(movie_id,title,genre,attendance,director_id)
+		values(#{movieId},#{title},#{genre},#{attendance},#{drDirectorVO.directorId})
+	</insert>
+
+	<select id="getAllMovieList" resultType="map">
+		select m.title, d.director_name
+		from movie m , director d
+		where m.director_id=d.director_id"
+		order by m.movie_id asc
+	</select>
+
+	<!-- Movie 정보 조회시 Director 정보를 할당하기 위해 resultmap 을 이용 -->
+	<resultMap type="movieVO" id="movieListRM">
+		<result column="director_name"
+			property="directorVO.directorName" />
+	</resultMap>
+	<select id="getAllMovieVOListMap" resultMap="movieListRM">
+		select m.title, d.director_name
+		from movie m , director d
+		where m.director_id=d.director_id
+		order by m.movie_id asc
+	</select>
+	<select id="getDetailMovieInfo" resultType="map">
+		select m.title, d.director_name
+		from movie m , director d
+		where m.director_id=d.director_id"
+		and m.movie_id=#{value}
+	</select>
+	<select id="getDetailMovieVO"></select>
+	
+</mapper>
+
+
+
+
+
+
+
+

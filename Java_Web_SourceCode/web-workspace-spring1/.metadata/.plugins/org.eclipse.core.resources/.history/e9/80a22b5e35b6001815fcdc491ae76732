@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="member">
+
+	<sql id="selectMember">
+		select id,password,name,address from spring_member
+	</sql>
+
+	<select id="findMemberById" parameterType="string"
+		resultType="memberVO">
+		<include refid="selectMember"></include>
+		where id=#{value}
+	</select>
+
+	<insert id="inertMember" parameterType="memberVO">
+		insert into
+		spring_member(id,password,name,address)
+		values(#{id},#{password},#{name},#{address})
+	</insert>
+
+	<select id="getMemberTotalCount" resultType="int">
+		select count(*) from
+		spring_member
+	</select>
+
+	<select id="getAllMemberList" resultType="memberVO">
+		<include refid="selectMember"></include>
+	</select>
+
+	<select id="findMemberMapById" resultType="map">
+		<include refid="selectMember" />
+		where id=#{value}
+	</select>
+
+	<insert id="insertMemberByMap" parameterType="map">
+		insert into
+		spring_member(id,password,name,address)
+		values(#{ID},#{PASS},#{NAME},#{ADDR})
+	</insert>
+
+	<select id="getAddressKind" resultType="string">
+		select distinct address
+		from spring_member
+	</select>
+
+	<select id="findMemberListByNameAndAddress"
+		resultType="memberVO" parameterType="memberVO">
+		<include refid="selectMember" />
+		where name=#{name} and address=#{address}
+	</select>
+
+	<select id="findMemberMap" resultType="memberVO">
+		<include refid="selectMember"></include>
+	</select>
+	<update id="updateMember" parameterType="memberVO">
+
+		update spring_member set
+		address=#{address} where name=#{name}
+	</update>
+
+	<delete id="deleteMemberByAddressAndName" parameterType="map">
+		delete
+		from spring_member where name=#{NAME} and address=#{ADDR}
+	</delete>
+
+	<select id="getEmpAndDeptAndSalGradeMap" resultType="map"
+		parameterType="int">
+		
+		
+	<![CDATA[
+	select e.ename, d.dname, e.sal, s.grade
+		from emp e, SALGRADE s, dept d
+		where e.sal>=s.losal and e.sal<=s.hisal
+		and e.deptno=d.deptno
+		and e.empno=#{empno}
+	]]>
+	</select>
+</mapper>

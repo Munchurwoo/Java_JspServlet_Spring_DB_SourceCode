@@ -1,0 +1,123 @@
+package model;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.kosta.model.MemberVO;
+
+import factory.SqlSessionFactoryManager;
+
+public class MemberDAO {
+	private static MemberDAO instance = new MemberDAO();
+	private SqlSessionFactory factory;
+	private MemberDAO() {
+		factory = SqlSessionFactoryManager.getInstance().getFactory();
+	}
+	public static MemberDAO getInstance() {
+		return instance;
+	}
+	public MemberVO findMemberById(String id) {
+		SqlSession session = null;
+		MemberVO vo = null;
+		try {
+			//getConnection 하는 역할 
+			session = factory.openSession();
+			/*
+			 * selectOne(sql id, 검색조건)
+			 * : pk로 검색해서 조회결과가 있으면 지정해준 resultType의 정보로 반환하고 조회겨로가가 없으면 
+			 * 	 null을 반환한다.
+			 *   첫번째 매개변수 member.findMemberById 
+			 *   member : mapper xml 의 namespace
+			 *   findMemberById : mapper xml 에 명시된 sql id 
+			 *   두번째 매개변수 id : where 절 이하에 적용될 검색조건 
+			 *   jdbc 의 pstmt.setXXX(1,id)l
+			 */
+			vo = session.selectOne("member.findMemberById",id);
+		}finally {
+			session.close();
+		}
+		session.close();
+		return vo;
+	}
+	public void insertMember(MemberVO paramVO) {
+		SqlSession session = null;
+		try {
+			session=factory.openSession();
+			session.insert("member.inertMember", paramVO);
+			session.commit(); // MyBatis 디폴트는 수동 commit mode
+		}finally{
+			session.close();
+		}
+		
+	}
+	public int getMemberTotalCount() {
+		SqlSession session = null;
+		int totalCount=0;
+		try {
+			session=factory.openSession();
+			totalCount = session.selectOne("member.getMemberTotalCount");
+			
+		}finally {
+			session.close();
+		}
+		return totalCount;
+	}
+	/*
+	 * hint : DAO 의 session.selectList(sql id);
+	 * mapper(member.xml) 의 resultType 은 memberVO
+	 * resultType 은 한 row의 정보를 어떻게 만들것인가 
+	 */
+	public List<MemberVO> getAllMemberList() {
+		SqlSession session = null;
+		List<MemberVO> list = null;
+		
+		try {
+			session = factory.openSession();
+			list = session.selectList("member.getAllMemberList");
+			
+		}finally {
+			session.close();
+		}
+		return list;
+	}
+	public Map<String, String> findMemberMapById(String id) {
+		SqlSession session = null;
+		Map<String, String> map = null;
+		try {
+			session= factory.openSession();
+			map=session.selectOne("member.findMemberMapById", id);
+		}finally {
+			session.close();
+		}
+		return map;
+	}
+	public void insertMemberByMap(HashMap<String, String> paramMap) {
+		SqlSession session = null;
+		try {
+			session = factory.openSession();
+			hashmap = session.insert("member.insertMemberByMap", paramMap);
+			session.commit();
+		}finally {
+			session.close();
+		}
+	}
+	public List<String> getAddressKind() {
+		SqlSession session = null;
+		List<String> list = null;
+		
+		try {
+			session=factory.openSession();
+			list = session.selectList("member.getAddressKind");
+		}finally {
+			session.close();
+		}
+		return list;
+	}
+	public List<MemberVO> findMemberListByNameAndAddress(MemberVO param) {
+		
+		return null;
+	}
+}
