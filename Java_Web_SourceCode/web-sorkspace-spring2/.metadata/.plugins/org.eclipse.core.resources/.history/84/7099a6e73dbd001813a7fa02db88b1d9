@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="login.do" method="post">
+		아이디 <input type="text" name="id" required="required">
+		패스워드 <input type="text" name="password" required="required">
+		<input type="submit" value="로그인">
+	</form>
+	<%--
+		MemberController MemberDAO 와 Impl member.xml(mapper) 
+				|
+			로그인 실패			login_fail.jsp에서 alert 후 home으로 
+			로그인 성공			인증정보를 MemberVO 객체 session 에 mvo name 으로 할당 
+			SESSION에 mvo name으로 할당하고 
+			home으로 이동, 
+			로그인폼 대신 아이유님 로그인 로그아웃버튼 post 방식만 허용 
+	 --%>
+	home 화면
+	<img src="${pageContext.request.contextPath }/resources/interceptorjpg.jpg">
+</body>
+</html>

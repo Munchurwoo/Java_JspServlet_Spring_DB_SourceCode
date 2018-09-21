@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springmvc5-product1/WebContent/views/duplicatedId_result.jsp&apos; to &apos;duplicated_result.jsp&apos;" description="Rename resource &apos;duplicatedId_result.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/views/duplicatedId_result.jsp" name="duplicated_result.jsp" stamp="1537161903563" updateReferences="true"/>
+</session>

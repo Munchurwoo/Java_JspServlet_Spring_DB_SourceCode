@@ -1,0 +1,11 @@
+package org.kosta.spring10.model.dao;
+
+public class EmpDAOImpl implements EmpDAO {
+
+	@Override
+	public String getEmpNo() {
+		
+		return null;
+	}
+	
+}

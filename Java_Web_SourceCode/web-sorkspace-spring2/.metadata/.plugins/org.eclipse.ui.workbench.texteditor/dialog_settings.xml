@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jst.jsp.ui.internal.preferences.ui.JSPTemplatePreferencePage$JSPEditTemplateDialog_dialogBounds">
+		<item value="717" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="559" key="DIALOG_HEIGHT"/>
+		<item value="270" key="DIALOG_X_ORIGIN"/>
+		<item value="50" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="warn"/>
+			<item value="String"/>
+			<item value="info"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.wst.xml.ui.internal.preferences.XMLTemplatePreferencePage$XMLEditTemplateDialog_dialogBounds">
+		<item value="717" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="419" key="DIALOG_HEIGHT"/>
+		<item value="141" key="DIALOG_X_ORIGIN"/>
+		<item value="5" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

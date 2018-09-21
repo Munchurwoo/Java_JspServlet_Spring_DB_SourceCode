@@ -1,0 +1,9 @@
+package org.kosta.model.dao;
+
+public class CustomerDAO {
+	public interface findCustomerById{
+		public CustomerDAO findCustomerById() {
+			
+		}
+	}
+}

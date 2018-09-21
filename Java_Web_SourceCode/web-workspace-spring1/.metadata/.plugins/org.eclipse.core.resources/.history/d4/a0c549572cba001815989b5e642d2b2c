@@ -1,0 +1,73 @@
+package org.kosta.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.kosta.model.MemberVO;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class MyController {
+	@RequestMapping("hello.do")
+	public ModelAndView hello() {
+		return new ModelAndView("hello_result"); //viewName 
+	}
+	@RequestMapping("paramtest1.do")
+	public ModelAndView paramtest(HttpServletRequest request) {
+		System.out.println(request.getParameter("userName"));
+		//ViewResolover에 의해 /view/test_result.jsp로 응답된다.
+		return new ModelAndView("test_result");
+	}
+	@RequestMapping("paramtest2.do")
+	//아래처럼 매개변수를 선언하면 request.getParameter("userName")과 동일한 동작을 한다.
+	public String paramtest2(String userName) {
+		System.out.println(userName);
+		return "test_result";
+		//String 으로 반환하면 리턴하는 정보가 viewName 이다. 
+	}
+	@RequestMapping("paramtest3.do")
+	public String paramtest3(String userName,String userAddr) {
+		System.out.println(userName+" "+userAddr);
+		return "test_result";
+	}
+	//@RequestMapping("paramtest4.do")
+	// post 방식으로 요청할 때만 동작하게 할 수 있다 
+	@RequestMapping(method=RequestMethod.POST,value="paramtest4.do")
+	public String paramtest4(MemberVO vo,Model model) {
+		System.out.println(vo);
+		model.addAttribute("vo", vo);
+		return "test_result";
+	}
+	// 위 메서드와 같이 post 방식만 허용하는 어노테이션
+	// spring 4.3 버전 이상에서 지원 
+	@PostMapping("login.do")
+	public String login(MemberVO memberVO,
+			HttpSession session) {
+		//로그인 조건이 맞으면 
+		session.setAttribute("memberVO", memberVO);
+		return "test_result";
+	}
+	
+	@RequestMapping("redirect.do")
+	public String redirectTest() {
+		System.out.println("MyController redirect ");
+		//redirect 방식으로 이동해서 응답할 경우에는 
+		// redirect: 를 앞에 붙여서 viewName 을 반환한다. 
+		return "redirect:veiws/redirect_result.jsp";
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+package org.kosta.model.dao;
+
+import javax.annotation.Resource;
+
+import org.kosta.model.vo.CustomerVO;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+@Repository
+public class CustomerDAOImpl implements CustomerDAO {
+	@Resource
+	private SqlSessionTemplate template;
+	@Override
+	public CustomerVO findCustomerById(String address) {
+		return template.selectOne("customer.findCustomerById", address);
+	}
+	@Override
+	public CustomerVO findCustomerByAddress(String address) {
+		
+		return template.selectOne("customer.findCustomerById", address);
+	}
+}

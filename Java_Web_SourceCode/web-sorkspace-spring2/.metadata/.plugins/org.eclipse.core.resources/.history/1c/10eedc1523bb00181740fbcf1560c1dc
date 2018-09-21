@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+ 	<select id="getTotalMemberCount" resultType="int">
+ 		select count(*) from spring_member
+ 	</select>
+ 	<sql id="selectMember">
+ 		select id, password, name, address from spring_member
+ 	</sql>
+ 	<select id="findMemberById" resultType="memberVO">
+ 		<include refid="selectMember"/>
+ 			where id=#{value}
+ 	</select>
+ 	<select id="getAddressKind" resultType="string">
+ 		select distinct address from spring_member
+ 	</select>
+ 	<select id="getInfoByAddress" resultType="memberVO">
+ 		select id, name from spring_member where address = #{value}
+ 	</select>
+ 	
+ 	<select id="login" parameterType="memberVO" resultType="memberVO">
+ 		<include refid="selectMember"/>
+ 		where id=#{id} and password=#{password}
+ 	</select>
+ 	<update id="update">
+ 	update spring_member
+ 	set password=#{password}, name=#{name}, address=#{address}
+ 	where id=#{id}
+ 	</update>
+ 	
+</mapper>
+ 

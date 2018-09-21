@@ -1,0 +1,11 @@
+package org.kosta.model.dao;
+
+import org.kosta.model.vo.CustomerVO;
+
+public interface CustomerDAO {
+
+	CustomerVO findCustomerById(String id);
+
+	String List<CustomerVO> findCustomerByAddress(String address);
+
+}	

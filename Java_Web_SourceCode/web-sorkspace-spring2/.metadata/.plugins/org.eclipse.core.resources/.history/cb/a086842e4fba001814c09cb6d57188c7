@@ -1,0 +1,13 @@
+package org.kosta.model.dao;
+
+import org.kosta.model.vo.ProductVO;
+
+public class ProductDAOImpl implements ProductDAO{
+
+	@Override
+	public ProductVO ProductNumberInfo(String productNum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

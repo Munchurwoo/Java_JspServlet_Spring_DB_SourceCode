@@ -1,0 +1,14 @@
+package org.kosta.model.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CustomerDAOImpl implements CustomerDAO{
+
+	@Override
+	public CustomerDAO findCustomerById() {
+		
+		return null;
+	}
+
+}

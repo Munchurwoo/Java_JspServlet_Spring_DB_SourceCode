@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<c:forEach items="${list}" var="list">
+상품번호 : ${list.productNo}<br>
+상품이름 : ${list.name}<br>
+제품명 : ${list.maker}<br>
+주소 : ${list.number}<br>
+
+</c:forEach>
+</body>
+</html>

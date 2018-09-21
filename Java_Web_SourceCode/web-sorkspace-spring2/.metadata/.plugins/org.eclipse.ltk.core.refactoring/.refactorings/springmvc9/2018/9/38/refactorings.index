@@ -1,0 +1,11 @@
+1537411526243	Delete element
+1537411714311	Rename resource 'member.xml'
+1537412905166	Extract interface 'DeptDAO'
+1537413192589	Rename package 'org.kosta.springmvc.controller'
+1537413204663	Delete element
+1537413860163	Copy package
+1537414765438	Extract interface 'EmpDAO'
+1537414868987	Copy compilation unit
+1537414889351	Rename type 'DeptUnitTest2'
+1537430990221	Copy files
+1537431139291	Copy file

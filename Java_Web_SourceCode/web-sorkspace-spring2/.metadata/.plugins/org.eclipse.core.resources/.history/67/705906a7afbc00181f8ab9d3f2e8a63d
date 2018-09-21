@@ -1,0 +1,5 @@
+package org.kosta.spring10.model.dao;
+
+public class EmpImpl implements Emp {
+	
+}

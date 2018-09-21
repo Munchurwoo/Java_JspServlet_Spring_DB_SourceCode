@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+	<select id="login" parameterType="memberVO" resultType="memberVO">
+		select id,password, name,address from spring_member 
+		where id=#{id} and password=#{password}
+	</select>
+	
+	<select id="findMemberById" resultType="memberVO">
+		select id,password, name,address from spring_member 
+		where id=#{id}
+	</select>
+</mapper>

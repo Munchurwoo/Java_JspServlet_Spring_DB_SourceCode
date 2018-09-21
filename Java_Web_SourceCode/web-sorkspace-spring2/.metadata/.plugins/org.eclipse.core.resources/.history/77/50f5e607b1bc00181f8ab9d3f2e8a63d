@@ -1,0 +1,10 @@
+package org.kosta.spring10.model.dao;
+
+public interface Emp {
+
+	static String getEmpNo() {
+		
+		return null;
+	}
+
+}

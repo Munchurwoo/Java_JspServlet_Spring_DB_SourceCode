@@ -1,0 +1,7 @@
+package org.kosta.springmvc9.model.dao;
+
+public interface EmpDAO {
+
+	int getEmpCount();
+
+}

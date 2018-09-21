@@ -1,0 +1,30 @@
+package org.kosta.springmvc9.controller;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.kosta.springmvc9.model.dao.DeptDAO;
+import org.kosta.springmvc9.model.dao.EmpDAO;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmpController {
+	
+	@Resource
+	private DeptDAO deptDAO;
+	@Resource
+	private EmpDAO empDAO;
+	
+	@RequestMapping("empHome.do")
+	public String home(Model model) {
+		model.addAttribute("deptNo",deptDAO.getAllDeptList());
+		return "emp_home";
+	}
+	@RequestMapping("findEmpListByDeptNo.do")
+	public String findEmpListByDeptNo(HttpServletRequest request, Model model) {
+		model.addAttribute("list",empDAO.findEmpListByDeptNo(request.getParameter("deptNo")));
+		return emp_list;
+	}
+}

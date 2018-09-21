@@ -1,0 +1,52 @@
+package org.kosta.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.kosta.model.dao.CustomerDAO;
+import org.kosta.model.vo.CustomerVO;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+@Controller
+public class CustomerController {
+	@Resource
+	private CustomerDAO customerDAO;
+	@RequestMapping("findCustomerById.do")
+	public ModelAndView findCustomerById(String id) {
+		CustomerVO vo=customerDAO.findCustomerById(id);
+		if(vo==null)
+			return new ModelAndView("find_fail");
+		else
+			return new ModelAndView("find_ok","customerVO",vo);
+	}
+	/*@RequestMapping("findCustomerByAddress.do")
+	public ModelAndView findCustomerByAddress(String address) {
+		List<CustomerVO> vo=customerDAO.findCustomerByAddress(address);
+		if(vo==null)
+			return new ModelAndView("findbyaddress_customer_fail");
+		else
+			return new ModelAndView("findbyaddress_customer_ok","customerVO",vo);
+	}*/
+	
+	public String findCustomerByAddress(String address) {
+	String viewName = null;
+	List<CustomerVO> list = CustomerDAO.findCustomerByAddress(address);
+	if(list.isEmpty()) {
+		viewName=("findbyaddress_customer_fail");
+	}else {
+		viewName("findbyaddress_customer_ok","customerVO",vo);
+	}
+	}
+}
+
+
+
+
+
+
+
+
+
+

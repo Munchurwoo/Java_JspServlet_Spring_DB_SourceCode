@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>update_member_form</title>
+</head>
+<body>
+회원정보수정폼 
+<form method="post" action="updateMember.do">
+아이디 <input type="text" name="id" value="${mvo.id }" readonly="readonly"><br>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package org.kosta.springmvc9.controller;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmpController {
+
+	@RequestMapping("empHome.do")
+	public String home() {
+		return "emp_home";
+	}
+}

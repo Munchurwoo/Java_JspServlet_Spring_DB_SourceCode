@@ -1,0 +1,9 @@
+package org.kosta.model.dao;
+
+import org.kosta.model.vo.ProductVO;
+
+public interface ProductDAO {
+
+	ProductVO ProductNumberInfo(String productNum);
+
+}

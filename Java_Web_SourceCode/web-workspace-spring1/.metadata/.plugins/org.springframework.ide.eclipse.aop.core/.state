@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="springIOC4-dbcp"/>
-<aop-project name="springIOC1-solution-maven"/>
-<aop-project name="springmvc4-mybatis-inst"/>
-<aop-project name="springIOC2"/>
+<aop-project name="springmvc5-customer"/>
+<aop-project name="springmvc5-product"/>
 <aop-project name="springmvc2"/>
 <aop-project name="springIOC1-solution"/>
-<aop-project name="springAOP2-ex-inst"/>
 <aop-project name="springIOC6-Annotation-inst"/>
 <aop-project name="springMVC-annotation"/>
 <aop-project name="springAOP1-solution-inst">
@@ -19,6 +16,23 @@
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:springAOP1-solution-inst|3:src/ioc.xml|7:beans:6|8:memberService:8" bean-file="/springAOP1-solution-inst/src/ioc.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP1-solution-inst/src/ioc.xml" source="=springAOP1-solution-inst/src&lt;aop.common{CommonLoggingService.java[CommonLoggingService~timeLogging~QJoinPoint;" source-start-line="9" target="=springAOP1-solution-inst/src&lt;model{MemberServiceImpl.java[MemberServiceImpl~deleteMember" target-start-line="9"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="springIOC3"/>
+<aop-project name="springAOP2-solution-inst">
+<aspect-definition advice-class-name="aop.common.LoggingAspect" advice-method-name="logging" advice-type="BEFORE" aspect-end-line-number="25" aspect-name="loggingAspect" aspect-start-line-number="25" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" pointcut-expression="execution(public * org.kosta.model..*Service.*(..))" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~findMemberById" target-start-line="4"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~registerMember" target-start-line="10"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~findMemberByAddress" target-start-line="7"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~findProductById" target-start-line="7"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~registerProduct" target-start-line="4"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~findProductByMaker" target-start-line="10"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springIOC6-Anotation"/>
+<aop-project name="springIOC4-dbcp"/>
+<aop-project name="springIOC1-solution-maven"/>
+<aop-project name="springmvc4-mybatis-inst"/>
+<aop-project name="springIOC2"/>
+<aop-project name="springAOP2-ex-inst"/>
 <aop-project name="springAOP3-around">
 <aspect-definition advice-class-name="aop.common.AroundLoggingAspect" advice-method-name="aroundLogging" advice-type="AROUND" aspect-end-line-number="24" aspect-name="LoggingService" aspect-start-line-number="24" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/springAOP3-around/src/spring-config.xml" pointcut-expression="within(kosta.model..*)" proxy-target-class="false">
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:springAOP3-around|3:src/spring-config.xml|7:beans:6|8:personService:8" bean-file="/springAOP3-around/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP3-around/src/spring-config.xml" source="=springAOP3-around/src&lt;aop.common{AroundLoggingAspect.java[AroundLoggingAspect~aroundLogging~QProceedingJoinPoint;" source-start-line="23" target="=springAOP3-around/src&lt;kosta.model{PersonService.java[PersonService~getNick" target-start-line="10"/>
@@ -50,21 +64,9 @@
 <aop-reference advice-type="AROUND" bean="1:BeansModel|2:springAOP4-around|3:src/aop.xml|7:beans:6|8:memberService:9" bean-file="/springAOP4-around/src/aop.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP4-around/src/aop.xml" source="=springAOP4-around/src&lt;aop.common{PerformanceReportAspect.java[PerformanceReportAspect~checkTime~QProceedingJoinPoint;" source-start-line="11" target="=springAOP4-around/src&lt;kosta.member{MemberService.java[MemberService~findAllMember" target-start-line="14"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="springIOC3"/>
 <aop-project name="springmvc1"/>
 <aop-project name="springmvc2-inst"/>
 <aop-project name="springmvc3-annotation-inst"/>
-<aop-project name="springAOP2-solution-inst">
-<aspect-definition advice-class-name="aop.common.LoggingAspect" advice-method-name="logging" advice-type="BEFORE" aspect-end-line-number="25" aspect-name="loggingAspect" aspect-start-line-number="25" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" pointcut-expression="execution(public * org.kosta.model..*Service.*(..))" proxy-target-class="false">
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~findMemberById" target-start-line="4"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~registerMember" target-start-line="10"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:memberService:8" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.member{MemberService.java[MemberService~findMemberByAddress" target-start-line="7"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~findProductById" target-start-line="7"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~registerProduct" target-start-line="4"/>
-<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:springAOP2-solution-inst|3:src/spring-config.xml|7:beans:6|8:productService:10" bean-file="/springAOP2-solution-inst/src/spring-config.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springAOP2-solution-inst/src/spring-config.xml" source="=springAOP2-solution-inst/src&lt;aop.common{LoggingAspect.java[LoggingAspect~logging~QJoinPoint;" source-start-line="15" target="=springAOP2-solution-inst/src&lt;org.kosta.model.product{ProductService.java[ProductService~findProductByMaker" target-start-line="10"/>
-</aspect-definition>
-</aop-project>
-<aop-project name="springIOC6-Anotation"/>
 <aop-project name="springmvc1-inst"/>
 <aop-project name="springIOC5-review"/>
 <aop-project name="MyBatis-Study3-Spring-inst"/>

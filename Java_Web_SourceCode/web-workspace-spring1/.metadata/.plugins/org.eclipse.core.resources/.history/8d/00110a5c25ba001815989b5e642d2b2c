@@ -1,0 +1,9 @@
+package org.kosta.model.dao;
+
+import org.kosta.model.vo.CustomerVO;
+
+public interface CustomerDAO {
+
+	CustomerVO findCustomerById(String id);
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emp">
+
+	<sql id="selectEmp">
+		select empNo, ename,job,deptNo from emp
+	</sql>
+
+	<select id="getEmpNo" resultType="empVO">
+		select empNo from emp
+	</select>s
+	
+	<resultMap type="empVO" id="empRM">
+		<result column="deptno" property="deptVO.deptNo"/>
+		<result column="dname" property="deptVO.dname"/>
+		<result column="loc" property="deptVO.loc"/>
+	</resultMap>
+	<select id="getEmpList" resultMap="empRM">
+		select e.empno, e.ename, e.job, e.deptno, d.dname,d.loc
+		from emp e, dept d
+		where e.deptno=d.deptno
+		and e.empno=#{value}
+
+	</select>
+</mapper>

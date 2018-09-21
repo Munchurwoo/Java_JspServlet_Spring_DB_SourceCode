@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpringMVC AnnotationController</title>
+</head>
+<body>
+<h3>SpringMVC AnnotationController</h3>
+<a href="hello.do">hello.do test</a><br><br>
+<form action="paramtest1.do">
+	이름 <input type="text" name="userName">
+	<input type="submit" value="전송1">
+</form><br>
+<form action="paramtest2.do">
+	이름 <input type="text" name="userName">
+	<input type="submit" value="전송2">
+</form><br>
+<form action="paramtest3.do">
+	이름 <input type="text" name="userName"><br>
+	주소 <input type="text" name="userAddr"><br>
+	<input type="submit" value="전송3">
+</form><br>
+<%-- post 방식일때만 처리되도록 컨트롤러에서 설정 --%>
+<form action="paramtest4.do" method="post">
+	아이디 <input type="text" name="id"><br>
+	이름 <input type="text" name="name"><br>
+	주소 <input type="text" name="address"><br>
+	<input type="submit" value="전송4">
+</form><br>
+<form action="login.do" method="post">
+	아이디 <input type="text" name="id"><br>
+	패스워드 <input type="password" name="password"><br>
+	<input type="submit" value="로그인">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

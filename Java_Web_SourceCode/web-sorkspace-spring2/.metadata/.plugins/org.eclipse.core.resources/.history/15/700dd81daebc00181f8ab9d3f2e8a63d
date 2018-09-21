@@ -1,0 +1,10 @@
+package org.kosta.spring10.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("home.do")
+public class EmpController {
+	public String home() {
+		return "index"
+	}
+}

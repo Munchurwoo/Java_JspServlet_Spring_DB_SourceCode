@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="springmvc5-product">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <property name="context-root" value="springmvc5-product"/>
+        <property name="java-output-path" value="/springmvc5-product/build/classes"/>
+    </wb-module>
+</project-modules>

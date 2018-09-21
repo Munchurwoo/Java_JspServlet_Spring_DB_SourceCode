@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sql Mapper -->
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emp">
+	<sql id="selectEmp">
+		select empNo, ename,job,deptNo from emp 
+	</sql>
+	
+	<select id="getEmpCount" resultType="int">
+		select count(*) from emp
+	</select>
+	<select id="findEmpListByDeptNo" resultType="empVO">
+		<include refid="selectEmp"/>
+		where deptNo=${value}
+	</select>
+	<select id="findEmpListLikeName" resultType="empVO">
+		<include refid="selectEmp"></include>
+		where ename like '%' || #{value} || '%'	
+	</select>
+</mapper>

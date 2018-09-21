@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	사원관리 홈
+
+	<%--
+	<select 를 이용해 option 으로 부서명을 제공하고 
+	실제 검색시 서버로 전송되는 정보는 부서번호가 전송되도록 value 를 설정한다.
+	
+	select option을 선택하고 검색 버튼을 누르면  
+	emp_list.jsp(empno, ename, job)에서 사원정보를 보여준다.
+	
+ --%>
+	<form action="findEmpListByDeptNo.do">
+		<select name="$deptNo">
+			<option value="">--부서명--</option>
+			<option value="">--부서명--</option>
+		</select>
+		<input type="submit" value="검색">
+	</form>
+</body>
+</html>

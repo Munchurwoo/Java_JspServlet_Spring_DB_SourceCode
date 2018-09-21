@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springmvc5-product/WebContent/views/find_Customer_ok.jsp&apos; to &apos;find_customer_ok.jsp&apos;" description="Rename resource &apos;find_Customer_ok.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/views/find_Customer_ok.jsp" name="find_customer_ok.jsp" stamp="1537150987079" updateReferences="true"/>
+</session>

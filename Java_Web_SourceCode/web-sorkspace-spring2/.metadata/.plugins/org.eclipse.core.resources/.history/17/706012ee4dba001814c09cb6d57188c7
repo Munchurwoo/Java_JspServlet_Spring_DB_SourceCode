@@ -1,0 +1,26 @@
+package org.kosta.controller;
+
+import javax.annotation.Resource;
+
+import org.kosta.model.dao.ProductDAO;
+import org.kosta.model.vo.ProductVO;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ProductController {
+
+	@Resource
+	private ProductDAO productDAO;
+	
+	@RequestMapping("ProductNumberInfo.do")
+	public String ProductNumberInfo(String productNum, Model model) {
+		ProductVO vo = productDAO.ProductNumberInfo(productNum);
+		String viewName = null;
+		if(vo==null)
+			viewName="findbynumber_customer.fail";
+		return productNum;
+		
+	}
+}

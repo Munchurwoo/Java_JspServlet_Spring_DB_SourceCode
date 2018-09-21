@@ -1,0 +1,12 @@
+package org.kosta.springmvc9.model.dao;
+
+import javax.annotation.Resource;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class EmpDAOImpl {
+	@Resource
+	private SqlSessionTemplate template;
+}

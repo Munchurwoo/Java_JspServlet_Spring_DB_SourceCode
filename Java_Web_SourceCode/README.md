@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> cc63eddeae983dbd8fe5b3ba85b7e1cbd6ec2344
+﻿
 back-end developers
 
 :memo: 2018-07-09 ~2018-08-30 

@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	alert("${param.id} 아이디에 대한 회원 없음 ");
+	location.href="${page.Context.request.contextPath}/index.jsp";
+</script>
+</body>
+</html>

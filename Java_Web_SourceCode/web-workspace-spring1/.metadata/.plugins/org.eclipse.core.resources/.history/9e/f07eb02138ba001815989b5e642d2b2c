@@ -1,0 +1,26 @@
+package org.kosta.model.dao;
+
+import java.util.List;
+
+import org.kosta.model.vo.CustomerVO;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository	//스프링컨테이너에 객체를 생성할 것을 명시
+public class CustomerDAOImpl implements CustomerDAO{
+	@Autowired		//MyBatis Framework를 이용해 DAO를 구현하기 위해 스프링 컨테이너에게 DI할 것을 명시
+	private SqlSessionTemplate template;
+	@Override
+	public CustomerVO findCustomerById(String id) {
+		return template.selectOne("customer.findCustomerById", id);
+	}
+	@Override
+	public List<CustomerVO> findCustomerByAddress(String address) {
+		return template.selectList("customer.findCustomerByAddress", address);
+	}
+	@Override
+	public void registerCustomer(CustomerVO vo) {
+		template.insert(vo);
+	}
+}

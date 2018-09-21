@@ -1,0 +1,21 @@
+package test;
+
+import org.kosta.model.ProductDAO;
+import org.kosta.model.ProductService;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestAnnotationIOC {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext container =
+				new ClassPathXmlApplicationContext("ioc.xml");
+		
+		//어노테이션으로 생성되는 bean의 id는 소문자로 시작하는 클래스명이다.
+		/*ProductDAO dao = (ProductDAO)container.getBean("productDAOImpl");
+		System.out.println(dao.findProductById("a"));
+		container.close();*/
+		
+		ProductService service = (ProductService)container.getBean("productServiceImpl");
+		System.out.println(service.findProductById("a"));
+		container.close();
+	}
+}

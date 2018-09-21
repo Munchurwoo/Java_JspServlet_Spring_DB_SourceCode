@@ -1,0 +1,5 @@
+package org.kosta.springmvc10.model.dao;
+
+public interface MemberDAO {
+
+}

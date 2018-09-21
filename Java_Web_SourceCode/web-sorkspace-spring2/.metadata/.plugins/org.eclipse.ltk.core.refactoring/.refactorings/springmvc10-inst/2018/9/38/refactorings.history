@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EmpUnitTest.java&apos; to &apos;springmvc10-interceptor/src/test/java/org.kosta.springmvc10&apos;&#x0D;&#x0A;- Original project: &apos;springmvc10-inst&apos;&#x0D;&#x0A;- Destination element: &apos;springmvc10-interceptor/src/test/java/org.kosta.springmvc10&apos;&#x0D;&#x0A;- Original element: &apos;org.kosta.springmvc10.EmpUnitTest.java&apos;" description="Copy compilation unit" destination="=springmvc10-interceptor/src\/test\/java&lt;org.kosta.springmvc10" element1="/src\/test\/java&lt;org.kosta.springmvc10{EmpUnitTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1537496408259" units="1" version="1.0"/>
+</session>

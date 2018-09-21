@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Annotation 기반 SpringMVC</title>
+</head>
+<body>
+<H3>고객관리</H3>
+<form action="findCustomerById.do">
+아이디 <input type="text" name="id" required="required">
+<input type="submit" value="고객검색"> 
+</form>
+</body>
+</html>

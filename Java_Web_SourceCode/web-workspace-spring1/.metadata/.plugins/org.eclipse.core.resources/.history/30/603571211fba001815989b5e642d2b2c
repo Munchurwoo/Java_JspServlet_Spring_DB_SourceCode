@@ -1,0 +1,11 @@
+package org.kosta.model.dao;
+
+public class CustomerDAOImpl implements CustomerDAO{
+
+	@Override
+	public CustomerDAO findCustomerById() {
+		
+		return null;
+	}
+
+}

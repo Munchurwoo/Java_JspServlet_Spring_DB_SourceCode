@@ -1,0 +1,5 @@
+ackage org.kosta.springmvc12.model.vo;
+
+public class BoardVO {
+
+}

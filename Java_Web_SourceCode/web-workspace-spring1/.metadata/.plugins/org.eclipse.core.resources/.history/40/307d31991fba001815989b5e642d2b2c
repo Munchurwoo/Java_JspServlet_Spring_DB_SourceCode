@@ -1,0 +1,21 @@
+package org.kosta.model.dao;
+
+import javax.annotation.Resource;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+//spring container 에게 객체 생성 
+@Repository
+public class CustomerDAOImpl implements CustomerDAO{
+	
+	@Resource
+	private SqlSessionTemplate template;
+
+	@Override
+	public CustomerDAO findCustomerById() {
+		
+		return template.selectOne("customer.findCustomerById", id);
+	}
+
+}

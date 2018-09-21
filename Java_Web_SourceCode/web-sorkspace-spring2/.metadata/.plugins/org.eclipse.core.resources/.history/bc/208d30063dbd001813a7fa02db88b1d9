@@ -1,0 +1,13 @@
+package org.kosta.springmvc10.model.dao;
+
+import org.kosta.springmvc10.model.vo.MemberVO;
+
+public class MemberDAOImpl implements MemberDAO{
+
+	@Override
+	public MemberVO login(MemberVO memberVO) {
+		
+		return null;
+	}
+
+}

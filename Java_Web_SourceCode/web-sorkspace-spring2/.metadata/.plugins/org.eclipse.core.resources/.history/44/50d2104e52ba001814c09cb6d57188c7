@@ -1,0 +1,26 @@
+package org.kosta.model.dao;
+
+import java.util.List;
+
+import org.kosta.model.vo.ProductVO;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository 
+public class ProductDAOImpl implements ProductDAO{
+	
+	@Autowired
+	private SqlSessionTemplate template;
+	@Override
+	public ProductVO ProductNumberInfo(String productNum) {
+		// TODO Auto-generated method stub
+		return template.selectOne("product.ProductNumberInfo",productNum);
+	}
+	@Override
+	public List<ProductVO> DetailProduct() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

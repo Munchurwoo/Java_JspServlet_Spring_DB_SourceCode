@@ -1,0 +1,23 @@
+package org.kosta.spring10.controller;
+
+import org.kosta.spring10.model.dao.Emp;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class EmpController {
+	@RequestMapping("home.do")
+	public String home(Model model) {
+		
+		
+		String empNo = Emp.getEmpNo();
+		model.addAttribute("empNo",)
+		return "index";
+	}
+	
+	@RequestMapping("empList.do")
+	public String empList() {
+		return null;
+	}
+}

@@ -1,6 +1,0 @@
-package model;
-public interface AcountService {
-
-	AccountVO findAccountId(String id);
-
-}
