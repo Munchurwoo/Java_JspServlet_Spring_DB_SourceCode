@@ -1,5 +1,0 @@
-package org.kosta.model.dao;
-
-public abstract class ProductDAO {
-
-}

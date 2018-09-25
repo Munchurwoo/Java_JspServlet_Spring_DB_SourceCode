@@ -1,5 +1,0 @@
-package org.kosta.model.dao;
-
-public class ProductDAOImpl implements ProductDAO{
-
-}

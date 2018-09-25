@@ -55,8 +55,8 @@ public class CustomerController {
 			//redirect : 재동작 방지를 위해 리다이렉트 방식으로 응답
 			//등록된 고객정보를 결과하면에서 보여주기 위해 
 			//컨트롤러 메서드 주소로 redirect 한다 
-		
-			viewName = "redirect:registerCustomerResult.do?id="+cvo.getId();
+			System.out.println(vo.getId());
+			viewName = "redirect:registerCustomerResult.do?id="+vo.getId();
 			
 		} else {
 			

@@ -2,9 +2,10 @@
 <aop-reference-model>
 <aop-project name="springmvc5-customer"/>
 <aop-project name="springmvc8-junit-inst"/>
+<aop-project name="springmvc13-board-inst"/>
 <aop-project name="springmvc9-inst"/>
-<aop-project name="springmvc10-interceptor"/>
 <aop-project name="springmvc12-board"/>
+<aop-project name="springmvc10-interceptor"/>
 <aop-project name="springmvc8-junit"/>
 <aop-project name="springMVC-annotation"/>
 <aop-project name="springmvc10"/>

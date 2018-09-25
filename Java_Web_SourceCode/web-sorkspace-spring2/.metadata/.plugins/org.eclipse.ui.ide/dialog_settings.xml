@@ -5,6 +5,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\mdnbo\Desktop"/>
 			<item value="C:\Java_Web_SourceCode\web-workspace2\webstudy30-board-paging-inst"/>
 			<item value=""/>
 			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\springmvc5-customer"/>

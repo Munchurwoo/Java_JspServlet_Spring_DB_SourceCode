@@ -1,0 +1,44 @@
+**Spring 회원 게시판**
+적용 기술 
+:  javase, jdbc , javascript, jquery , css , bootstrap , Servlet/JSP,JSTL ,
+   spring ioc , springmvc , mybatis , sql 
+   
+- 분석   
+   로그인 
+   로그아웃
+   
+   목록 
+   페이징
+     
+   글쓰기 
+   상세보기(조회수)
+   삭제
+   수정 
+   
+1. insert , delete , update 는 post request method 
+   글쓰기  삭제      수정 
+2. 인증 기반 게시판이므로 
+    목록을 제외한 서비스는 Interceptor로 인증을 체크한다 
+3. File List 
+   Model :   MemberDAO , Impl
+	   BoardDAO , Impl 
+	   MemberService , Impl 
+	   BoardService, Impl 
+    	   PostVO , MemberVO 
+   Controller :   MemberController
+	        BoardController 
+   View :   /resources/ css , js ... 
+    
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+    
+   
