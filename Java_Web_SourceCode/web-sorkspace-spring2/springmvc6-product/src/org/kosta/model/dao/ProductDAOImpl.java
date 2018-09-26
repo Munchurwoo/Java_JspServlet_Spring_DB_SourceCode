@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 @Repository 
 public class ProductDAOImpl implements ProductDAO{
 	
-	@Autowired
+	@Autowired //TYPE 을 통해 DI 적용하므로 SqlSessionTemplate 적용된다.
 	private SqlSessionTemplate template;
 	@Override
 	public ProductVO ProductNumberInfo(int productNum) {

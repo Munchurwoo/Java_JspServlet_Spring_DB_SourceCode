@@ -5,11 +5,457 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-09-25T01:38:00Z</updated>
+  <updated>2018-09-26T03:09:47Z</updated>
+  <entry>
+    <title>This Week in Spring (SpringOne Platform 2018 edition) - September 25th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/09/26/this-week-in-spring-springone-platform-2018-edition-september-25th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-09-26:3417</id>
+    <updated>2018-09-26T03:09:47Z</updated>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s been such a crazy SpringOne Platform 2018 and we literally just started! I don&amp;rsquo;t even know where to begin! The show represents the convergence of the best and the brightest in the ecosystem. It&amp;rsquo;s absolutely amazing all the people who want and love to be here. &lt;/p&gt;
+&lt;p&gt;From our friends in the ecosystem, we see people from all organizations. IBM, Amazon Web Services, Microsoft &lt;em&gt;and&lt;/em&gt; Google are &lt;em&gt;all&lt;/em&gt; here hoping to make their platform the most compelling place to run Pivotal Cloud Foundry and Spring-based workloads. It&amp;rsquo;s great to see my friends from all these organizations! Friends like my friends Erin Schnabel, Billy Korando and Pratik Patel from IBM&amp;hellip;&lt;/p&gt;
+&lt;img src="https://pbs.twimg.com/media/Dn-VvuqUwAANaZt.jpg" width = "500" alt = "IBM devrel at Atomist party"/&gt;
+&lt;p&gt;&amp;hellip;and my friend Ray Tsang from Google and Bruno Borges from Microsoft.. &lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hanging with &lt;a href="https://twitter.com/googlecloud?ref_src=twsrc%5Etfw"&gt;@googlecloud&lt;/a&gt; ¡®a &lt;a href="https://twitter.com/saturnism?ref_src=twsrc%5Etfw"&gt;@saturnism&lt;/a&gt; and &lt;a href="https://twitter.com/Azure?ref_src=twsrc%5Etfw"&gt;@Azure&lt;/a&gt; ¡®a &lt;a href="https://twitter.com/brunoborges?ref_src=twsrc%5Etfw"&gt;@brunoborges&lt;/a&gt; &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt; ? where¡¯s &lt;a href="https://twitter.com/arungupta?ref_src=twsrc%5Etfw"&gt;@arungupta&lt;/a&gt; ? &lt;a href="https://t.co/UMfquZPudG"&gt;pic.twitter.com/UMfquZPudG&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044411203697745920?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s nice when you can reunit with old colleagues who are now ecosystem partners and friends - it was amazing to see former VMWare and Pivotal alum Mark Chmarny (left) representing Google&amp;rsquo;s KNative efforts today!&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;This isn¡¯t quite what I think most of us involved in the &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt; keynote were expecting when they said there was a ¡®green room¡¯! &lt;br&gt;&lt;br&gt;LTR the &lt;a href="https://twitter.com/KnativeProject?ref_src=twsrc%5Etfw"&gt;@KnativeProject&lt;/a&gt; natives: &lt;a href="https://twitter.com/Google?ref_src=twsrc%5Etfw"&gt;@google&lt;/a&gt; ¡®s &lt;a href="https://twitter.com/mchmarny?ref_src=twsrc%5Etfw"&gt;@mchmarny&lt;/a&gt; and &lt;a href="https://twitter.com/pivotal?ref_src=twsrc%5Etfw"&gt;@pivotal&lt;/a&gt; ¡®s &lt;a href="https://twitter.com/m_f_?ref_src=twsrc%5Etfw"&gt;@m_f_&lt;/a&gt; &lt;a href="https://t.co/pMk9vQcRdI"&gt;pic.twitter.com/pMk9vQcRdI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044750037203472389?ref_src=twsrc%5Etfw"&gt;September 26, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;It was also great to see former SpringSource colleagues and friends Rod Johnson (creator of Spring) and Christian Dupuis representing Atomist, the new continuous delivery sensation that&amp;rsquo;s sweeping the nation!&lt;/p&gt;
+&lt;img src="https://pbs.twimg.com/media/Dn-wYipX0AAl2-S.jpg" width ="500" alt = "Atomist Party" /&gt;
+&lt;p&gt;I had fun MC&amp;rsquo;ing this morning&amp;rsquo;s keynote with Pivotal legend Dormain Drewitz! &lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Opening &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt; &lt;a href="https://t.co/SHv1r7L2aX"&gt;pic.twitter.com/SHv1r7L2aX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Christophe F. (@_christophe_f) &lt;a href="https://twitter.com/_christophe_f/status/1044573490949574656?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;It was crazy fun sharing the stage with some of the best in the business, including the Spring team&amp;rsquo;s own legends, Spring co-founder Juergen Hoeller and the good Dr. David Syer.&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Life tip: find yourself some friends who like you enough to take a selfie with you while 3000+ ppl are in the room watching and waiting and countless thousands more are watching the live stream! &lt;a href="https://twitter.com/hashtag/springOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#springOne&lt;/a&gt; &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt;&lt;br&gt;&lt;br&gt;I love my &lt;a href="https://twitter.com/springcentral?ref_src=twsrc%5Etfw"&gt;@springcentral&lt;/a&gt; fam: LTR dr. &lt;a href="https://twitter.com/david_syer?ref_src=twsrc%5Etfw"&gt;@david_syer&lt;/a&gt; and &lt;a href="https://twitter.com/springjuergen?ref_src=twsrc%5Etfw"&gt;@springjuergen&lt;/a&gt; &lt;a href="https://t.co/11Vxkb3Lzt"&gt;pic.twitter.com/11Vxkb3Lzt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044751898098782208?ref_src=twsrc%5Etfw"&gt;September 26, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Speaking of the good Dr. Syer, I love this pearl of wisdom (from among thousands) from his keynote this morning:&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;.&lt;a href="https://twitter.com/david_syer?ref_src=twsrc%5Etfw"&gt;@david_syer&lt;/a&gt; on abstractions at &lt;a href="https://twitter.com/hashtag/SpringOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#SpringOne&lt;/a&gt;: &lt;a href="https://t.co/6WGhyZ4Aur"&gt;pic.twitter.com/6WGhyZ4Aur&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pivotal (@pivotal) &lt;a href="https://twitter.com/pivotal/status/1044587088694398977?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;I am so grateful that my buddy Matt Raible and I managed to finish a crazy 75+ printed pages of blog content just in time for the big show! Cheers buddy! We did it! &lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;It¡¯s &lt;a href="https://twitter.com/mraible?ref_src=twsrc%5Etfw"&gt;@mraible&lt;/a&gt; and I fresh off publishing like 75 pages of blog content in the last two weeks for the &lt;a href="https://twitter.com/oktadev?ref_src=twsrc%5Etfw"&gt;@oktadev&lt;/a&gt; blog. We introduce all things &lt;a href="https://twitter.com/ProjectReactor?ref_src=twsrc%5Etfw"&gt;@ProjectReactor&lt;/a&gt; &lt;a href="https://twitter.com/springboot?ref_src=twsrc%5Etfw"&gt;@springboot&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/Webflux?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#Webflux&lt;/a&gt; &lt;a href="https://twitter.com/reactjs?ref_src=twsrc%5Etfw"&gt;@reactjs&lt;/a&gt; and more &lt;br&gt;&lt;br&gt;I love working with that guy. We get it good stuff done and have fun the entire way &lt;a href="https://t.co/O3EpWe3l2h"&gt;pic.twitter.com/O3EpWe3l2h&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044750601794531328?ref_src=twsrc%5Etfw"&gt;September 26, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;At SpringOne Platform, anything is possible! The Spring team is geographically dispersed, so it&amp;rsquo;s great to be able to catch selfies with a plurality of any given team all in the same venue! Here, I get selfies with three members of the Spring Security team&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Look at my security peeps Josh Cummings, &lt;a href="https://twitter.com/joe_grandja?ref_src=twsrc%5Etfw"&gt;@joe_grandja&lt;/a&gt; and &lt;a href="https://twitter.com/rob_winch?ref_src=twsrc%5Etfw"&gt;@rob_winch&lt;/a&gt; &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/springOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#springOne&lt;/a&gt; &lt;a href="https://t.co/NjAgQTI0iF"&gt;pic.twitter.com/NjAgQTI0iF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044749015634649088?ref_src=twsrc%5Etfw"&gt;September 26, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;It wouldn&amp;rsquo;t be a world-class event if, in addition to seeing old friends, we couldn&amp;rsquo;t make new ones. &lt;/p&gt;
+&lt;p&gt;Neha Narkhede, co-founder and CTO Confluentinc, and co-creator of Apache Kafka, absolutely &lt;em&gt;killed it&lt;/em&gt; this morning in her keynote address at the conference. What a legend! What an amazing speaker and an amazing technologist! &lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;It¡¯s the amazing &lt;a href="https://twitter.com/nehanarkhede?ref_src=twsrc%5Etfw"&gt;@nehanarkhede&lt;/a&gt; &lt;a href="https://twitter.com/s1p?ref_src=twsrc%5Etfw"&gt;@s1p&lt;/a&gt; &lt;a href="https://t.co/5beGisYeq7"&gt;pic.twitter.com/5beGisYeq7&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044596776240656384?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;It means &lt;em&gt;everything&lt;/em&gt; to us to see our customers thriving. It was amazing to see DICKS Sporting Goods take the stage today to share their digital journey:&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Amazing story of digital transformation of &lt;a href="https://twitter.com/DICKS?ref_src=twsrc%5Etfw"&gt;@DICKS&lt;/a&gt; at &lt;a href="https://twitter.com/hashtag/SpringOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#SpringOne&lt;/a&gt; &lt;a href="https://t.co/LygDMpBqnd"&gt;pic.twitter.com/LygDMpBqnd&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yatin Khadilkar (@tatyaRao) &lt;a href="https://twitter.com/tatyaRao/status/1044586281982783494?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;I had the privilege of introducing DICKS Sporting Goods so I thought I&amp;rsquo;d dress the part. I even went to a store in south San Francisco this weekend and got my attire just for their big debut!&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Can&amp;#39;t miss &lt;a href="https://twitter.com/starbuxman?ref_src=twsrc%5Etfw"&gt;@starbuxman&lt;/a&gt; at &lt;a href="https://twitter.com/hashtag/SpringOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#SpringOne&lt;/a&gt; &#x1f923; &lt;a href="https://t.co/HyyBDW3V9h"&gt;pic.twitter.com/HyyBDW3V9h&lt;/a&gt;&lt;/p&gt;&amp;mdash; Christophe F. (@_christophe_f) &lt;a href="https://twitter.com/_christophe_f/status/1044586057767866368?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;A huge part of the value of SpringOne Platform, for those of us at Pivotal as well as the larger ecosystem, is just in getting the chance to see the legends in our ecosystem that changed the world. I&amp;rsquo;m a big James Watters fan. He&amp;rsquo;s a big reason why, as a company, we all get out and work as hard as we can for our customers. He&amp;rsquo;s shown us, always leading by example, time and time again, that if we focus on the customer and their desired outcomes, good things result. Rock on James! #GOAT&lt;/p&gt;
+&lt;p&gt;&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hey it¡¯s &lt;a href="https://twitter.com/wattersjames?ref_src=twsrc%5Etfw"&gt;@wattersjames&lt;/a&gt; how cool is that &lt;a href="https://twitter.com/hashtag/SpringOne?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#SpringOne&lt;/a&gt; &lt;a href="https://t.co/yDzufzeeXL"&gt;pic.twitter.com/yDzufzeeXL&lt;/a&gt;&lt;/p&gt;&amp;mdash; Josh Long (?ñýõð, ???) (@starbuxman) &lt;a href="https://twitter.com/starbuxman/status/1044434456227061761?ref_src=twsrc%5Etfw"&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;&lt;br/&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;For every photo or moment I&amp;rsquo;ve shared here are a thousand other ones I haven&amp;rsquo;t shared. It&amp;rsquo;s been an INSANE 24h since the show started in full swing and we&amp;rsquo;ve got miles to go before we sleep! &lt;/p&gt;
+&lt;p&gt;So, without further ado, let&amp;rsquo;s get to this week&amp;rsquo;s amazing, release-packed roundup! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/25/spring-cloud-function-2-0-and-azure-functions"&gt;Spring Cloud Function 2.0 and Azure Functions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Good news everybody! &lt;a href="https://spring.io/blog/2018/09/25/spring-tools-4-ga-released"&gt;Spring Tool Suite 4 is here&lt;/a&gt;! I want to personally congratulation Spring Tool Suite lead Martin Lippert on this &lt;em&gt;incredible&lt;/em&gt; journey! STS 4 is a complete reworking of the engine behind the plugins supporting our Eclipse distribution. That engine represents a radical reprioritization of goals: the tools give you validation now based on runtime behavior instead of false positive yielded by trying to second-guess Spring at design time. The result is that using Java is fast and productive during development - no red squigglies with which to contend! - and any validation and navigation information is informed by the actual runtime behavior of the application. It&amp;rsquo;s just more accurate. Additionally, the engine itself has been extracted out into language servers which run independent of Eclipse and are supported in Microsoft Visual Studio Code and Atom. I&amp;rsquo;m super impressed with this release! This has been a long and well-worth it journey.&lt;/li&gt;
+  &lt;li&gt;Spring Boot team legend Madhura Bhave has just &lt;a href="https://spring.io/blog/2018/09/25/spring-boot-2-1-m4-available-now"&gt;announced Spring Boot 2.1.M4&lt;/a&gt;! The new Spring Boot 2.1.0.M4 release ships with a ton of things including preliminary support for Spring Data JDBC, including a &lt;code&gt;@DataJdbcTest&lt;/code&gt; annotation. Check it out!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/24/hands-on-with-spring-vault-2-1"&gt;Hands on with Spring Vault 2.1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/24/spring-integration-amqp-and-kafka-release-candidates-available"&gt;Spring Integration, AMQP and Kafka Release Candidates Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/24/spring-session-bom-bean-rc1-released"&gt;Spring Session BOM Bean-RC1 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/24/spring-data-jdbc-references-and-aggregates"&gt;Spring Data JDBC, References, and Aggregates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/22/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-m3-released"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.0.0.M3 Released!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/21/spring-data-lovelace-ga-released"&gt;Spring Data Lovelace GA released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/21/spring-framework-5-1-goes-ga"&gt;Spring Framework 5.1 goes GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://content.pivotal.io/blog/meet-the-new-aws-service-broker-for-pcf-now-an-open-beta-heres-why-its-the-easiest-way-to-add-18-aws-services-to-your-cloud-native-apps?mkt_tok=eyJpIjoiWkRKak1ETTJPVEE0T0ROaiIsInQiOiJkYnpQaGdRc2IwRDExZTFMNnZKTGU2TXBpais4Z2hpaDA2UlBMSmxhQnpNMTZoMDJFTVgzT1BDKzJMYUphRkREdElnM2NqdkRmazRXYTIyTjQzTGV0RmdqMmY1OWJtMjVpenJIMVRzUFN4dkt2N2lZcWcxVUJEQllnblBMNVRUdSJ9"&gt;Meet the New AWS Service Broker for PCF, Now an Open Beta. Here&amp;rsquo;s Why It&amp;rsquo;s the Easiest Way to Add 18 AWS Services to Your Cloud Native Apps.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/20/spring-tool-suite-3-9-6-released"&gt;Spring Tool Suite 3.9.6 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/19/spring-web-services-3-0-4-2-4-3-released"&gt;Spring Web Services 3.0.4 / 2.4.3 released!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/19/announcing-spring-cloud-function-2-0-0-m2"&gt;Announcing Spring Cloud Function - 2.0.0.M2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring creator Rod Johnson&amp;rsquo;s got a nice post on how &lt;a href="https://the-composition.com/modern-delivery-for-modern-java-give-yaml-the-boot-9fdcc4d83123"&gt;Atomist helps liberate modern Spring developers from the scourge of too much &lt;code&gt;.YAML&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;IBM have some very interesting new posts on building &lt;a href="https://console.bluemix.net/docs/java-spring/index.html#getting-started-tutorial"&gt;Spring applications that are destined for IBM Cloud&lt;/a&gt; and &lt;a href="https://developer.ibm.com/components/spring/"&gt;using Spring with IBM Cloud and IBM software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love the new Spring Tool Suite release so much I put together a quick primer that shows how to develop Java-based Spring Boot-based applications that get deployed to production in the cloud on Cloud Foundry, all from &lt;a href="https://www.youtube.com/watch?v=0ryrlJfSgfc"&gt;within the fantastically streamlined and productive Spring Tool Suite 4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love that buildpacks have been finally extracted out into a separate thing that&amp;rsquo;s now standard across platforms. &lt;a href="https://buildpacks.io/"&gt;Read on to learn more!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Vlad Mihalcea has a nice post on &lt;a href="https://vladmihalcea.com/spring-read-only-transaction-hibernate-optimization/"&gt;the Spring read-only transaction optimization&lt;br/&gt;in Hibernate&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Just in time for SpringOne Platform, &lt;a href="https://projectriff.io/blog/announcing-riff-0-1-3/"&gt;check out riff v0.1.3&lt;/a&gt;. Riff is the function-as-a-service sensation that&amp;rsquo;s sweeping the nation!&lt;/li&gt;
+  &lt;li&gt;My buddy Matt Raible and I have been burning the midnight oil &lt;a href="https://developer.okta.com/blog/2018/09/25/spring-webflux-websockets-react"&gt;to get this &lt;em&gt;massive&lt;/em&gt; blog series&lt;/a&gt; - three parts spanning 70+ printed pages in all! - out in time for the epic SpringOne Platform event. It is &lt;em&gt;so&lt;/em&gt; worth a read.&lt;/li&gt;
+  &lt;li&gt;Java 11 is here! The best part about is how mundane it all is. If you&amp;rsquo;re using the excellent &lt;a href="http://twitter.com/sdkman_"&gt;SDKMAN&lt;/a&gt;, then all you need to do is say: &lt;code&gt;sdk install java 11.ea.28-open&lt;/code&gt; and then head on over to the &lt;a href="http://start.spring.io/"&gt;Spring Initializr&lt;/a&gt; and build a new project using Java 11. It&amp;rsquo;ll just work. InfoQ have a nice &lt;a href="https://www.infoq.com/news/2018/09/java11-released"&gt;post with some details here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I love this post by Mario&amp;rsquo;s own &lt;a href="http://twitter.com/MarioGray"&gt;Mario Gray&lt;/a&gt; on testing reactive &lt;a href="https://www.sudoinit5.com/post/spring-boot-testing-producer/"&gt;cloud Spring-based applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The SpringUni blog have &lt;a href="https://springuni.com/bootiful-gcp-spring-cloud-stream-with-google-cloud-pub-sub/"&gt;a nice post on using Spring Cloud GCP with Google Cloud&lt;/a&gt; that expands upon a post in my recent 8-part miniseries. It&amp;rsquo;s worth a read!&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1043189646677536768"&gt;Reactor Californium-RELEASE has shipped this week &#x1f6a2;&#x1f680;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://groups.google.com/forum/#!topic/rabbitmq-users/LMnYh5RXD0w"&gt;RabbitMQ 3.7.8 is out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;As if this week weren&amp;rsquo;t epic enough, there&amp;rsquo;s a new &lt;a href="https://groups.google.com/forum/#!topic/lettuce-redis-client-users/v5Q2qQntzzU"&gt;release of the Redis Lettuce driver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In light of the new Java 11 release, it feels appropriate to look &lt;a href="https://www.youtube.com/watch?v=eX7VnkcXMdM"&gt;at the long and fascinating history of Java thus far.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a nice article that looks at &lt;a href="http://claudioed.tech/2018/03/07/continuous-query-with-spring-data-reactive-mongodb/"&gt;using MongoDB&amp;rsquo;s tailable queries to support&lt;/a&gt; continuous queries, a feature you might be familiar with if you&amp;rsquo;ve ever used a distributed data grid like Coherence or Apache Geode&lt;/li&gt;
+  &lt;li&gt;You know that you can stream the mainstage action at SpringOne Platform 2018, don&amp;rsquo;t ya? Cuz.. &lt;a href="http://springoneplatform.io/"&gt;you can&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;You surely know by now that you can fork the Spring Initializr - here&amp;rsquo;s an example of what at least one group has &lt;a href="https://gitter.im/spring-io/initializr?at=5ba23b08f4bd1056ac866fb2"&gt;done with their fork&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Function 2.0 and Azure Functions</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/09/25/spring-cloud-function-2-0-and-azure-functions" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Dave Syer</name>
+    </author>
+    <id>tag:spring.io,2018-09-25:3416</id>
+    <updated>2018-09-25T15:33:40Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-function"&gt;Spring Cloud
+Function&lt;/a&gt; has had support for Microsoft
+&lt;a href="https://azure.microsoft.com/en-gb/services/functions"&gt;Azure Functions&lt;/a&gt;
+since version 1.0, but in the latest 2.0 releases (still in milestone
+phase) we decided to change the programming model a bit. This article
+describes what the changes mean for users, and provides a bit of
+background behind the shift. We in the Spring team had a lot of fun
+working on this and collaborating with the folks at Microsoft to get
+the best blend of the two technologies for our users.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="azure-functions-for-java"&gt;&lt;a class="anchor" href="#azure-functions-for-java"&gt;&lt;/a&gt;Azure Functions for Java&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Microsoft has had Java support in Azure Functions for a while, and it
+enables developers to easily write and deploy Java code that connects
+in a serverless way to a wide range of platform services (events,
+databases, storage, HTTP gateways, etc.) in Azure. It comes with an
+annotation-based programming model that puts the function
+implementations in Java methods. So you write a method and annotation
+it with &lt;code&gt;@FunctionName&lt;/code&gt;, and it becomes an Azure Function. There is a
+rich set of tools based on a Maven plugin (currently) that drives the
+Azure command line and can be used to build a function, run and debug
+it locally and deploy it to the cloud. There is a
+&lt;a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-java-maven"&gt;Quickstart
+Guide&lt;/a&gt; on the Azure website which will help you get all the
+pre-requisites installed and working, and there is more detailed
+documentation about how Azure Functions works in the
+&lt;a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-java"&gt;Developer&amp;#8217;s
+Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The annotations also tie the function method parameters and return
+types to the services used at deployment time. For example, if you
+want to bind to an HTTP gateway at deployment time you use
+&lt;code&gt;@HttpTrigger&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@FunctionName("uppercase")
+public Bar execute(
+    @HttpTrigger(name = "req", methods = { HttpMethod.GET, HttpMethod.POST },
+        authLevel = AuthorizationLevel.ANONYMOUS) Foo foo,
+    ExecutionContext context) {
+  return new Bar(foo.getValue());
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this example we accept an incoming HTTP POST request and Azure
+binds its body to a POJO of type &lt;code&gt;Foo&lt;/code&gt;. We transform the &lt;code&gt;Foo&lt;/code&gt; into a
+&lt;code&gt;Bar&lt;/code&gt; and it comes back to the caller in the HTTP response.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;HTTP triggers are in the top 5 most popular integrations in Azure
+Functions, but even more popular are the event-based and storage or
+database-based triggers. The complete list can be found in the
+&lt;a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings"&gt;Triggers
+and Bindings&lt;/a&gt; documentation - there is a table where you can click on
+a specific binding or trigger and it will take you to reference page
+where there are code samples in all languages, including Java.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Here&amp;#8217;s another example using the Azure Event Hub as an input and
+Cosmos DB as an output. This example is
+&lt;a href="https://github.com/dsyer/azure-docs"&gt;in github&lt;/a&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@FunctionName("uppercase")
+public Bar execute(
+  @EventHubTrigger(name = "data", eventHubName = "events",
+        connection = "TRANSACTIONS_EVENT_HUB_CONNECTION_STRING")
+    Foo data,
+    @CosmosDBOutput(name = "document", databaseName = "inventory",
+        collectionName = "messages",
+        connectionStringSetting = "PRODUCT_ITEMS_DOCUMENTDB_CONNECTION_STRING",
+        createIfNotExists = true)
+    OutputBinding&amp;lt;Bar&amp;gt; document,
+    final ExecutionContext context) {
+  return document.setValue(new Bar(foo.getValue()));
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock note"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+If the incoming JSON cannot be converted to the function input
+type (&lt;code&gt;Foo&lt;/code&gt; in this case) you will see Azure fail with a confusing &lt;code&gt;no
+such method&lt;/code&gt; error. If you see that you might be able to change the
+&lt;code&gt;@FunctionName&lt;/code&gt; method to a &lt;code&gt;String&lt;/code&gt; input and eyeball the data to
+make sure it is bindable to the desired input type.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The annotations carry connection credential information through an
+indirection to environment variables that are configured in the
+function deployment. The configuration for all that happens in the
+build &lt;code&gt;pom.xml&lt;/code&gt; through the Azure Functions Maven plugin. For example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;plugin&amp;gt;
+  &amp;lt;groupId&amp;gt;com.microsoft.azure&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;azure-functions-maven-plugin&amp;lt;/artifactId&amp;gt;
+  &amp;lt;configuration&amp;gt;
+    &amp;lt;resourceGroup&amp;gt;${functionResourceGroup}&amp;lt;/resourceGroup&amp;gt;
+    &amp;lt;appName&amp;gt;${functionAppName}&amp;lt;/appName&amp;gt;
+    &amp;lt;region&amp;gt;${functionAppRegion}&amp;lt;/region&amp;gt;
+    &amp;lt;appSettings&amp;gt;
+            &amp;lt;property&amp;gt;
+              &amp;lt;name&amp;gt;FUNCTIONS_EXTENSION_VERSION&amp;lt;/name&amp;gt;
+              &amp;lt;value&amp;gt;beta&amp;lt;/value&amp;gt;
+            &amp;lt;/property&amp;gt;
+            &amp;lt;property&amp;gt;
+              &amp;lt;name&amp;gt;TRANSACTIONS_EVENT_HUB_CONNECTION_STRING&amp;lt;/name&amp;gt;
+            &amp;lt;value&amp;gt;${TRANSACTIONS_EVENT_HUB_CONNECTION_STRING}&amp;lt;/value&amp;gt;
+            &amp;lt;/property&amp;gt;
+            &amp;lt;property&amp;gt;
+              &amp;lt;name&amp;gt;PRODUCT_ITEMS_DOCUMENTDB_CONNECTION_STRING&amp;lt;/name&amp;gt;
+              &amp;lt;value&amp;gt;${PRODUCT_ITEMS_DOCUMENTDB_CONNECTION_STRING}&amp;lt;/value&amp;gt;
+            &amp;lt;/property&amp;gt;
+            &amp;lt;property&amp;gt;
+              &amp;lt;name&amp;gt;MSDEPLOY_RENAME_LOCKED_FILES&amp;lt;/name&amp;gt;
+              &amp;lt;value&amp;gt;1&amp;lt;/value&amp;gt;
+            &amp;lt;/property&amp;gt;
+    &amp;lt;/appSettings&amp;gt;
+  &amp;lt;/configuration&amp;gt;
+  &amp;lt;executions&amp;gt;
+    &amp;lt;execution&amp;gt;
+            &amp;lt;id&amp;gt;package-functions&amp;lt;/id&amp;gt;
+            &amp;lt;goals&amp;gt;
+              &amp;lt;goal&amp;gt;package&amp;lt;/goal&amp;gt;
+            &amp;lt;/goals&amp;gt;
+    &amp;lt;/execution&amp;gt;
+  &amp;lt;/executions&amp;gt;
+&amp;lt;/plugin&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In this case the environment variable names link the plugin
+configuration to the function binding declaration. For instance the
+&lt;code&gt;@EventHubTrigger&lt;/code&gt; has a &lt;code&gt;connection&lt;/code&gt; attribute that will be
+popeulated at runtime from the
+&lt;code&gt;TRANSACTIONS_EVENT_HUB_CONNECTION_STRING&lt;/code&gt; environment variable. The
+plugin configures it remotely using a local environment variable with
+the same name (notice the &lt;code&gt;${}&lt;/code&gt; placeholders), which the developer or
+CI process is responsible for setting up at runtime.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Your own personal connection strings are secrets and can be found in
+the &lt;a href="https://portal.azure.com"&gt;Azure Dashboard&lt;/a&gt; - when you click on the
+relevant resource there is usually a &lt;code&gt;Connection Strings&lt;/code&gt; link (or
+similar) that you can copy and paste to your local process (e.g. in a
+script that you run locally but do not check into source
+control). E.g. you might use a &lt;code&gt;setup-env.sh&lt;/code&gt; script like this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code&gt;export PRODUCT_ITEMS_DOCUMENTDB_CONNECTION_STRING="AccountEndpoint=https://..."
+export TRANSACTIONS_EVENT_HUB_CONNECTION_STRING="Endpoint=sb://..."&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;and source it once at the beginning of a terminal session.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There are some other plugin declarations in the &lt;code&gt;pom.xml&lt;/code&gt; of the
+sample. They are all important but basically boilerplate - you should
+be able to copy them and re-use the same configuration in all Azure
+Function Applications.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="spring-cloud-function"&gt;&lt;a class="anchor" href="#spring-cloud-function"&gt;&lt;/a&gt;Spring Cloud Function&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Spring Cloud Function aims to support similar serverless use cases
+when the application developer declares Spring beans of type
+&lt;code&gt;java.util.Function&lt;/code&gt;. The advantages of using Spring Cloud Function on
+Azure, as opposed to vanilla Java functions, are that the actual
+business logic code is (in principle) portable to other platforms, and
+it is a familiar programming model for existing Spring users. Also,
+all the usual benefits of Spring apply: dependency injection and
+comprehensive integration with many other Java libraries.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The equivalent of both the examples above would be a single &lt;code&gt;@Bean&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Bean
+public Function&amp;lt;Foo, Bar&amp;gt; uppercase() {
+  return foo -&amp;gt; new Bar(foo.getValue().toUpperCase());
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In version 1.0 of Spring Cloud Function, the user had to map the
+Microsoft annotations manually to a JSON deployment descriptor, and
+wrap it up manually into an archive with the right layout for the
+platform. The process was brittle (but independent of the Azure Java
+programming model).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;In version 2.0 this would still work, but we have chosen to support
+the use of the Azure annotations a bit more explicitly. So now we have
+a base class that application developers can extend and decorate with
+the Azure annotations. The example above would be exactly the same
+&lt;code&gt;@Bean&lt;/code&gt; and one of the &lt;code&gt;execute&lt;/code&gt; methods above would be inserted into
+the subclass of the Spring Cloud handler. Example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;public class UppercaseHandler extends AzureSpringBootRequestHandler&amp;lt;Foo, Bar&amp;gt; {
+  @FunctionName("uppercase")
+    @HttpTrigger(name = "req", methods = { HttpMethod.GET,
+        HttpMethod.POST }, authLevel = AuthorizationLevel.ANONYMOUS) Foo foo,
+    ExecutionContext context) {
+  return super.handle(foo, context);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Notice that the base class &lt;code&gt;AzureSpringBootRequestHandler&lt;/code&gt; is generic
+with type parameters for input and output. You have to match the input
+type to the incoming event data, which will be presented in JSON and
+converted using Jackson by Azure before Spring has anything to
+do. There are 2 utility methods in the base class, one (&lt;code&gt;handle&lt;/code&gt;)
+which returns the response object, and one (&lt;code&gt;handleOutput&lt;/code&gt;) which
+accepts an &lt;code&gt;OutputBinding&lt;/code&gt; and binds it to the output from the user
+&lt;code&gt;Function&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock note"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+The base class is pure boilerplate, and serves only as
+an external representation of the binding of your Spring functions
+to the serverless platform services. The Azure bindings would be ignored
+if you were running in a different platform, or locally via the
+Spring Cloud Function web adapter, for instance. It might be possible
+in the future to replace it with an interface declaration - the
+Azure platform doesn&amp;#8217;t permit this currently, but it&amp;#8217;s something we
+are looking at with the Microsoft team.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There are various configuration options that drive the runtime
+behaviour of the Azure Function. The most important (and only
+mandatory) one is the &lt;code&gt;MAIN_CLASS&lt;/code&gt;, which is the main
+&lt;code&gt;@SpringBootApplication&lt;/code&gt; class that carries the declaration of the
+&lt;code&gt;Function&lt;/code&gt; (or &lt;code&gt;Functions&lt;/code&gt;). You can specify this as an environment
+variable, or as the &lt;code&gt;Main-Class&lt;/code&gt; entry in the application jar
+manifest. As long as your app has a main class with precisely one
+function, there is no need to do anything else. In the sample app we
+use the manifest to define the main class:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;plugin&amp;gt;
+  &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+  &amp;lt;configuration&amp;gt;
+    &amp;lt;archive&amp;gt;
+      &amp;lt;manifest&amp;gt;
+        &amp;lt;mainClass&amp;gt;example.FunctionApplication&amp;lt;/mainClass&amp;gt;
+      &amp;lt;/manifest&amp;gt;
+    &amp;lt;/archive&amp;gt;
+  &amp;lt;/configuration&amp;gt;
+&amp;lt;/plugin&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;If your app has multiple &lt;code&gt;Function&lt;/code&gt; beans, they can be mapped to the
+Azure function though the &lt;code&gt;@FunctionName&lt;/code&gt; annotation - the bean name
+(or more precisely the name i nthe &lt;code&gt;FunctionCatalog&lt;/code&gt;) matches the
+function name. In this way you can create an Azure Function
+Application, which is a single deployment artifact for a group of
+functions. If you prefer, you can also use an arbitrary
+&lt;code&gt;@FunctionName&lt;/code&gt; and configure the Spring Cloud Function name through
+an environment variable &lt;code&gt;FUNCTION_NAME&lt;/code&gt; or a &lt;code&gt;function.name&lt;/code&gt; in your
+&lt;code&gt;application.properties&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;There is another simple sample of how to set up a Spring Cloud
+Function as an Azure Function in
+&lt;a href="https://github.com/spring-cloud/spring-cloud-function/blob/master/spring-cloud-function-samples/function-sample-azure/README.adoc"&gt;the
+project repo&lt;/a&gt; - this one is an HTTP trigger from an Azure perspective,
+but the Spring Cloud Function parts are very similar.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admonitionblock note"&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class="icon"&gt;
+&lt;div class="title"&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class="content"&gt;
+If you are at &lt;a href="https://springoneplatform.io"&gt;Spring One Platform&lt;/a&gt; this week, come along to a &lt;a href="https://springoneplatform.io/2018/sessions/running-serverless-applications-using-spring-and-microsoft-azure"&gt;presentation on Spring and Azure Functions&lt;/a&gt; by Jeff Hollan (Microsoft) and Oleg Zhurakousky (Pivotal).
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Tools 4 GA released</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/09/25/spring-tools-4-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2018-09-20:3404</id>
+    <updated>2018-09-25T12:18:00Z</updated>
+    <content type="html">&lt;p&gt;&lt;img src="https://github.com/spring-projects/sts4/wiki/images/sts4-big.gif" alt="spring tools 4" /&gt;&lt;/p&gt;
+&lt;p&gt;After a decade of rolling out updates and improvements to the famous Spring Tool Suite and the Spring IDE components for Eclipse, a new era of Spring tooling starts today and we welcome you to the all-new &lt;a href="https://spring.io/tools"&gt;Spring Tools 4&lt;/a&gt;. After an intensive period of public betas, we are happy to announce the first official release today.&lt;/p&gt;
+&lt;p&gt;Spring Tools 4 is a completely new set of tools for working with Spring projects in your favorite IDEs and editors. They are re-built from scratch with the goal in mind to provide the best support for implementing enterprise-grade applications based on Spring and Spring Boot across development environments and lightweight editors. They provide a unique editor-centric experience for working with Spring projects, ranging from smart and Spring-aware content-assist to a unique new way of connecting your source code with and enriching it with detailed information and insights from your running Spring Boot applications. This puts your source code editor side-by-side with your running boot applications.&lt;/p&gt;&lt;h2&gt;&lt;a href="#spring-aware" class="anchor" name="spring-aware"&gt;&lt;/a&gt;Spring Aware&lt;/h2&gt;
+&lt;p&gt;The all-new Spring Tools 4 analyze your projects on the fly, understand the Spring constructs inside, and provide easy and super quick navigation to all your Spring elements. Finding a specific request mapping, an exact bean definition, or a newly created function was never as easy as with the new Spring Tools 4.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/spring-projects/sts4/wiki/images/screenshot-navigation.png" alt="smart code completion" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#information-from-live-running-apps" class="anchor" name="information-from-live-running-apps"&gt;&lt;/a&gt;Information from live-running apps&lt;/h2&gt;
+&lt;p&gt;The all-new Spring Tools 4 introduces a new concept of overlaying your source code with detailed information from live-running Spring Boot apps. As soon as you run your boot app on your machine, additional information from this app will show up directly in your source code editor. The most powerful part here are the detailed wiring reports for your beans. You can see exactly which bean (from which source) got injected into your @Autowired-annotated dependency (for example), and where your bean got injected in your application. This provides a unique insight into the running application directly in your source code. You don¡¯t have to collect that data yourself and find the right lines of code manually. The tooling does that for you automatically. And going one step further, you can get that information from remote Spring Boot apps too. This allows you to see bean wirings of cloud-deployed Spring applications directly in your source code editor.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/spring-projects/sts4/wiki/images/screenshot-live-hovers.png" alt="live hover screenshot" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#ide-agnostic" class="anchor" name="ide-agnostic"&gt;&lt;/a&gt;IDE agnostic&lt;/h2&gt;
+&lt;p&gt;We know that Spring developers love their IDEs and code editors. And we want them to continue to use the tools that they love. Therefore we implemented most parts of the Spring Tools 4 in an IDE-agnostic way. You can use them in:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Eclipse (&lt;a href="https://www.eclipse.org/downloads"&gt;https://www.eclipse.org/downloads&lt;/a&gt; or the STS4 distribution from &lt;a href="https://spring.io/tools"&gt;https://spring.io/tools&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Visual Studio Code (&lt;a href="https://code.visualstudio.com"&gt;https://code.visualstudio.com&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Atom IDE (&lt;a href="https://ide.atom.io"&gt;https://ide.atom.io&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And that is just the beginning. We expect more environments to join this party in the future.&lt;/p&gt;&lt;h2&gt;&lt;a href="#re-built-from-scratch" class="anchor" name="re-built-from-scratch"&gt;&lt;/a&gt;Re-built from scratch&lt;/h2&gt;
+&lt;p&gt;To realize these all-new Spring Tools 4, we decided to re-write most of the Spring tooling from scratch - with these goals in mind from the beginning:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Let¡¯s be IDE agnostic - let every developer continue to use the environments they love.&lt;/li&gt;
+  &lt;li&gt;Build for performance right from the start - we hate to wait for our IDE or editor to finish before we can continue coding. Therefore the Spring Tools 4 are designed to never block the user plus deliver results quickly.&lt;/li&gt;
+  &lt;li&gt;Build for modern Spring technologies - the tools focus on Spring Boot and annotation-driven Spring app development.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#continuous-updates" class="anchor" name="continuous-updates"&gt;&lt;/a&gt;Continuous Updates&lt;/h2&gt;
+&lt;p&gt;Moving forward, the Spring Tools 4 will receive continuous updates with bug fixes as well as new and improved features. Those updates will appear as updates automatically in your installation across all environments. The Eclipse-based distribution will also be updated continuously, even across Eclipse platform versions, so you will always be on the latest and greatest.&lt;/p&gt;&lt;h2&gt;&lt;a href="#download" class="anchor" name="download"&gt;&lt;/a&gt;Download&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download the release from here: &lt;a href="https://spring.io/tools"&gt;https://spring.io/tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Installation instructions: &lt;a href="https://github.com/spring-projects/sts4/wiki/Installation"&gt;https://github.com/spring-projects/sts4/wiki/Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;To learn more, take a look at the user guide here: &lt;a href="https://github.com/spring-projects/sts4/wiki/User-Guide"&gt;https://github.com/spring-projects/sts4/wiki/User-Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#watch-spring-tools-4-in-action" class="anchor" name="watch-spring-tools-4-in-action"&gt;&lt;/a&gt;Watch Spring Tools 4 in Action&lt;/h2&gt;
+&lt;p&gt;Josh Long recorded a new and comprehensive &amp;ldquo;Getting Started with Spring Boot and Spring Tools 4&amp;rdquo; video, showing Spring Tools 4 for Eclipse in action. Take a look:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0ryrlJfSgfc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;&lt;h2&gt;&lt;a href="#faq" class="anchor" name="faq"&gt;&lt;/a&gt;FAQ&lt;/h2&gt;&lt;h3&gt;&lt;a href="#what-will-happen-to-the-old-sts-3-9-x-tooling" class="anchor" name="what-will-happen-to-the-old-sts-3-9-x-tooling"&gt;&lt;/a&gt;What will happen to the old STS 3.9.x tooling?&lt;/h3&gt;
+&lt;p&gt;We will continue to ship updates for STS 3.9.x as a full distribution until mid of 2019 and will update the distribution to the upcoming Eclipse releases (2018-09, 2018-12, and beyond). In case you still need important parts of the old tooling in Eclipse that haven¡¯t been supported in Spring Tools 4 for Eclipse, you will be able to install those parts as add-on features into the Spring Tools 4 Eclipse distribution and those parts will continue to receive maintenance updates until mid of 2019. After mid of 2019, the old STS 3.9.x tooling will receive no maintenance updates anymore.&lt;/p&gt;&lt;h3&gt;&lt;a href="#are-the-spring-tools-4-ready-for-boot-2-1-and-spring-framework-5-1" class="anchor" name="are-the-spring-tools-4-ready-for-boot-2-1-and-spring-framework-5-1"&gt;&lt;/a&gt;Are the Spring Tools 4 ready for Boot 2.1 and Spring Framework 5.1?&lt;/h3&gt;
+&lt;p&gt;Yes, the Spring Tools 4 are ready for usage with various Spring Boot versions (including 1.5.x, 2.0.x and 2.1.x) as well as the latest Spring Framework versions (including 4.x and 5.x).&lt;/p&gt;&lt;h3&gt;&lt;a href="#do-the-spring-tools-4-include-java-language-support" class="anchor" name="do-the-spring-tools-4-include-java-language-support"&gt;&lt;/a&gt;Do the Spring Tools 4 include Java language support?&lt;/h3&gt;
+&lt;p&gt;The ready-to-use Spring Tools 4 distribution on top of Eclipse includes the standard Java language tooling of Eclipse out-of-the-box. For Visual Studio Code, you should install the Java Extension Pack, which is a combination of the regular Java language tooling (provided from RedHat and Eclipse) and the launching, testing, and debugging support for Java for Visual Studio Code (from Microsoft). For Atom, there is also a Java extension around (that is based on the same code as the Java support for Visual Studio Code).&lt;/p&gt;&lt;h3&gt;&lt;a href="#do-the-spring-tools-4-support-jdk9-jdk10-jdk11" class="anchor" name="do-the-spring-tools-4-support-jdk9-jdk10-jdk11"&gt;&lt;/a&gt;Do the Spring Tools 4 support JDK9, JDK10, JDK11?&lt;/h3&gt;
+&lt;p&gt;Yes. You can use JDK 8/9/10/11 to run your Spring Tools 4. Language support for Java within your projects however is limited to JDK 8/9/10. Full language support for JDK11 will arrive with a future update soon.&lt;/p&gt;&lt;h3&gt;&lt;a href="#do-the-spring-tools-4-support-lombok" class="anchor" name="do-the-spring-tools-4-support-lombok"&gt;&lt;/a&gt;Do the Spring Tools 4 support Lombok?&lt;/h3&gt;
+&lt;p&gt;Yes, you can use Lombok in your projects when using the Spring Tools 4 in the various environments.&lt;/p&gt;&lt;h3&gt;&lt;a href="#can-i-install-and-use-spring-tools-4-in-intellij-idea" class="anchor" name="can-i-install-and-use-spring-tools-4-in-intellij-idea"&gt;&lt;/a&gt;Can I install and use Spring Tools 4 in IntelliJ IDEA?&lt;/h3&gt;
+&lt;p&gt;No. We implemented a prototype to integrate the Spring Tools 4 with IntelliJ IDEA, but the third-party support for the language server protocol for IntelliJ isn¡¯t mature, stable, and feature-rich enough to implement a meaningful version of the Spring Tools 4 for IntelliJ yet. However, there is awesome support for Spring available out-of-the-box in the IntelliJ Ultimate Edition that you can use instead if you prefer IntelliJ.&lt;/p&gt;&lt;h3&gt;&lt;a href="#which-other-ides-and-editors-will-be-supported-in-the-future" class="anchor" name="which-other-ides-and-editors-will-be-supported-in-the-future"&gt;&lt;/a&gt;Which other IDEs and editors will be supported in the future?&lt;/h3&gt;
+&lt;p&gt;We don¡¯t have exact plans yet, but we constantly monitoring the language server community for new and emerging clients and environments that might be good candidates for the Spring Tools 4. Eclipse Theia is one of the projects we are taking into account at the moment, for example.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot 2.1 M4 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2018/09/25/spring-boot-2-1-m4-available-now" />
-    <category term="engineering" label="Engineering" />
+    <category term="releases" label="Releases" />
     <author>
       <name>Madhura Bhave</name>
     </author>
@@ -1677,132 +2123,5 @@ And if you find a bug or want to request a feature &lt;a href="https://jira.spri
 &lt;p&gt;If you want to get started with 2.1 and try out the new features, you can bootstrap a new project on &lt;a href="https://start.spring.io"&gt;https://start.spring.io&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We hope to release an M4 just in time for &lt;a href="https://springoneplatform.io/"&gt;Spring One Platform 2018&lt;/a&gt; and the 2.1 GA towards the end of October.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.0.M3/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Bootiful GCP: To Production! (8/8)</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/09/13/bootiful-gcp-to-production-8-8" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2018-08-18:3370</id>
-    <updated>2018-09-13T00:00:00Z</updated>
-    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;Hi Spring fans! In this brief 8 part series we¡¯re going to look at the Spring Cloud integration for Google Cloud Platform, called Spring Cloud GCP. &lt;a href="https://cloud.spring.io/spring-cloud-gcp/"&gt;Spring Cloud GCP&lt;/a&gt; represents a joint effort between Google and Pivotal that endeavors to provide a first class experience for Spring Cloud developers when using the Google Cloud Platform. Pivotal Cloud Foundry users will enjoy an even &lt;a href="https://docs.pivotal.io/partners/gcp-sb/index.html"&gt;easier integration with the GCP service broker&lt;/a&gt;. I wrote these installments with input from Google Cloud Developer Advocate, and my buddy, &lt;a href="http://twitter.com/saturnism"&gt;Ray Tsang&lt;/a&gt;. You can also catch a walkthrough of Spring Cloud GCP in our Google Next 2018 session, &lt;a href="https://www.youtube.com/watch?v=2Jo3vy7iQf8"&gt;Bootiful Google Cloud Platform&lt;/a&gt;. Thanks buddy! As always, &lt;a href="http://twitter.com/starbuxman"&gt;I&amp;rsquo;d love to hear from you if you have feedback&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;If you&amp;rsquo;re just joining us, be sure to read the previous installments including:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/08/20/bootiful-gcp-getting-started-with-spring-cloud-for-google-cloud-platform-1-8"&gt;Bootiful GCP: Getting Started with Spring Cloud for Google Cloud Platform (1/8)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/08/23/bootiful-gcp-relational-data-access-with-spring-cloud-gcp-2-8"&gt;Bootiful GCP: Relational Data Access with Spring Cloud GCP (2/8)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/08/27/bootiful-gcp-globally-consistent-data-access-with-spanner-3-8"&gt;Bootiful GCP: Globally Consistent Data Access with Spanner (3/8)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/08/30/bootiful-gcp-integration-with-google-cloud-pub-sub-4-8"&gt;Bootiful GCP: Integration with Google Cloud Pub/Sub (4/8)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/03/bootiful-gcp-runtime-configuration-with-spring-cloud-gcp-runtime-config-5-8"&gt;Bootiful GCP: Runtime Configuration with Spring Cloud GCP Runtime Config (5/8)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/06/bootiful-gcp-supporting-observability-with-spring-cloud-gcp-stackdriver-trace-6-8"&gt;Bootiful GCP: Supporting Observability with Spring Cloud GCP Stackdriver Trace (6/8)&lt;br/&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2018/09/10/bootiful-gcp-use-spring-cloud-gcp-to-connect-to-other-gcp-services-7-8"&gt;Bootiful GCP: Use Spring Cloud GCP to Connect to Other GCP Services (7/8)&lt;br/&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As we¡¯ve worked through these examples we¡¯ve relied on the default authentication of the Google Cloud SDKs and Spring Cloud GCP working with a local installation of the Google Cloud SDK and the &lt;code&gt;gcloud&lt;/code&gt; CLI. Spring Cloud GCP¡¯s auto-configuration configures a &lt;code&gt;DefaultCredentialsProvider&lt;/code&gt; that looks for &lt;em&gt;some&lt;/em&gt; way to authenticate. Everything¡¯s worked fine on our local machine so far because we ran the interactive authentication prompt and confirmed on the Google Cloud website the linking of our authorities to this application. But what if you want to run tests in a CI environment or deploy the application to a cloud platform?&lt;/p&gt;
-&lt;p&gt;We need a way to convey our authorization when running in these environments. We can do this on Google Cloud using &lt;em&gt;service accounts&lt;/em&gt;. The &lt;a href="https://cloud.google.com/docs/authentication/production#auth-cloud-implicit-java"&gt;process is explained here&lt;/a&gt;. The gist is that you will need to describe, as narrowly as possible, the privileges your application can have using a Google Cloud service account and then render those credentials into a file which we will feed to the application.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint shell"&gt;PROJECT_ID=$(gcloud config list --format &amp;#39;value(core.project)&amp;#39;)&#xD;
-&#xD;
-&#xD;
-NAME=gcp-service-app&#xD;
-&#xD;
-&#xD;
-gcloud iam service-accounts create $NAME&#xD;
-&#xD;
-&#xD;
-gcloud projects add-iam-policy-binding $PROJECT_ID  --member &amp;quot;serviceAccount:${NAME}@${PROJECT_ID}.iam.gserviceaccount.com&amp;quot; --role &amp;quot;roles/owner&amp;quot;&#xD;
-&#xD;
-&#xD;
-gcloud iam service-accounts keys create ${NAME}.json --iam-account ${NAME}@${PROJECT_ID}.iam.gserviceaccount.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-  &lt;p&gt;the name is arbitrary. You might use a name that reflects the nature of your application.&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;create the service account giving it a name&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;add a role - &lt;code&gt;roles/owner&lt;/code&gt; - to our service binding. You would do well to be more granular in assignment of your roles.&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;generate a file, &lt;code&gt;gcp-service-app.json&lt;/code&gt;, that contains the key.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The result of this process should be a &lt;code&gt;.json&lt;/code&gt; file, &lt;code&gt;gcp-service-app.json&lt;/code&gt;, on your local machine.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;That &lt;code&gt;.json&lt;/code&gt; file is a secret! Do &lt;em&gt;not&lt;/em&gt; share or lose track of it!&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You need to tell the Spring Cloud application where to find this credential. You can pass it to Spring Cloud GCP as a file location or a Base 64-encoded &lt;code&gt;String&lt;/code&gt;. Let¡¯s do the latter. We can use the &lt;code&gt;spring.cloud.gcp.credentials.encoded-key&lt;/code&gt; to convey the Base64-encoded contents of the file we just generated.&lt;/p&gt;
-&lt;p&gt;This is a secret value, and it will differ from one environment to another. We don¡¯t want it checked into version control, in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt;, and even if we did we¡¯d still need to maintain different environment-specific values. Spring Boot lets us provide overrides when running the application. We could use &lt;code&gt;application.properties&lt;/code&gt; or &lt;code&gt;application.yml&lt;/code&gt; files. We could stash thm in environment-specific Runtime Config. We could provide them as &lt;code&gt;-D&lt;/code&gt; arguments or environment variables when running the application. So could easily say &lt;code&gt;java -Dspring.cloud.gcp.credentials.encoded-key=¡¦? -jar ..&lt;/code&gt; to provide a value that either contributes a new value to the application or overrides the existing value in &lt;code&gt;src/main/resources/application.properties&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Environment variables are a more natural fit for platforms like Cloud Foundry or Heroku where we don¡¯t necessarily want to have control over &lt;em&gt;how&lt;/em&gt; an application is run, over its &lt;code&gt;java&lt;/code&gt; incantation. The platform Buildpack does that for us. Let¡¯s look at how we could run the application locally.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;run.sh.&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint shell"&gt;#!/bin/bash&#xD;
-&#xD;
-&#xD;
-export SPRING_CLOUD_GCP_CREDENTIALS_ENCODED_KEY=$( cat $GCP_SERVICE_ACCOUNT_KEY_FILE | base64 -w0  )&#xD;
-export SPRING_CLOUD_GCP_PROJECT_ID=$(gcloud config list --format &amp;#39;value(core.project)&amp;#39;)&#xD;
-&#xD;
-mvn clean spring-boot:run
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-  &lt;li&gt;when you run this script, set the environment variable &lt;code&gt;SPRING_CLOUD_GCP_CREDENTIALS_ENCODED_KEY&lt;/code&gt; before running the application to point to the location of your service account &lt;code&gt;.json&lt;/code&gt; file.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;On my machine, I was able to run that script like this: &lt;code&gt;GCP_SERVICE_ACCOUNT_KEY_FILE=/home/jlong/keys/gcp-service-account.json ./run.sh&lt;/code&gt;. Your local path for the &lt;code&gt;.json&lt;/code&gt; file will most likely vary.&lt;/p&gt;
-&lt;p&gt;You can translate those environment variables as needed for your particular CI environment. Once your application has been tested and integrated, it¡¯s off to production! For me, production is Cloud Foundry (running on top of Google Cloud, no less). Here¡¯s a script that deploys the application to the Cloud Foundry instance in which I¡¯m authenticated.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;deploy.sh.&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class="prettyprint shell"&gt;#!/usr/bin/env bash&#xD;
-&#xD;
-mvn -DskipTests=true clean package&#xD;
-&#xD;
-&#xD;
-cf d -f $APP_NAME&#xD;
-&#xD;
-&#xD;
-cf push --no-start --random-route -p $JAR $APP_NAME&#xD;
-cf set-env $APP_NAME SPRING_CLOUD_GCP_CREDENTIALS_ENCODED_KEY &amp;quot;$( cat $GCP_SERVICE_ACCOUNT_KEY_FILE | base64 -w0 )&amp;quot;&#xD;
-cf set-env $APP_NAME SPRING_CLOUD_GCP_PROJECT_ID $(gcloud config list --format &amp;#39;value(core.project)&amp;#39;)&#xD;
-&#xD;
-&#xD;
-cf restart $APP_NAME
-&lt;/code&gt;&lt;/pre&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-  &lt;p&gt;warning! this script &lt;strong&gt;deletes&lt;/strong&gt; the existing application. You don¡¯t need to, but it ensures things are cleanly reset :)&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;here we push the application, giving it a random route, and tell Cloud Foundry to &lt;em&gt;not&lt;/em&gt; start it. Then, we specify environment variables for the application.&lt;/p&gt;&lt;/li&gt;
-  &lt;li&gt;
-  &lt;p&gt;finally, we start the application now that we¡¯re done securing it.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;In both &lt;code&gt;run.sh&lt;/code&gt; and &lt;code&gt;deploy.sh&lt;/code&gt; we used &lt;code&gt;base64 -w0&lt;/code&gt; to encode the &lt;code&gt;.json&lt;/code&gt; service account file in Base64. One of us is running on Linux and the other on OS X. The &lt;code&gt;-w0&lt;/code&gt; operand ensures that the Base64 encoded file isn¡¯t hard-wrapped, that it is one contiguous line of text, when running on Linux against the &lt;code&gt;GNU&lt;/code&gt; &lt;code&gt;base64&lt;/code&gt; utility.&lt;/p&gt;
-&lt;/blockquote&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.0.5</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/09/12/spring-boot-2-0-5" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2018-09-12:3392</id>
-    <updated>2018-09-12T11:52:00Z</updated>
-    <content type="html">&lt;p&gt;It is my pleasure to announce that Spring Boot 2.0.5 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 2.0.5 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.0.5.RELEASE"&gt;87 fixes, improvements and dependency updates&lt;/a&gt; (including &lt;a href="https://pivotal.io/security/cve-2018-11087"&gt;an important security fix for Spring AMQP&lt;/a&gt;). Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.0.5.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 1.5.16</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/09/11/spring-boot-1-5-16" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2018-09-11:3391</id>
-    <updated>2018-09-11T16:43:00Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team, I am pleased to announce that Spring Boot 1.5.16 has been released and is is now available from &lt;a href="http://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and &lt;a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.springframework.boot%22"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Spring Boot 1.5.16 includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v1.5.16.RELEASE"&gt;27 fixes, improvements and dependency updates&lt;/a&gt; (including &lt;a href="https://pivotal.io/security/cve-2018-11087"&gt;an important security fix for Spring AMQP&lt;/a&gt;). Thanks to all that have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/htmlsingle"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

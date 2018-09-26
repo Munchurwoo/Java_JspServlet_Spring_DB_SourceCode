@@ -188,3 +188,9 @@
 0:0:0:0:0:0:0:1 - - [25/Sep/2018:20:53:31 +0900] "POST /springmvc5-customer/registerCustomer.do HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [25/Sep/2018:20:53:32 +0900] "GET /springmvc5-customer/registerCustomerResult.do?id=javaqwer HTTP/1.1" 200 232
 0:0:0:0:0:0:0:1 - - [25/Sep/2018:20:53:33 +0900] "GET /springmvc5-customer/index.jsp HTTP/1.1" 200 1027
+127.0.0.1 - - [25/Sep/2018:21:26:10 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [25/Sep/2018:21:26:12 +0900] "GET /springmvc6-product/ HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [25/Sep/2018:21:37:50 +0900] "GET /springmvc6-product/index.jsp HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [25/Sep/2018:21:37:54 +0900] "GET /springmvc6-product/index.jspa HTTP/1.1" 404 1107
+0:0:0:0:0:0:0:1 - - [25/Sep/2018:21:37:57 +0900] "GET /springmvc6-product/index.jsp HTTP/1.1" 200 702
+0:0:0:0:0:0:0:1 - - [25/Sep/2018:21:38:08 +0900] "GET /springmvc6-product/detailProduct.do HTTP/1.1" 200 1979
