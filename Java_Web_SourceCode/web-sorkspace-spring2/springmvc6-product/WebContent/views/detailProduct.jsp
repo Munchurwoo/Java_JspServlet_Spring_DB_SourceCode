@@ -34,7 +34,7 @@
       </tr>
     </thead>
     <tbody>
-    <c:forEach items="${list}" var="list">
+    <c:forEach items="${requestScope.list}" var="list">
       <tr>
         <td>상품번호 : ${list.productNo}</td>
         <td>상품명 : ${list.name}</td>

@@ -12,9 +12,10 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="info"/>
+			<item value="go"/>
 			<item value="warn"/>
 			<item value="String"/>
-			<item value="info"/>
 		</list>
 		<list key="replacehistory">
 		</list>

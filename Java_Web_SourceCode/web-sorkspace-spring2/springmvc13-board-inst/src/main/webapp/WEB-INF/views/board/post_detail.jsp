@@ -53,10 +53,10 @@
 			 <c:if test="${requestScope.pvo.memberVO.id==sessionScope.mvo.id}">
 			 <button form="deleteForm" type="submit">삭제</button>
 			 <button form="updateForm" type="submit">수정</button>
-			 <form action="deletePost.do" id="deleteForm">
+			 <form action="deletePost.do" id="deleteForm" method="post">
 			 <input type="hidden" name="no" value="${requestScope.pvo.no}">			
 			 </form>
-			 <form action="updateView.do" id="updateForm">
+			 <form action="updateView.do" id="updateForm" method="post">
 			 <input type="hidden" name="no" value="${requestScope.pvo.no}">			
 			 </form>			 
 			 </c:if>

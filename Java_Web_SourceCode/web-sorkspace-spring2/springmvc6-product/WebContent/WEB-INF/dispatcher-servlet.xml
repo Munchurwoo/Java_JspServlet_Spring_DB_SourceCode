@@ -28,7 +28,6 @@
 <context:component-scan base-package="org.kosta" />
 <!-- annotation 기반 springmvc 설정
  	 RequestMapping, session, 등으 어노테이션 
-	
  -->
 <mvc:annotation-driven />
 <!-- dbcp -->

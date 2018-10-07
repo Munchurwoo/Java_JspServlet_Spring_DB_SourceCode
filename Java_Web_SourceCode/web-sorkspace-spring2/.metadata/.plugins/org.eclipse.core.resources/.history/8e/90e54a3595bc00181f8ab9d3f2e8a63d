@@ -1,3 +1,0 @@
-select * from dept;
-select count(*) from dept;
-		select count(*) from emp

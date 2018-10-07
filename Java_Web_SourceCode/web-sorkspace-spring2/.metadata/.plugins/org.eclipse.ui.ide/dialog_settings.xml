@@ -3,11 +3,13 @@
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Java_Web_SourceCode\web-sorkspace-spring2\springIOC6-Anotation\target"/>
+			<item value="C:\Users\mdnbo\Downloads"/>
 			<item value="C:\Users\mdnbo\Desktop"/>
 			<item value="C:\Java_Web_SourceCode\web-workspace2\webstudy30-board-paging-inst"/>
-			<item value=""/>
 			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\springmvc5-customer"/>
 			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\springMVC-annotation"/>
 			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\MyBatis-Study4"/>
@@ -15,7 +17,14 @@
 			<item value="C:\Java_Web_SourceCode\web-workspace-spring1\a-framework-info"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\mdnbo\Downloads\springmvc19-websocket.zip"/>
+			<item value="C:\Users\mdnbo\Downloads\springmvc18-security.zip"/>
+			<item value="C:\Users\mdnbo\Downloads\framework14일차수업소스.zip"/>
+			<item value="C:\Users\mdnbo\Downloads\springmvc15-transaction2.zip"/>
+			<item value="C:\Users\mdnbo\Downloads\springmvc3-annotation-inst2.zip"/>
+			<item value="C:\Users\mdnbo\Downloads\springmvc3-annotation-inst.zip"/>
 			<item value=""/>
+			<item value="C:\Users\mdnbo\Downloads\springmvc14-stockmarket-inst.zip"/>
 			<item value="C:\Users\mdnbo\Downloads\Framework-8일차수업소스.zip"/>
 			<item value="C:\Users\mdnbo\Downloads\springmvc7-member-inst.zip"/>
 			<item value="C:\Users\mdnbo\Downloads\springmvc7-member.zip"/>

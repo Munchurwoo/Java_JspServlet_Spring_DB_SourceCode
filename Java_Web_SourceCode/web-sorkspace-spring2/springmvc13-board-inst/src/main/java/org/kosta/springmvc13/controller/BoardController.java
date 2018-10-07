@@ -80,20 +80,22 @@ public class BoardController{
 		return new ModelAndView("board/post_detail","pvo",boardService.getPostDetailNoHits(no));
 	}	
 	
-	@RequestMapping("deletePost.do")
+	@PostMapping("deletePost.do")
 	public ModelAndView deletePost(int no) {		
 		boardService.deletePost(no);		
-		return new ModelAndView("board/list","lvo",boardService.getPostList());
+//		return new ModelAndView("board/list","lvo",boardService.getPostList());
+		return new ModelAndView("redirect:home.do");
 	}
-	@RequestMapping("updateView.do")
+	@PostMapping("updateView.do")
 	public ModelAndView updateView(int no) {
 		return new ModelAndView("board/update","pvo"
 				,boardService.getPostDetailNoHits(no));
 	}
-	@RequestMapping("updatePost.do")
+	@PostMapping("updatePost.do")
 	public ModelAndView updatePost(PostVO pvo) {
 		boardService.updatePost(pvo);
-		return new ModelAndView("board/post_detail","pvo",boardService.getPostDetailNoHits(pvo.getNo()));
+//		return new ModelAndView("board/post_detail","pvo",boardService.getPostDetailNoHits(pvo.getNo()));
+		return new ModelAndView("redirect:post-detail-no-hits.do?no="+pvo.getNo());
 	}
 	
 }

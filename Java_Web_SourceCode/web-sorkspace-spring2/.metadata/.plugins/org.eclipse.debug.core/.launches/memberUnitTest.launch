@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/springmvc10-interceptor/src/test/java/org/kosta/springmvc10/MemberUnitTest.java"/>
+<listEntry value="/springmvc15-transaction3-inst/src/test/java/org/kosta/springmvc15/MemberUnitTest.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -10,8 +10,8 @@
 <booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.kosta.springmvc10.MemberUnitTest"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="springmvc10-interceptor"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.kosta.springmvc15.MemberUnitTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="springmvc15-transaction3-inst"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea"/>
 </launchConfiguration>

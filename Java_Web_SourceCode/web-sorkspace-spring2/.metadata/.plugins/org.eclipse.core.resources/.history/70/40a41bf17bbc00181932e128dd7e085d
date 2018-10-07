@@ -1,5 +1,0 @@
-package org.kosta.springmvc8;
-
-public @interface RunWith {
-
-}

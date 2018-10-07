@@ -1,17 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="springmvc5-customer"/>
+<aop-project name="springmvc19-websocket"/>
+<aop-project name="springmvc12-board"/>
+<aop-project name="springmvc15-transaction2"/>
+<aop-project name="springMVC-annotation"/>
+<aop-project name="springBootTest1"/>
+<aop-project name="springmvc14-stockmarket2"/>
+<aop-project name="springmvc16-mybatis-mapper-inst"/>
+<aop-project name="springmvc7-member-inst"/>
+<aop-project name="springBootTest1-1"/>
+<aop-project name="springIOC6-Anotation"/>
+<aop-project name="springmvc17-tiles-inst"/>
+<aop-project name="springmvc10-inst"/>
+<aop-project name="springmvc14-stockmarket"/>
+<aop-project name="springmvc7-member"/>
 <aop-project name="springmvc8-junit-inst"/>
 <aop-project name="springmvc13-board-inst"/>
 <aop-project name="springmvc9-inst"/>
+<aop-project name="springmvc14-stockmarket-inst"/>
 <aop-project name="springmvc10-interceptor"/>
-<aop-project name="springmvc12-board"/>
 <aop-project name="springmvc8-junit"/>
-<aop-project name="springMVC-annotation"/>
+<aop-project name="springmvc15-transaction"/>
 <aop-project name="springmvc10"/>
+<aop-project name="springmvc18"/>
+<aop-project name="springmvc17-transaction"/>
 <aop-project name="springmvc9"/>
-<aop-project name="springmvc7-member-inst"/>
-<aop-project name="springIOC6-Anotation"/>
-<aop-project name="springmvc10-inst"/>
-<aop-project name="springmvc7-member"/>
+<aop-project name="springmvc15-transaction3-inst"/>
+<aop-project name="springmvc18-security">
+<aspect-definition advice-class-name="org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="24" aspect-name="_methodSecurityInterceptor" aspect-start-line-number="24" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" pointcut-expression="(@within(org.springframework.security.access.annotation.Secured) || @annotation(org.springframework.security.access.annotation.Secured)) &amp;&amp; execution(* *..*(..))" proxy-target-class="true">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:adminController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{AdminController.java[AdminController~adminMain" target-start-line="14"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:memberController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{MemberController.java[MemberController~updateForm" target-start-line="72"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:memberController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{MemberController.java[MemberController~updateMemberAction~QHttpServletRequest;~QMemberVO;" target-start-line="78"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:memberController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{MemberController.java[MemberController~enterCafe" target-start-line="65"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:productController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{ProductController.java[ProductController~registerProductAction~QProductVO;~QHttpServletRequest;" target-start-line="42"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-web.xml|7:beans:12|8:productController:12" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-web.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/security\/spring-security-core\/4.0.2.RELEASE\/spring-security-core-4.0.2.RELEASE.jar&lt;org.springframework.security.access.intercept.aopalliance(MethodSecurityInterceptor.class[MethodSecurityInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.controller{ProductController.java[ProductController~fileDownload~QString;" target-start-line="70"/>
+</aspect-definition>
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="58" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#springmvc18-security#src/main/webapp/WEB-INF/spring-model.xml#58" aspect-start-line-number="58" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-model.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="true">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springmvc18-security|3:src/main/webapp/WEB-INF/spring-model.xml|7:beans:14|8:memberServiceImpl:14" bean-file="/springmvc18-security/src/main/webapp/WEB-INF/spring-model.xml" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvc18-security/src/main/webapp/WEB-INF/spring-model.xml" source="=springmvc18-security/C:\/Users\/mdnbo\/.m2\/repository\/org\/springframework\/spring-tx\/4.3.14.RELEASE\/spring-tx-4.3.14.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=springmvc18-security/src\/main\/java&lt;org.kosta.springmvc18.model{MemberServiceImpl.java[MemberServiceImpl~registerMember~QMemberVO;" target-start-line="46"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springmvc15-transaction2-inst"/>
+<aop-project name="springmvc3-annotation-inst2"/>
+<aop-project name="springmvc15-transaction1-inst"/>
 </aop-reference-model>
